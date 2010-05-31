@@ -111,25 +111,20 @@ class SchedulesController < ApplicationController
 
     unless flash[:notice].blank?
       unless @schedule.blank?
-        render :action => "edit", :id => @schedule.id
+        render :action => "edit", :id => @schedule.id, :date => @now_date
       else
-        render :action => "edit"
+        render :action => "edit", :date => @now_date
       end
       return
     end
 
-#    begin
     if @schedule.update_attributes( params[:schedule] )
       flash[:notice] = 'スケジュールの更新が完了しました。'
-      redirect_to "/schedules/show/#{@schedule.id}"
+      redirect_to :action => "show", :id => @schedule.id, :date => @now_date
     else
       flash[:notice] = 'スケジュールの更新に失敗しました。'
-      render :action => "edit", :id => @schedule.id
+      render :action => "edit", :id => @schedule.id, :date => @now_date
     end
-#    rescue => exc
-#      print "【 exc 】 >> " ; p exc
-#      render :action => "edit", :id => @schedule.id
-#    end
   end
 
   #---------#
@@ -140,7 +135,7 @@ class SchedulesController < ApplicationController
     @schedule = Schedule.find( params[:id] ) unless params[:id].blank?
     @schedule.destroy unless @schedule.blank?
 
-    redirect_to "/schedules/list"
+    redirect_to :action => "list", :date => @now_date
   end
 
 end
