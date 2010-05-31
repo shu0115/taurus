@@ -827,3 +827,112 @@ TypeError (can't dup NilClass):
 Rendered rescues/_trace (70.1ms)
 Rendered rescues/_request_and_response (0.4ms)
 Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#edit (for 127.0.0.1 at 2010-06-01 00:52:10) [GET]
+  Parameters: {"date"=>"2010-06-30", "id"=>"7"}
+  [4;35;1mSchedule Load (0.3ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 7) [0m
+Rendering template within layouts/base
+Rendering schedules/edit
+Completed in 28ms (View: 23, DB: 0) | 200 OK [http://localhost/schedules/edit/7?date=2010-06-30]
+
+
+Processing SchedulesController#update (for 127.0.0.1 at 2010-06-01 00:52:12) [PUT]
+  Parameters: {"schedule"=>{"schedule_date(1i)"=>"2010", "title"=>"[W杯]オランダ×日本", "schedule_date(2i)"=>"6", "schedule_date(3i)"=>"19", "cycle"=>"1", "note"=>"試合開始：20:30\r\n試合会場：ダーバン スタジアム", "cycle_mode"=>"day"}, "commit"=>"保存", "date"=>"2010-06-30", "authenticity_token"=>"oA9gD5tG/yOkgDcuKySxCcfUL4/TBjziPNXhBYXpGsg=", "id"=>"7"}
+  [4;36;1mSchedule Load (0.3ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 7) [0m
+  [4;35;1mSchedule Update (0.3ms)[0m   [0mUPDATE "schedules" SET "schedule_date" = '2010-06-19', "updated_at" = '2010-05-31 15:52:12' WHERE "id" = 7[0m
+Redirected to http://localhost:3000/schedules/show/7?date=2010-06-30
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/schedules/update/7]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2010-06-01 00:52:12) [GET]
+  Parameters: {"date"=>"2010-06-30", "id"=>"7"}
+  [4;36;1mSchedule Load (0.3ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 7) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/schedules/show/7?date=2010-06-30]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2010-06-01 00:52:13) [GET]
+  Parameters: {"date"=>"2010-06-30"}
+  [4;35;1mSchedule Load (1.1ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2010-06-01' AND schedule_date <= '2010-06-30') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 48ms (View: 34, DB: 1) | 200 OK [http://localhost/schedules?date=2010-06-30]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2010-06-01 00:52:37) [GET]
+  Parameters: {"date"=>"2010-07-30"}
+  [4;36;1mSchedule Load (0.4ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2010-07-01' AND schedule_date <= '2010-07-31') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 80ms (View: 70, DB: 0) | 200 OK [http://localhost/schedules?date=2010-07-30]
+
+
+Processing SchedulesController#new (for 127.0.0.1 at 2010-06-01 00:52:39) [GET]
+  Parameters: {"schedule_date_day"=>"11", "date"=>"2010-07-30", "schedule_date_month"=>"7", "schedule_date_year"=>"2010"}
+Rendering template within layouts/base
+Rendering schedules/new
+Completed in 22ms (View: 16, DB: 0) | 200 OK [http://localhost/schedules/new?date=2010-07-30&schedule_date_day=11&schedule_date_month=7&schedule_date_year=2010]
+
+
+Processing SchedulesController#create (for 127.0.0.1 at 2010-06-01 00:52:58) [POST]
+  Parameters: {"schedule"=>{"schedule_date(1i)"=>"2010", "title"=>"[W杯]決勝", "schedule_date(2i)"=>"7", "schedule_date(3i)"=>"11", "cycle"=>"1", "note"=>"27:30〜", "cycle_mode"=>"day"}, "commit"=>"作成", "date"=>"2010-07-30", "authenticity_token"=>"oA9gD5tG/yOkgDcuKySxCcfUL4/TBjziPNXhBYXpGsg="}
+  [4;35;1mSchedule Create (0.4ms)[0m   [0mINSERT INTO "schedules" ("schedule_date", "updated_at", "title", "cycle", "note", "cycle_mode", "created_at") VALUES('2010-07-11', '2010-05-31 15:52:58', '[W杯]決勝', 1, '27:30〜', 'day', '2010-05-31 15:52:58')[0m
+Redirected to http://localhost:3000/schedules/list?date=2010-07-30
+Completed in 17ms (DB: 0) | 302 Found [http://localhost/schedules/create]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2010-06-01 00:52:58) [GET]
+  Parameters: {"date"=>"2010-07-30"}
+  [4;36;1mSchedule Load (1.6ms)[0m   [0;1mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC[0m
+Rendering template within layouts/base
+Rendering schedules/list
+Completed in 77ms (View: 72, DB: 2) | 200 OK [http://localhost/schedules/list?date=2010-07-30]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2010-06-01 00:53:00) [GET]
+  Parameters: {"date"=>"2010-07-30"}
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2010-07-01' AND schedule_date <= '2010-07-31') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 43ms (View: 31, DB: 1) | 200 OK [http://localhost/schedules?date=2010-07-30]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2010-06-01 00:53:17) [GET]
+  Parameters: {"date"=>"2010-06-30"}
+  [4;36;1mSchedule Load (1.0ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2010-06-01' AND schedule_date <= '2010-06-30') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 85ms (View: 72, DB: 1) | 200 OK [http://localhost/schedules?date=2010-06-30]
+
+
+Processing SchedulesController#new (for 127.0.0.1 at 2010-06-01 00:53:19) [GET]
+  Parameters: {"schedule_date_day"=>"13", "date"=>"2010-06-30", "schedule_date_month"=>"6", "schedule_date_year"=>"2010"}
+Rendering template within layouts/base
+Rendering schedules/new
+Completed in 22ms (View: 16, DB: 0) | 200 OK [http://localhost/schedules/new?date=2010-06-30&schedule_date_day=13&schedule_date_month=6&schedule_date_year=2010]
+
+
+Processing SchedulesController#create (for 127.0.0.1 at 2010-06-01 00:53:41) [POST]
+  Parameters: {"schedule"=>{"schedule_date(1i)"=>"2010", "title"=>"[W杯]ドイツ×オーストラリア", "schedule_date(2i)"=>"6", "schedule_date(3i)"=>"13", "cycle"=>"1", "note"=>"試合開始：27:30\r\n試合会場：ダーバン スタジアム", "cycle_mode"=>"day"}, "commit"=>"作成", "date"=>"2010-06-30", "authenticity_token"=>"oA9gD5tG/yOkgDcuKySxCcfUL4/TBjziPNXhBYXpGsg="}
+  [4;35;1mSchedule Create (0.4ms)[0m   [0mINSERT INTO "schedules" ("schedule_date", "updated_at", "title", "cycle", "note", "cycle_mode", "created_at") VALUES('2010-06-13', '2010-05-31 15:53:41', '[W杯]ドイツ×オーストラリア', 1, '試合開始：27:30
+試合会場：ダーバン スタジアム', 'day', '2010-05-31 15:53:41')[0m
+Redirected to http://localhost:3000/schedules/list?date=2010-06-30
+Completed in 10ms (DB: 0) | 302 Found [http://localhost/schedules/create]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2010-06-01 00:53:41) [GET]
+  Parameters: {"date"=>"2010-06-30"}
+  [4;36;1mSchedule Load (1.7ms)[0m   [0;1mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC[0m
+Rendering template within layouts/base
+Rendering schedules/list
+Completed in 84ms (View: 78, DB: 2) | 200 OK [http://localhost/schedules/list?date=2010-06-30]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2010-06-01 00:53:44) [GET]
+  Parameters: {"date"=>"2010-06-30"}
+  [4;35;1mSchedule Load (1.2ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2010-06-01' AND schedule_date <= '2010-06-30') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 86ms (View: 71, DB: 1) | 200 OK [http://localhost/schedules?date=2010-06-30]

@@ -91,7 +91,7 @@ class SchedulesController < ApplicationController
 
     if @schedule.save
       flash[:notice] = 'スケジュールを新規作成しました。'
-      redirect_to :action => "list", :date => @now_date
+      redirect_to :action => "calendar", :date => @now_date
     else
       flash[:notice] = 'スケジュールの新規作成に失敗しました。'
       render :action => "new", :date => @now_date
