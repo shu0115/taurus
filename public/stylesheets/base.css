@@ -1,65 +1,69 @@
-
 * {
-	font-family: monospace;
+  font-family: monospace;
 }
 
 body {
-	font-size: 14px;
+  font-size: 14px;
 }
 
 table, td, th {
-	border: 1px solid gray;
+  border: 1px solid gray;
 }
 
 a {
-	color: #000000;
-	text-decoration: underline;
+  color: #000000;
+  text-decoration: underline;
 }
 
 th, td {
-	padding: 5px;
-	text-align: left;
-	vertical-align: top;
+  padding: 5px;
+  text-align: left;
+  vertical-align: top;
 }
 
 
 
 /* メニュータイトル */
 .menu_title {
-	font-size: 18px;
-	font-weight: bold;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 /* カレンダー */
 .calendar th {
-	padding: 5px;
-	text-align: center;
-	vertical-align: middle;
+  padding: 5px;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .calendar td {
-	padding: 5px;
+  padding: 5px;
 /*
-	width: 120px;
-	height: 120px;
+  width: 120px;
+  height: 120px;
 */
-	width: 100px;
-	height: 100px;
-	text-align: left;
-	vertical-align: top;
+  width: 100px;
+  height: 100px;
+  text-align: left;
+  vertical-align: top;
 }
 
 /* 日曜日 */
 .sunday, .sunday a {
-	color: #ff0000;
+  color: #ff0000;
 }
 
 /* 土曜日 */
 .saturday, .saturday a {
-	color: #0000ff;
+  color: #0000ff;
+}
+
+/* 今日 */
+.today {
+  background-color: #ddeeff;
 }
 
 /* カレンダー内部スケジュール名 */
 .schedule_title {
-	font-size: 12px;
+  font-size: 12px;
 }
