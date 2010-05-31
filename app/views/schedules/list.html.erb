@@ -22,10 +22,6 @@
     <td><%=h schedule.cycle %></td>
     <td><%=h schedule.cycle_mode %></td>
     <td><%=h schedule.note %></td>
-    <td><%= link_to '閲覧', "/schedules/show/#{schedule.id}" %></td>
-    <td><%= link_to '編集', "/schedules/edit/#{schedule.id}" %></td>
-    <td><%= link_to '削除', "/schedules/destroy/#{schedule.id}", :confirm => '本当に削除してよろしいですか?', :method => :delete %></td>
-
     <td><%= link_to '閲覧', { :controller => "schedules", :action => "show", :id => schedule.id, :date => @now_date } %></td>
     <td><%= link_to '編集', { :controller => "schedules", :action => "edit", :id => schedule.id, :date => @now_date } %></td>
     <td><%= link_to '削除', { :controller => "schedules", :action => "edit", :id => schedule.id, :date => @now_date }, :confirm => '本当に削除してよろしいですか?', :method => :delete %></td>
