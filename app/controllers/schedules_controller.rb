@@ -12,9 +12,6 @@ class SchedulesController < ApplicationController
   # calendar #
   #----------#
   def calendar
-
-#    p Date.new(2007,9,24).national_holiday?;
-
     #paramsに年月日データが入っているなら、そのデータ[@date]に入れる。
     #入っていなければ、今日の年月日データを[@date]入れる。
     if params[:date]
@@ -48,13 +45,13 @@ class SchedulesController < ApplicationController
 
     # 月内スケジュール取得
     @month_schedules = Schedule.get_month_schedule( @now_date )
-
   end
 
   #------#
   # list #
   #------#
   def list
+    @now_date = Date.parse( params[:date] )
     @schedules = Schedule.find( :all, :order => "schedule_date DESC, id ASC" )
   end
 
@@ -62,6 +59,7 @@ class SchedulesController < ApplicationController
   # show #
   #------#
   def show
+    @now_date = Date.parse( params[:date] )
     @schedule = Schedule.find( params[:id] ) unless params[:id].blank?
   end
 
@@ -69,6 +67,7 @@ class SchedulesController < ApplicationController
   # new #
   #-----#
   def new
+    @now_date = Date.parse( params[:date] )
     if !params[:schedule_date_year].blank? and !params[:schedule_date_month].blank? and !params[:schedule_date_day].blank?
       schedule_date = Date.new( params[:schedule_date_year].to_i, params[:schedule_date_month].to_i, params[:schedule_date_day].to_i )
     end
@@ -79,6 +78,7 @@ class SchedulesController < ApplicationController
   # edit #
   #------#
   def edit
+    @now_date = Date.parse( params[:date] )
     @schedule = Schedule.find( params[:id] ) unless params[:id].blank?
   end
 
@@ -86,6 +86,7 @@ class SchedulesController < ApplicationController
   # create #
   #--------#
   def create
+    @now_date = Date.parse( params[:date] )
     @schedule = Schedule.new( params[:schedule] )
 
     if @schedule.save
@@ -101,7 +102,7 @@ class SchedulesController < ApplicationController
   # update #
   #--------#
   def update
-
+    @now_date = Date.parse( params[:date] )
     @schedule = Schedule.find( params[:id] ) unless params[:id].blank?
 
     flash[:notice] = ""
@@ -129,13 +130,13 @@ class SchedulesController < ApplicationController
 #      print "【 exc 】 >> " ; p exc
 #      render :action => "edit", :id => @schedule.id
 #    end
-
   end
 
   #---------#
   # destroy #
   #---------#
   def destroy
+    @now_date = Date.parse( params[:date] )
     @schedule = Schedule.find( params[:id] ) unless params[:id].blank?
     @schedule.destroy unless @schedule.blank?
 

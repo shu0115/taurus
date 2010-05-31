@@ -18,7 +18,7 @@
 <br />
 
 <br />
-<%= link_to 'スケジュール一覧', :action => "list" %><br />
+<%= link_to 'スケジュール一覧', :action => "list", :date => @now_date %><br />
 <br />
 
 <%# form_tag :action => "table" do %>
@@ -57,11 +57,11 @@
 			<%#= value[:days] %>
 			<span id="schedule_field_<%= index %>">
 				<%# 日付(新規作成リンク) %>
-				<% if value[:days].to_s != "　" %><%= link_to value[:days], { :action => "new", :schedule_date_year => @now_date.year, :schedule_date_month => @now_date.month, :schedule_date_day => value[:days] } %><% end %>
+				<% if value[:days].to_s != "　" %><%= link_to value[:days], { :action => "new", :schedule_date_year => @now_date.year, :schedule_date_month => @now_date.month, :schedule_date_day => value[:days], :date => @now_date } %><% end %>
 			</span><br />
 			<% unless now_schedule.blank? %>
 				<% now_schedule.each_with_index{ | value, index | %>
-					<span class="schedule_title"><%= link_to value.title, :action => "show", :id => value.id %></span><br />
+					<span class="schedule_title"><%= link_to value.title, :action => "show", :id => value.id, :date => @now_date %></span><br />
 				<% } %>
 			<% end %>
 		</td>
@@ -77,7 +77,7 @@
 	<%#= submit_tag "保存" %>
 <%# end %>
 
-<%= link_to 'スケジュール一覧', :action => "list" %>
+<%= link_to 'スケジュール一覧', :action => "list", :date => @now_date %>
 
 <br />
 <br />
