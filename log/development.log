@@ -23,3 +23,114 @@ Migrating to CreateSchedules (1)
  WHERE type = 'table' AND NOT name = 'sqlite_sequence'
 [0m
   [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("schedules")[0m
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2010-05-31 23:53:20) [GET]
+
+NoMethodError (undefined method `nth_kday?' for Mon, 24 Sep 2007:Date):
+  lib/date/holiday.rb:41:in `float?'
+  lib/date/holiday.rb:89:in `nhol2?'
+  lib/date/holiday.rb:130:in `national_holiday?'
+  lib/date/holiday.rb:130:in `instance_eval'
+  lib/date/holiday.rb:130:in `national_holiday?'
+  app/controllers/schedules_controller.rb:16:in `calendar'
+
+Rendered rescues/_trace (38.8ms)
+Rendered rescues/_request_and_response (15.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2010-05-31 23:54:33) [GET]
+  [4;36;1mSchedule Load (0.4ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2010-05-01' AND schedule_date <= '2010-05-31') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+
+ActionView::TemplateError (undefined method `civil_to_jd' for Sat, 01 May 2010:Date) on line #41 of app/views/schedules/calendar.html.erb:
+38: 	<%# カレンダーテーブル %>
+39: 	<% @calendar_matrix.each_with_index{ | value, index | %>
+40: 		<% now_schedule = @month_schedules["#{@now_date.strftime("%Y")}-#{@now_date.strftime("%m")}-#{sprintf("%02d", value[:days].to_i)}"] %>
+41: 		<% holiday_judge = Date.new( @now_date.strftime("%Y").to_i, @now_date.strftime("%m").to_i, sprintf("%02d", value[:days].to_i).to_i ).national_holiday? if value[:days].to_s != "　" %>
+42: 
+43: 		<%# print "【 now_schedule 】 >> " ; p now_schedule %>
+44: 		<%# print "【 holiday_judge 】 >> " ; p holiday_judge %>
+
+    lib/date/holiday.rb:61:in `_veq'
+    lib/date/holiday.rb:79:in `veq?'
+    lib/date/holiday.rb:89:in `nhol2?'
+    lib/date/holiday.rb:130:in `national_holiday?'
+    lib/date/holiday.rb:130:in `instance_eval'
+    lib/date/holiday.rb:130:in `national_holiday?'
+    app/views/schedules/calendar.html.erb:41
+    app/views/schedules/calendar.html.erb:39:in `each'
+    app/views/schedules/calendar.html.erb:39:in `each_with_index'
+    app/views/schedules/calendar.html.erb:39
+
+Rendered rescues/_trace (63.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2010-05-31 23:57:11) [GET]
+  [4;35;1mSchedule Load (0.7ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2010-05-01' AND schedule_date <= '2010-05-31') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 164ms (View: 154, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2010-05-31 23:57:22) [GET]
+  Parameters: {"date"=>"2010-06-30"}
+  [4;36;1mSchedule Load (0.3ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2010-06-01' AND schedule_date <= '2010-06-30') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 38ms (View: 29, DB: 0) | 200 OK [http://localhost/schedules?date=2010-06-30]
+
+
+Processing SchedulesController#new (for 127.0.0.1 at 2010-05-31 23:57:46) [GET]
+  Parameters: {"schedule_date_day"=>"4", "schedule_date_month"=>"6", "schedule_date_year"=>"2010"}
+Rendering template within layouts/base
+Rendering schedules/new
+Completed in 40ms (View: 26, DB: 0) | 200 OK [http://localhost/schedules/new?schedule_date_day=4&schedule_date_month=6&schedule_date_year=2010]
+
+
+Processing SchedulesController#create (for 127.0.0.1 at 2010-05-31 23:59:14) [POST]
+  Parameters: {"schedule"=>{"schedule_date(1i)"=>"2010", "title"=>"ワンピース新刊 #58", "schedule_date(2i)"=>"6", "schedule_date(3i)"=>"4", "cycle"=>"1", "note"=>"", "cycle_mode"=>"day"}, "commit"=>"作成", "authenticity_token"=>"oA9gD5tG/yOkgDcuKySxCcfUL4/TBjziPNXhBYXpGsg="}
+  [4;35;1mSchedule Create (0.5ms)[0m   [0mINSERT INTO "schedules" ("schedule_date", "updated_at", "title", "cycle", "note", "cycle_mode", "created_at") VALUES('2010-06-04', '2010-05-31 14:59:14', 'ワンピース新刊 #58', 1, '', 'day', '2010-05-31 14:59:14')[0m
+Redirected to http://localhost:3000/schedules/list
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/schedules/create]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2010-05-31 23:59:14) [GET]
+  [4;36;1mSchedule Load (1.1ms)[0m   [0;1mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC[0m
+Rendering template within layouts/base
+Rendering schedules/list
+Completed in 31ms (View: 26, DB: 1) | 200 OK [http://localhost/schedules/list]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2010-05-31 23:59:16) [GET]
+  [4;35;1mSchedule Load (0.4ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2010-05-01' AND schedule_date <= '2010-05-31') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 58ms (View: 44, DB: 0) | 200 OK [http://localhost/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2010-05-31 23:59:19) [GET]
+  Parameters: {"date"=>"2010-06-30"}
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2010-06-01' AND schedule_date <= '2010-06-30') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 148ms (View: 135, DB: 1) | 200 OK [http://localhost/schedules?date=2010-06-30]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2010-05-31 23:59:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSchedule Load (0.9ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 20ms (View: 13, DB: 1) | 200 OK [http://localhost/schedules/show/1]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2010-05-31 23:59:43) [GET]
+  [4;36;1mSchedule Load (0.4ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2010-05-01' AND schedule_date <= '2010-05-31') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 80ms (View: 63, DB: 0) | 200 OK [http://localhost/schedules]

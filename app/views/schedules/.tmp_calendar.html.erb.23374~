@@ -38,8 +38,10 @@
 	<%# カレンダーテーブル %>
 	<% @calendar_matrix.each_with_index{ | value, index | %>
 		<% now_schedule = @month_schedules["#{@now_date.strftime("%Y")}-#{@now_date.strftime("%m")}-#{sprintf("%02d", value[:days].to_i)}"] %>
-		<%# holiday_judge = Date.new( @now_date.strftime("%Y").to_i, @now_date.strftime("%m").to_i, sprintf("%02d", value[:days].to_i).to_i ).national_holiday? if value[:days].to_s != "　" %>
-    <% holiday_judge = false %>
+		<% holiday_judge = Date.new( @now_date.strftime("%Y").to_i, @now_date.strftime("%m").to_i, sprintf("%02d", value[:days].to_i).to_i ).national_holiday? if value[:days].to_s != "　" %>
+
+		<%# print "【 now_schedule 】 >> " ; p now_schedule %>
+		<%# print "【 holiday_judge 】 >> " ; p holiday_judge %>
 
 		<%# 週始め %>
 		<% if value[:week_day].to_i == 0 %><tr><% end %>

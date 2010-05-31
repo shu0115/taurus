@@ -13,7 +13,7 @@ class SchedulesController < ApplicationController
   #----------#
   def calendar
 
-    p Date.new(2007,9,24).national_holiday?;
+#    p Date.new(2007,9,24).national_holiday?;
 
     #paramsに年月日データが入っているなら、そのデータ[@date]に入れる。
     #入っていなければ、今日の年月日データを[@date]入れる。
