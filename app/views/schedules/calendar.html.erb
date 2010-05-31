@@ -37,11 +37,6 @@
 
 	<%# カレンダーテーブル %>
 	<% @calendar_matrix.each_with_index{ | value, index | %>
-		<%# now_schedule = @month_schedules["#{@now_date.strftime("%Y")}-#{@now_date.strftime("%m")}-#{sprintf("%02d", value[:days].to_i)}"] %>
-		<%# holiday_judge = Date.new( @now_date.strftime("%Y").to_i, @now_date.strftime("%m").to_i, sprintf("%02d", value[:days].to_i).to_i ).national_holiday? if value[:days].to_s != "　" %>
-    <%# holiday_judge = false %>
-
-
 
     <% style_class = "" %>
 
@@ -89,37 +84,6 @@
 
     <%# 週終わり %>
     <% if value[:week_day].to_i == 6 %></tr><% end %>
-
-
-<% if false %>
-		<%# 週始め %>
-		<% if value[:week_day].to_i == 0 %><tr><% end %>
-
-		<% if value[:week_day].to_i == 0 or holiday_judge == true %>
-			<%# 日曜日／祝日 %>
-			<td class="sunday">
-		<% elsif value[:week_day].to_i == 6 %>
-			<%# 土曜日 %>
-			<td class="saturday">
-		<% else %>
-			<td>
-		<% end %>
-
-			<%#= value[:days] %>
-			<span id="schedule_field_<%= index %>">
-				<%# 日付(新規作成リンク) %>
-				<% if value[:days].to_s != "　" %><%= link_to value[:days], { :action => "new", :schedule_date_year => @now_date.year, :schedule_date_month => @now_date.month, :schedule_date_day => value[:days], :date => @now_date } %><% end %>
-			</span><br />
-			<% unless now_schedule.blank? %>
-				<% now_schedule.each_with_index{ | value, index | %>
-					<span class="schedule_title"><%= link_to value.title, :action => "show", :id => value.id, :date => @now_date %></span><br />
-				<% } %>
-			<% end %>
-		</td>
-
-		<%# 週終わり %>
-		<% if value[:week_day].to_i == 6 %></tr><% end %>
-<% end %>
 
 	<% } %>
 
