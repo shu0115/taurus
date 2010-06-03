@@ -45,6 +45,7 @@
     <%# holiday_judge = calendar_date.national_holiday? unless calendar_date.blank? %>
     <% holiday_judge = false %>
 
+
     <%# 今日 %>
     <% if Date.today == calendar_date %>
       <% style_class += "today" %>
@@ -80,6 +81,9 @@
           <span class="schedule_title"><%= link_to value.title, :action => "show", :id => value.id, :date => @now_date %></span><br />
         <% } %>
       <% end %>
+<%= Date.today %>
+<%= calendar_date %>
+<%= Time.now %>
     </td>
 
     <%# 週終わり %>

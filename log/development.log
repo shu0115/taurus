@@ -1173,3 +1173,163 @@ Processing SchedulesController#calendar (for 127.0.0.1 at 2010-06-01 01:10:38) [
 Rendering template within layouts/base
 Rendering schedules/calendar
 Completed in 71ms (View: 53, DB: 2) | 200 OK [http://localhost/schedules?date=2010-06-30]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-02 07:00:40) [GET]
+
+ActionController::RoutingError (No route matches "/memos/list/all/reset" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2010-06-02 07:00:42) [GET]
+  Parameters: {"date"=>"2010-06-30"}
+  [4;35;1mSchedule Load (2.2ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2010-06-01' AND schedule_date <= '2010-06-30') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 1021ms (View: 413, DB: 2) | 200 OK [http://localhost/schedules?date=2010-06-30]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2010-06-03 07:55:24) [GET]
+  Parameters: {"date"=>"2010-06-30"}
+  [4;36;1mSchedule Load (12.1ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2010-06-01' AND schedule_date <= '2010-06-30') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 206ms (View: 142, DB: 12) | 200 OK [http://localhost/schedules?date=2010-06-30]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-03 07:55:28) [GET]
+
+ActionController::RoutingError (No route matches "/memos/list/all/reset" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2010-06-03 07:56:37) [GET]
+  Parameters: {"date"=>"2010-06-30"}
+  [4;35;1mSchedule Load (2.3ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2010-06-01' AND schedule_date <= '2010-06-30') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 103ms (View: 85, DB: 2) | 200 OK [http://localhost/schedules?date=2010-06-30]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-03 07:56:41) [GET]
+
+ActionController::RoutingError (No route matches "/memos/list/all/reset" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2010-06-03 07:58:47) [GET]
+  Parameters: {"date"=>"2010-06-30"}
+  [4;36;1mSchedule Load (18.9ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2010-06-01' AND schedule_date <= '2010-06-30') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 224ms (View: 110, DB: 19) | 200 OK [http://localhost/schedules?date=2010-06-30]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-03 07:58:51) [GET]
+
+ActionController::RoutingError (No route matches "/memos/list/all/reset" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-03 21:42:26) [GET]
+
+ActionController::RoutingError (No route matches "/memos/list/all/reset" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2010-06-03 21:42:26) [GET]
+  Parameters: {"date"=>"2010-06-30"}
+  [4;35;1mSchedule Load (11.9ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2010-06-01' AND schedule_date <= '2010-06-30') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 119ms (View: 46, DB: 12) | 200 OK [http://localhost/schedules?date=2010-06-30]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2010-06-03 21:44:38) [GET]
+  Parameters: {"date"=>"2010-06-30"}
+  [4;36;1mSchedule Load (2.5ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2010-06-01' AND schedule_date <= '2010-06-30') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 401ms (View: 105, DB: 2) | 200 OK [http://localhost/schedules?date=2010-06-30]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-03 21:44:44) [GET]
+
+ActionController::RoutingError (No route matches "/memos/list/all/reset" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2010-06-03 21:58:53) [GET]
+  Parameters: {"date"=>"2010-06-30"}
+  [4;35;1mSchedule Load (31.7ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2010-06-01' AND schedule_date <= '2010-06-30') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 170ms (View: 124, DB: 32) | 200 OK [http://localhost/schedules?date=2010-06-30]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-03 21:58:57) [GET]
+
+ActionController::RoutingError (No route matches "/memos/list/all/reset" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2010-06-03 22:38:02) [GET]
+  Parameters: {"date"=>"2010-06-30"}
+  [4;36;1mSchedule Load (1.4ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2010-06-01' AND schedule_date <= '2010-06-30') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 148ms (View: 127, DB: 1) | 200 OK [http://localhost/schedules?date=2010-06-30]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2010-06-03 22:41:50) [GET]
+  Parameters: {"date"=>"2010-06-30"}
+  [4;36;1mSchedule Load (1.4ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2010-06-01' AND schedule_date <= '2010-06-30') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 166ms (View: 122, DB: 1) | 200 OK [http://localhost/schedules?date=2010-06-30]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2010-06-03 22:48:51) [GET]
+  Parameters: {"date"=>"2010-06-30"}
+  [4;35;1mSchedule Load (11.3ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2010-06-01' AND schedule_date <= '2010-06-30') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 204ms (View: 130, DB: 11) | 200 OK [http://localhost/schedules?date=2010-06-30]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2010-06-03 22:49:20) [GET]
+  Parameters: {"date"=>"2010-06-30"}
+  [4;36;1mSchedule Load (1.4ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2010-06-01' AND schedule_date <= '2010-06-30') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 145ms (View: 126, DB: 1) | 200 OK [http://localhost/schedules?date=2010-06-30]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2010-06-03 22:50:36) [GET]
+  Parameters: {"date"=>"2010-06-30"}
+  [4;35;1mSchedule Load (1.4ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2010-06-01' AND schedule_date <= '2010-06-30') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 181ms (View: 162, DB: 1) | 200 OK [http://localhost/schedules?date=2010-06-30]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2010-06-03 22:51:12) [GET]
+  Parameters: {"date"=>"2010-06-30"}
+  [4;36;1mSchedule Load (1.3ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2010-06-01' AND schedule_date <= '2010-06-30') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 118ms (View: 101, DB: 1) | 200 OK [http://localhost/schedules?date=2010-06-30]
