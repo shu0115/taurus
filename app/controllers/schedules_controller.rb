@@ -13,13 +13,6 @@ class SchedulesController < ApplicationController
   #----------#
   def calendar
     
-    date = Date.today
-    if Utility.holiday_ja?( date )
-       puts "祝日でつ"
-    else
-       puts "平日だのん"
-    end 
-
     # paramsに年月日データが入っているなら、そのデータ[@date]に入れる。
     # 入っていなければ、今日の年月日データを[@date]入れる。
     if params[:date]
