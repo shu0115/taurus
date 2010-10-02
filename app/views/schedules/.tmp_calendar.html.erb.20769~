@@ -40,14 +40,11 @@
 
     <% style_class = "" %>
 
-    <%# カレンダー日付 %>
     <% calendar_date = Date.new( @now_date.strftime("%Y").to_i, @now_date.strftime("%m").to_i, sprintf("%02d", value[:days].to_i).to_i ) if value[:days].to_s != "　" %>
-
-    <%# 当日スケジュール取得 %>
     <% today_schedules = @month_schedules["#{@now_date.strftime("%Y")}-#{@now_date.strftime("%m")}-#{sprintf("%02d", value[:days].to_i)}"] %>
+    <%# holiday_judge = calendar_date.national_holiday? unless calendar_date.blank? %>
+    <% holiday_judge = false %>
 
-    <%# 祝日判定 %>
-    <% holiday_judge = Utility.holiday_ja?( calendar_date ) unless calendar_date.blank? %>
 
     <%# 今日 %>
     <% if Date.today == calendar_date %>

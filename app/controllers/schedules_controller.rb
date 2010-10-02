@@ -31,11 +31,6 @@ class SchedulesController < ApplicationController
     else
       @now_date = Date.today
     end
-    if Utility.holiday_ja?( date )
-       puts "祝日でつ"
-    else
-       puts "平日だのん"
-    end 
 
     @calendar_matrix = Array.new
 
