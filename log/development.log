@@ -1357,3 +1357,92 @@ Processing SchedulesController#calendar (for 127.0.0.1 at 2010-06-03 22:58:11) [
 Rendering template within layouts/base
 Rendering schedules/calendar
 Completed in 113ms (View: 95, DB: 1) | 200 OK [http://localhost/schedules?date=2010-06-30]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2010-10-02 20:25:07) [GET]
+  [4;36;1mSchedule Load (1.3ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2010-10-01' AND schedule_date <= '2010-10-31') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 99ms (View: 83, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2010-10-02 20:44:45) [GET]
+
+NoMethodError (undefined method `nth_kday?' for Mon, 24 Sep 2007:Date):
+  lib/date/holiday.rb:41:in `float?'
+  lib/date/holiday.rb:89:in `nhol2?'
+  lib/date/holiday.rb:130:in `national_holiday?'
+  lib/date/holiday.rb:130:in `instance_eval'
+  lib/date/holiday.rb:130:in `national_holiday?'
+  app/controllers/schedules_controller.rb:15:in `calendar'
+
+Rendered rescues/_trace (50.1ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2010-10-02 20:49:35) [GET]
+
+NoMethodError (undefined method `nth_kday?' for Mon, 24 Sep 2007:Date):
+  app/controllers/schedules_controller.rb:17:in `calendar'
+
+Rendered rescues/_trace (20.8ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2010-10-02 20:54:33) [GET]
+
+NoMethodError (undefined method `nth_kday?' for Mon, 24 Sep 2007:Date):
+  app/controllers/schedules_controller.rb:17:in `calendar'
+
+Rendered rescues/_trace (21.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2010-10-02 20:55:09) [GET]
+
+NoMethodError (undefined method `nth_kday?' for Mon, 24 Sep 2007:Date):
+  app/controllers/schedules_controller.rb:17:in `calendar'
+
+Rendered rescues/_trace (47.3ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2010-10-02 20:55:32) [GET]
+
+NoMethodError (undefined method `nth_kday?' for Mon, 24 Sep 2007:Date):
+  lib/date/holiday.rb:41:in `float?'
+  lib/date/holiday.rb:89:in `nhol2?'
+  lib/date/holiday.rb:130:in `national_holiday?'
+  lib/date/holiday.rb:130:in `instance_eval'
+  lib/date/holiday.rb:130:in `national_holiday?'
+  app/controllers/schedules_controller.rb:16:in `calendar'
+
+Rendered rescues/_trace (22.6ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2010-10-02 20:58:43) [GET]
+
+NoMethodError (undefined method `nth_kday?' for Mon, 24 Sep 2007:Date):
+  lib/date/holiday.rb:41:in `float?'
+  lib/date/holiday.rb:89:in `nhol2?'
+  lib/date/holiday.rb:130:in `national_holiday?'
+  lib/date/holiday.rb:130:in `instance_eval'
+  lib/date/holiday.rb:130:in `national_holiday?'
+  app/controllers/schedules_controller.rb:16:in `calendar'
+
+Rendered rescues/_trace (54.7ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2010-10-02 21:12:03) [GET]
+  [4;36;1mSchedule Load (0.4ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2010-10-01' AND schedule_date <= '2010-10-31') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 69ms (View: 57, DB: 0) | 200 OK [http://localhost/]
