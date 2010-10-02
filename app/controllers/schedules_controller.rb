@@ -1,7 +1,7 @@
 class SchedulesController < ApplicationController
 
-  require 'date'
-  require 'date/holiday'
+#  require 'date'
+#  require 'date/holiday'
 
   layout "base"
 
@@ -13,11 +13,15 @@ class SchedulesController < ApplicationController
   #----------#
   def calendar
     
-    print "【 national_holiday? 】>> " ; p p Date.new(2007,9,24).national_holiday?;
-#    print "【 national_holiday? 】>> " ; p p Date.new(2007,9,24).nth_kday?;
-    
-    #paramsに年月日データが入っているなら、そのデータ[@date]に入れる。
-    #入っていなければ、今日の年月日データを[@date]入れる。
+    date = Date.today
+    if Utility.holiday_ja?( date )
+       puts "祝日でつ"
+    else
+       puts "平日だのん"
+    end 
+
+    # paramsに年月日データが入っているなら、そのデータ[@date]に入れる。
+    # 入っていなければ、今日の年月日データを[@date]入れる。
     if params[:date]
       begin
         @now_date = Date.parse( params[:date] )
@@ -27,6 +31,11 @@ class SchedulesController < ApplicationController
     else
       @now_date = Date.today
     end
+    if Utility.holiday_ja?( date )
+       puts "祝日でつ"
+    else
+       puts "平日だのん"
+    end 
 
     @calendar_matrix = Array.new
 
@@ -42,7 +51,7 @@ class SchedulesController < ApplicationController
 
     # 月終わり空欄埋め
     ( Date.new( @now_date.year, @now_date.month, ( Time.days_in_month( @now_date.month, @now_date.year ) ) ).wday + 1 ).upto( 6 ) { | index |
-      puts index
+#      puts index
       @calendar_matrix.push( { :days => "　", :week_day => index } )
     }
 

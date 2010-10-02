@@ -1446,3 +1446,79 @@ Processing SchedulesController#calendar (for 127.0.0.1 at 2010-10-02 21:12:03) [
 Rendering template within layouts/base
 Rendering schedules/calendar
 Completed in 69ms (View: 57, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2010-10-02 21:19:03) [GET]
+  [4;36;1mSchedule Load (0.4ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2010-10-01' AND schedule_date <= '2010-10-31') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 70ms (View: 58, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2010-10-02 22:28:40) [GET]
+
+NoMethodError (undefined method `holiday_ja?' for #<SchedulesController:0x101d7a850>):
+  app/controllers/schedules_controller.rb:17:in `calendar'
+
+Rendered rescues/_trace (22.5ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2010-10-02 22:29:03) [GET]
+  [4;35;1mSchedule Load (0.4ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2010-10-01' AND schedule_date <= '2010-10-31') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 37ms (View: 23, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2010-10-02 22:33:20) [GET]
+  [4;36;1mSchedule Load (0.4ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2010-10-01' AND schedule_date <= '2010-10-31') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 67ms (View: 23, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2010-10-02 22:35:33) [GET]
+  [4;35;1mSchedule Load (0.4ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2010-10-01' AND schedule_date <= '2010-10-31') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 68ms (View: 48, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SchedulesController#new (for 127.0.0.1 at 2010-10-02 22:35:37) [GET]
+  Parameters: {"schedule_date_day"=>"11", "date"=>"2010-10-02", "schedule_date_month"=>"10", "schedule_date_year"=>"2010"}
+Rendering template within layouts/base
+Rendering schedules/new
+Completed in 18ms (View: 14, DB: 0) | 200 OK [http://localhost/schedules/new?date=2010-10-02&schedule_date_day=11&schedule_date_month=10&schedule_date_year=2010]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2010-10-02 22:35:39) [GET]
+  Parameters: {"date"=>"2010-10-02"}
+  [4;36;1mSchedule Load (0.4ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2010-10-01' AND schedule_date <= '2010-10-31') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 67ms (View: 23, DB: 0) | 200 OK [http://localhost/schedules?date=2010-10-02]
+
+
+Processing SchedulesController#new (for 127.0.0.1 at 2010-10-02 22:35:48) [GET]
+  Parameters: {"schedule_date_day"=>"11", "date"=>"2010-10-02", "schedule_date_month"=>"10", "schedule_date_year"=>"2010"}
+Rendering template within layouts/base
+Rendering schedules/new
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/schedules/new?date=2010-10-02&schedule_date_day=11&schedule_date_month=10&schedule_date_year=2010]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2010-10-02 22:36:00) [GET]
+  Parameters: {"date"=>"2010-10-02"}
+  [4;35;1mSchedule Load (0.4ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2010-10-01' AND schedule_date <= '2010-10-31') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 66ms (View: 23, DB: 0) | 200 OK [http://localhost/schedules?date=2010-10-02]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2010-10-02 22:36:08) [GET]
+  Parameters: {"date"=>"2010-10-11"}
+  [4;36;1mSchedule Load (0.4ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2010-10-01' AND schedule_date <= '2010-10-31') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 66ms (View: 47, DB: 0) | 200 OK [http://localhost/schedules?date=2010-10-11]

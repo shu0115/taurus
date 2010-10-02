@@ -1,5 +1,8 @@
 class Schedule < ActiveRecord::Base
 
+  #-------------------------#
+  # self.get_month_schedule #
+  #-------------------------#
   def self.get_month_schedule( date )
 
     month_schedules = Hash.new
