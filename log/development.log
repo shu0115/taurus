@@ -1618,3 +1618,11 @@ Processing SchedulesController#calendar (for 127.0.0.1 at 2010-10-02 22:47:34) [
 Rendering template within layouts/base
 Rendering schedules/calendar
 Completed in 287ms (View: 280, DB: 0) | 200 OK [http://localhost/schedules?date=2010-10-11]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2010-10-02 22:48:42) [GET]
+  Parameters: {"date"=>"2010-10-11"}
+  [4;35;1mSchedule Load (0.4ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2010-10-01' AND schedule_date <= '2010-10-31') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 283ms (View: 276, DB: 0) | 200 OK [http://localhost/schedules?date=2010-10-11]
