@@ -2,57 +2,26 @@
 
 <br />
 
-<%= link_to( "今月", :action => 'calendar', :date => Date.new( Time.now.year, Time.now.month, Time.now.day ) ) -%><br />
-
-<br />
-<%# 前年 %>
-<%= link_to( "#{@now_date.years_ago(1).year}年", :action=>'calendar', :date=> @now_date.years_ago(1) ) -%>
-<%# 今年 %>
- | <b><%= "#{@now_date.year}年" -%></b>
-
-<%# 翌年 %>
- | <%= link_to( "#{@now_date.years_since(1).year}年", :action=>'calendar', :date=> @now_date.years_since(1) ) -%>
-<br />
-
-<br />
-
-<%# 月 %>
-<% if @now_date.month == 1 %><b><%= "1月" -%></b><% else %><%= link_to( "1月", :action => 'calendar', :date => Date.new( @now_date.year, 1, @now_date.day ) ) -%><% end -%>
-　<% if @now_date.month == 2 %><b><%= "2月" -%></b><% else %><%= link_to( "2月", :action => 'calendar', :date => Date.new( @now_date.year, 2, @now_date.day ) ) -%><% end -%>
-　<% if @now_date.month == 3 %><b><%= "3月" -%></b><% else %><%= link_to( "3月", :action => 'calendar', :date => Date.new( @now_date.year, 3, @now_date.day ) ) -%><% end -%>
-　<% if @now_date.month == 4 %><b><%= "4月" -%></b><% else %><%= link_to( "4月", :action => 'calendar', :date => Date.new( @now_date.year, 4, @now_date.day ) ) -%><% end -%>
-　<% if @now_date.month == 5 %><b><%= "5月" -%></b><% else %><%= link_to( "5月", :action => 'calendar', :date => Date.new( @now_date.year, 5, @now_date.day ) ) -%><% end -%>
-　<% if @now_date.month == 6 %><b><%= "6月" -%></b><% else %><%= link_to( "6月", :action => 'calendar', :date => Date.new( @now_date.year, 6, @now_date.day ) ) -%><% end -%>
-　<% if @now_date.month == 7 %><b><%= "7月" -%></b><% else %><%= link_to( "7月", :action => 'calendar', :date => Date.new( @now_date.year, 7, @now_date.day ) ) -%><% end -%>
-　<% if @now_date.month == 8 %><b><%= "8月" -%></b><% else %><%= link_to( "8月", :action => 'calendar', :date => Date.new( @now_date.year, 8, @now_date.day ) ) -%><% end -%>
-　<% if @now_date.month == 9 %><b><%= "9月" -%></b><% else %><%= link_to( "9月", :action => 'calendar', :date => Date.new( @now_date.year, 9, @now_date.day ) ) -%><% end -%>
-　<% if @now_date.month == 10 %><b><%= "10月" -%></b><% else %><%= link_to( "10月", :action => 'calendar', :date => Date.new( @now_date.year, 10, @now_date.day ) ) -%><% end -%>
-　<% if @now_date.month == 11 %><b><%= "11月" -%></b><% else %><%= link_to( "11月", :action => 'calendar', :date => Date.new( @now_date.year, 11, @now_date.day ) ) -%><% end -%>
-　<% if @now_date.month == 12 %><b><%= "12月" -%></b><% else %><%= link_to( "12月", :action => 'calendar', :date => Date.new( @now_date.year, 12, @now_date.day ) ) -%><% end -%>
-
-<br />
-
-<% if false %>
 <%# 前3ヶ月 %>
 <%= link_to( "#{(@now_date << 3).year}年#{(@now_date << 3).month}月", :action=>'calendar', :date=> (@now_date << 3) ) -%>
  | <%= link_to( "#{(@now_date << 2).year}年#{(@now_date << 2).month}月", :action=>'calendar', :date=> (@now_date << 2) ) -%>
  | <%= link_to( "#{(@now_date << 1).year}年#{(@now_date << 1).month}月", :action=>'calendar', :date=> (@now_date << 1) ) -%>
+
 <%# 今月 %>
+
  | <b><%= "#{@now_date.year}年#{@now_date.month}月" -%></b>
+
 <%# 後3ヶ月 %>
  | <%= link_to( "#{(@now_date >> 1).year}年#{(@now_date >> 1).month}月", :action=>'calendar', :date=> (@now_date >> 1) ) -%>
  | <%= link_to( "#{(@now_date >> 2).year}年#{(@now_date >> 2).month}月", :action=>'calendar', :date=> (@now_date >> 2) ) -%>
  | <%= link_to( "#{(@now_date >> 3).year}年#{(@now_date >> 3).month}月", :action=>'calendar', :date=> (@now_date >> 3) ) -%>
 <br />
-<% end %>
 
 <br />
-
-<b><%= "#{@now_date.year}年#{@now_date.month}月" -%></b><br />
-
+<%= link_to 'スケジュール一覧', :action => "list", :date => @now_date %><br />
 <br />
-<%= link_to 'List', :action => "list", :date => @now_date %><br />
-<br />
+
+<%# form_tag :action => "table" do %>
 
 <table class="calendar">
 
@@ -112,8 +81,7 @@
       </span><br />
       <% unless today_schedules.blank? %>
         <% today_schedules.each_with_index{ | value, index | %>
-          <%# スケジュールリンク %>
-          <span class="schedule_title"><%= link_to value.title, { :action => "show", :id => value.id, :date => @now_date }, :title => value.note %></span><br />
+          <span class="schedule_title"><%= link_to value.title, :action => "show", :id => value.id, :date => @now_date %></span><br />
         <% } %>
       <% end %>
     </td>
@@ -127,7 +95,10 @@
 
 <br />
 
-<%= link_to 'List', :action => "list", :date => @now_date %>
+	<%#= submit_tag "保存" %>
+<%# end %>
+
+<%= link_to 'スケジュール一覧', :action => "list", :date => @now_date %>
 
 <br />
 <br />

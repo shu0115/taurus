@@ -1,0 +1,36 @@
+<span class="menu_title">一覧</span><br />
+
+<br />
+
+<%= link_to 'カレンダー', :action => "calendar", :date => @now_date %><br />
+
+<br />
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Schedule date</th>
+    <th>Cycle</th>
+    <th>Cycle mode</th>
+    <th>Note</th>
+  </tr>
+
+<% for schedule in @schedules %>
+  <tr>
+    <td><%=h schedule.title %></td>
+    <td><%=h schedule.schedule_date %></td>
+    <td><%=h schedule.cycle %></td>
+    <td><%=h schedule.cycle_mode %></td>
+    <td><%=h schedule.note %></td>
+    <td><%= link_to '閲覧', { :controller => "schedules", :action => "show", :id => schedule.id, :date => @now_date } %></td>
+    <td><%= link_to '編集', { :controller => "schedules", :action => "edit", :id => schedule.id, :date => @now_date } %></td>
+    <td><%= link_to '削除', { :controller => "schedules", :action => "destroy", :id => schedule.id, :date => @now_date }, :confirm => '本当に削除してよろしいですか?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to '新規作成', { :controller => "schedules", :action => "new", :date => @now_date } %><br />
+<br />
+<%= link_to 'カレンダー', :action => "calendar", :date => @now_date %><br />

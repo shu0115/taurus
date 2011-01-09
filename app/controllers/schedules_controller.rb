@@ -1,7 +1,6 @@
 class SchedulesController < ApplicationController
 
-#  require 'date'
-#  require 'date/holiday'
+  require 'date'
 
   layout "base"
 
@@ -39,7 +38,6 @@ class SchedulesController < ApplicationController
 
     # 月終わり空欄埋め
     ( Date.new( @now_date.year, @now_date.month, ( Time.days_in_month( @now_date.month, @now_date.year ) ) ).wday + 1 ).upto( 6 ) { | index |
-#      puts index
       @calendar_matrix.push( { :days => "　", :week_day => index } )
     }
 
@@ -106,8 +104,10 @@ class SchedulesController < ApplicationController
     @now_date = Date.parse( params[:date] )
     @schedule = Schedule.find( params[:id] ) unless params[:id].blank?
 
+print "【 Date.valid_date? 】>> " ; p Date.valid_date?( params[:schedule]["schedule_date(1i)"].to_i, params[:schedule]["schedule_date(2i)"].to_i, params[:schedule]["schedule_date(3i)"].to_i ) ;
+
     flash[:notice] = ""
-    flash[:notice] += '日付が存在しません。<br />' if params[:schedule].blank? or !(Date::exist?( params[:schedule]["schedule_date(1i)"].to_i, params[:schedule]["schedule_date(2i)"].to_i, params[:schedule]["schedule_date(3i)"].to_i ))
+    flash[:notice] += '日付が存在しません。<br />' if params[:schedule].blank? or !(Date.valid_date?( params[:schedule]["schedule_date(1i)"].to_i, params[:schedule]["schedule_date(2i)"].to_i, params[:schedule]["schedule_date(3i)"].to_i ))
     flash[:notice] += 'スケジュールデータが存在しません。<br />' if @schedule.blank?
 
     unless flash[:notice].blank?
