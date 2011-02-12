@@ -51,3 +51,10 @@ ja:
         site_id: サイトID
         design: デザイン
         approval: 承認
+
+  # date_select対応
+  date:
+    order:
+    - :year
+    - :month
+    - :day

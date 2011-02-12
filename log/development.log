@@ -4726,3 +4726,211 @@ Processing SchedulesController#list (for 127.0.0.1 at 2011-02-12 22:26:51) [GET]
 Rendering template within layouts/base
 Rendering schedules/list
 Completed in 22ms (View: 19, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-12]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-12 22:43:32) [GET]
+  [4;35;1mSchedule Load (0.4ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 213ms (View: 159, DB: 0) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#new (for 127.0.0.1 at 2011-02-12 22:46:12) [GET]
+  Parameters: {"schedule_date_day"=>"11", "date"=>"2011-02-12", "schedule_date_month"=>"2", "schedule_date_year"=>"2011"}
+Rendering template within layouts/base
+Rendering schedules/new
+
+ActionView::TemplateError (can't convert Symbol into String) on line #15 of app/views/schedules/new.html.erb:
+12: 
+13:   <p>
+14:     <b>日付</b><br />
+15:     <%= f.date_select :schedule_date, :start_year => 1900, :use_month_numbers => true %>
+16:   </p>
+17: 
+18:   <p>
+
+    app/views/schedules/new.html.erb:15
+    app/views/schedules/new.html.erb:7
+
+Rendered rescues/_trace (27.7ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-12 22:49:42) [GET]
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 209ms (View: 200, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-12 22:49:52) [GET]
+  Parameters: {"date"=>"2011-02-12", "id"=>"1"}
+  [4;35;1mSchedule Load (0.1ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/schedules/show?date=2011-02-12&id=1]
+
+
+Processing SchedulesController#edit (for 127.0.0.1 at 2011-02-12 22:49:53) [GET]
+  Parameters: {"date"=>"2011-02-12", "id"=>"1"}
+  [4;36;1mSchedule Load (0.1ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/base
+Rendering schedules/edit
+
+ActionView::TemplateError (can't convert Symbol into String) on line #16 of app/views/schedules/edit.html.erb:
+13: 
+14:   <p>
+15:     <b>日付</b><br />
+16:     <%= f.date_select :schedule_date, :start_year => 1900, :use_month_numbers => true %>
+17:   </p>
+18: 
+19:   <p>
+
+    app/views/schedules/edit.html.erb:16
+    app/views/schedules/edit.html.erb:8
+
+Rendered rescues/_trace (70.0ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#edit (for 127.0.0.1 at 2011-02-12 22:51:32) [GET]
+  Parameters: {"date"=>"2011-02-12", "id"=>"1"}
+  [4;35;1mSchedule Load (0.1ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/base
+Rendering schedules/edit
+
+ActionView::TemplateError (can't convert Symbol into String) on line #16 of app/views/schedules/edit.html.erb:
+13: 
+14:   <p>
+15:     <b>日付</b><br />
+16:     <%= f.date_select :schedule_date, :start_year => 1900, :use_month_numbers => true %>
+17:   </p>
+18: 
+19:   <p>
+
+    app/views/schedules/edit.html.erb:16
+    app/views/schedules/edit.html.erb:8
+
+Rendered rescues/_trace (27.3ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-12 22:51:36) [GET]
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 197ms (View: 190, DB: 0) | 200 OK [http://0.0.0.0/schedules/]
+
+
+Processing SchedulesController#new (for 127.0.0.1 at 2011-02-12 22:51:43) [GET]
+  Parameters: {"schedule_date_day"=>"10", "date"=>"2011-02-12", "schedule_date_month"=>"2", "schedule_date_year"=>"2011"}
+Rendering template within layouts/base
+Rendering schedules/new
+
+ActionView::TemplateError (can't convert Symbol into String) on line #15 of app/views/schedules/new.html.erb:
+12: 
+13:   <p>
+14:     <b>日付</b><br />
+15:     <%= f.date_select :schedule_date, :start_year => 1900, :use_month_numbers => true %>
+16:   </p>
+17: 
+18:   <p>
+
+    app/views/schedules/new.html.erb:15
+    app/views/schedules/new.html.erb:7
+
+Rendered rescues/_trace (72.5ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#new (for 127.0.0.1 at 2011-02-12 22:54:22) [GET]
+  Parameters: {"schedule_date_day"=>"10", "date"=>"2011-02-12", "schedule_date_month"=>"2", "schedule_date_year"=>"2011"}
+Rendering template within layouts/base
+Rendering schedules/new
+Completed in 21ms (View: 17, DB: 0) | 200 OK [http://0.0.0.0/schedules/new?date=2011-02-12&schedule_date_day=10&schedule_date_month=2&schedule_date_year=2011]
+
+
+Processing SchedulesController#create (for 127.0.0.1 at 2011-02-12 22:55:50) [POST]
+  Parameters: {"commit"=>"作成", "schedule"=>{"start_time(1i)"=>"2011", "start_time(2i)"=>"2", "schedule_date(1i)"=>"2011", "title"=>"TEST", "mode"=>"公開", "start_time(3i)"=>"12", "end_time(1i)"=>"2011", "start_time(4i)"=>"00", "schedule_date(2i)"=>"2", "end_time(2i)"=>"2", "start_time(5i)"=>"00", "schedule_date(3i)"=>"10", "end_time(3i)"=>"12", "note"=>"", "end_time(4i)"=>"00", "cycle_mode"=>"day", "cycle"=>"1", "end_time(5i)"=>"00"}, "authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "date"=>"2011-02-12", "user_id"=>"1"}
+  [4;35;1mSchedule Create (0.3ms)[0m   [0mINSERT INTO "schedules" ("created_at", "end_time", "title", "schedule_date", "updated_at", "mode", "user_id", "note", "cycle", "cycle_mode", "start_time") VALUES('2011-02-12 13:55:50', '2011-02-12 00:00:00', 'TEST', '2011-02-10', '2011-02-12 13:55:50', '公開', NULL, '', 1, 'day', '2011-02-12 00:00:00')[0m
+Redirected to http://0.0.0.0:3000/?date=2011-02-12
+Completed in 9ms (DB: 0) | 302 Found [http://0.0.0.0/schedules/create]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-12 22:55:50) [GET]
+  Parameters: {"date"=>"2011-02-12"}
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 204ms (View: 196, DB: 0) | 200 OK [http://0.0.0.0/?date=2011-02-12]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-12 22:55:55) [GET]
+  Parameters: {"date"=>"2011-02-12", "id"=>"10"}
+  [4;35;1mSchedule Load (0.2ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 10) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/schedules/show?date=2011-02-12&id=10]
+
+
+Processing SchedulesController#edit (for 127.0.0.1 at 2011-02-12 22:55:56) [GET]
+  Parameters: {"date"=>"2011-02-12", "id"=>"10"}
+  [4;36;1mSchedule Load (0.2ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 10) [0m
+Rendering template within layouts/base
+Rendering schedules/edit
+Completed in 22ms (View: 17, DB: 0) | 200 OK [http://0.0.0.0/schedules/edit?date=2011-02-12&id=10]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-12 22:58:01) [GET]
+  [4;35;1mSchedule Load (0.8ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 205ms (View: 195, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#new (for 127.0.0.1 at 2011-02-12 22:58:03) [GET]
+  Parameters: {"schedule_date_day"=>"10", "date"=>"2011-02-12", "schedule_date_month"=>"2", "schedule_date_year"=>"2011"}
+Rendering template within layouts/base
+Rendering schedules/new
+
+ActionView::TemplateError (undefined method `merge' for 1:Fixnum) on line #47 of app/views/schedules/new.html.erb:
+44: 
+45:   <p>
+46:     <%= hidden_field_tag :date, @now_date %>
+47:     <%= f.hidden_field :user_id, session[:user_id] %>
+48:     <%= f.submit "作成" %>
+49:   </p>
+50: <% end %>
+
+    app/views/schedules/new.html.erb:47
+    app/views/schedules/new.html.erb:7
+
+Rendered rescues/_trace (26.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#new (for 127.0.0.1 at 2011-02-12 22:58:54) [GET]
+  Parameters: {"schedule_date_day"=>"10", "date"=>"2011-02-12", "schedule_date_month"=>"2", "schedule_date_year"=>"2011"}
+Rendering template within layouts/base
+Rendering schedules/new
+Completed in 24ms (View: 20, DB: 0) | 200 OK [http://0.0.0.0/schedules/new?date=2011-02-12&schedule_date_day=10&schedule_date_month=2&schedule_date_year=2011]
+
+
+Processing SchedulesController#create (for 127.0.0.1 at 2011-02-12 22:59:12) [POST]
+  Parameters: {"commit"=>"作成", "schedule"=>{"start_time(1i)"=>"2011", "start_time(2i)"=>"2", "schedule_date(1i)"=>"2011", "title"=>"TEST2", "mode"=>"公開", "start_time(3i)"=>"12", "end_time(1i)"=>"2011", "start_time(4i)"=>"00", "schedule_date(2i)"=>"2", "end_time(2i)"=>"2", "start_time(5i)"=>"00", "schedule_date(3i)"=>"10", "user_id"=>"1", "end_time(3i)"=>"12", "note"=>"", "end_time(4i)"=>"00", "cycle_mode"=>"day", "cycle"=>"1", "end_time(5i)"=>"00"}, "authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "date"=>"2011-02-12"}
+  [4;36;1mSchedule Create (0.3ms)[0m   [0;1mINSERT INTO "schedules" ("created_at", "end_time", "title", "schedule_date", "updated_at", "mode", "user_id", "note", "cycle", "cycle_mode", "start_time") VALUES('2011-02-12 13:59:12', '2011-02-12 00:00:00', 'TEST2', '2011-02-10', '2011-02-12 13:59:12', '公開', 1, '', 1, 'day', '2011-02-12 00:00:00')[0m
+Redirected to http://0.0.0.0:3000/?date=2011-02-12
+Completed in 17ms (DB: 0) | 302 Found [http://0.0.0.0/schedules/create]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-12 22:59:12) [GET]
+  Parameters: {"date"=>"2011-02-12"}
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 199ms (View: 191, DB: 1) | 200 OK [http://0.0.0.0/?date=2011-02-12]

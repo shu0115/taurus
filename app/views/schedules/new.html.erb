@@ -4,7 +4,7 @@
 
 <%= error_messages_for :schedule %>
 
-<% form_for @schedule, :url => "/schedules/create" do |f| %>
+<% form_for @schedule, :url => { :controller => "schedules", :action => "create" } do |f| %>
   <p>
     <b>タイトル</b><br />
     <%= f.text_field :title %>
@@ -44,6 +44,7 @@
 
   <p>
     <%= hidden_field_tag :date, @now_date %>
+    <%= f.hidden_field :user_id, { :value => session[:user_id] } %>
     <%= f.submit "作成" %>
   </p>
 <% end %>
