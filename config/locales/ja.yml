@@ -1,0 +1,53 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+ja:
+  web-app-theme:
+    save: 保存
+    cancel: キャンセル
+    list: リスト
+    edit: 編集
+    new: 新規
+    show: 閲覧
+    delete: 削除
+    confirm: 本当によろしいですか?
+    created_at: 作成日時
+    all: すべての
+    entry: 新規登録
+    profile: プロフィール
+    settings: 設定
+    logout: ログアウト
+    confirmation: 確認
+    registration: 登録
+    back: 戻る
+    login: ログイン
+
+  entry:
+    edit: 変更
+    password: 現在のパスワード
+    edit_password: 変更するパスワード
+    edit_password_confirmation: 変更するパスワード(再入力)
+
+  activerecord:
+    attributes:
+      user:
+        display_name: 表示名
+        level: レベル
+        login_id: ログインID
+        mail_address: メールアドレス
+        password: パスワード
+        password_confirmation: パスワード確認
+      site:
+        uesr_id: ユーザID
+        code: コード
+        title: タイトル
+        design: デザイン
+        public: 公開
+      member:
+        display_name: 表示名
+        level: レベル
+        login_id: ログインID
+        mail_address: メールアドレス
+        site_id: サイトID
+        design: デザイン
+        approval: 承認

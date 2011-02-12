@@ -1,0 +1,34 @@
+<div class="block">
+
+  <div class="content">
+
+    <h2 class="title">登録情報確認</h2>
+
+    <div class="inner">
+
+      <% form_for :user, :url => { :controller => "entry", :action => "complete" }, :html => { :class => :form } do |f| -%>
+        <p>
+          <b><%= t("activerecord.attributes.user.login_id", :default => t("activerecord.labels.login_id", :default => "Login ID")) %>:</b>
+          <%= @user.login_id %>
+          <%= f.hidden_field :login_id, :value => @user.login_id %>
+        </p>
+
+        <p>
+          <b><%= t("activerecord.attributes.user.password", :default => t("activerecord.labels.password", :default => "Password")) %>:</b>
+          <% @user.password.length.times{ |index| %>*<% } %>
+          <%= f.hidden_field :password, :value => @user.password %>
+        </p>
+
+        <div class="wat-cf">
+          <%# 登録 %>
+          <button class="button" type="submit">登録</button>
+          <%# 戻る %>
+          <%= link_to '戻る', { :action => "input", :user => params[:user] }, :class => 'button' %>
+        </div>
+      <% end -%>
+
+    </div>
+  </div>
+</div>
+
+<%# content_for :sidebar, render(:partial => 'sidebar') -%>

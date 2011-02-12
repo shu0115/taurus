@@ -2579,3 +2579,2150 @@ Processing SchedulesController#calendar (for 127.0.0.1 at 2011-01-10 05:36:54) [
 Rendering template within layouts/base
 Rendering schedules/calendar
 Completed in 215ms (View: 208, DB: 0) | 200 OK [http://localhost/schedules?date=2011-01-10]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-11 18:16:03) [GET]
+  [4;36;1mSchedule Load (0.4ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 255ms (View: 236, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-11 18:16:18) [GET]
+  Parameters: {"date"=>"2011-01-31"}
+  [4;35;1mSchedule Load (0.2ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-01-01' AND schedule_date <= '2011-01-31') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+
+ActionView::TemplateError (invalid date) on line #21 of app/views/schedules/calendar.html.erb:
+18: 
+19: <%# 月 %>
+20: <% if @now_date.month == 1 %><b><%= "1月" -%></b><% else %><%= link_to( "1月", :action => 'calendar', :date => Date.new( @now_date.year, 1, @now_date.day ) ) -%><% end -%>
+21: 　<% if @now_date.month == 2 %><b><%= "2月" -%></b><% else %><%= link_to( "2月", :action => 'calendar', :date => Date.new( @now_date.year, 2, @now_date.day ) ) -%><% end -%>
+22: 　<% if @now_date.month == 3 %><b><%= "3月" -%></b><% else %><%= link_to( "3月", :action => 'calendar', :date => Date.new( @now_date.year, 3, @now_date.day ) ) -%><% end -%>
+23: 　<% if @now_date.month == 4 %><b><%= "4月" -%></b><% else %><%= link_to( "4月", :action => 'calendar', :date => Date.new( @now_date.year, 4, @now_date.day ) ) -%><% end -%>
+24: 　<% if @now_date.month == 5 %><b><%= "5月" -%></b><% else %><%= link_to( "5月", :action => 'calendar', :date => Date.new( @now_date.year, 5, @now_date.day ) ) -%><% end -%>
+
+    /Library/Ruby/Site/1.8/date.rb:402:in `new'
+    app/views/schedules/calendar.html.erb:21
+
+Rendered rescues/_trace (26.2ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-11 18:18:33) [GET]
+  Parameters: {"date"=>"2011-01-31"}
+  [4;36;1mSchedule Load (0.3ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-01-01' AND schedule_date <= '2011-01-31') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+
+ActionView::TemplateError (invalid date) on line #23 of app/views/schedules/calendar.html.erb:
+20: <% if @now_date.month == 1 %><b><%= "1月" -%></b><% else %><%= link_to( "1月", :action => 'calendar', :date => Date.new( @now_date.year, 1, @now_date.day ) ) -%><% end -%>
+21: 　<% if @now_date.month == 2 %><b><%= "2月" -%></b><% else %><%= link_to( "2月", :action => 'calendar', :date => Date.new( @now_date.year, 2, 1 ) ) -%><% end -%>
+22: 　<% if @now_date.month == 3 %><b><%= "3月" -%></b><% else %><%= link_to( "3月", :action => 'calendar', :date => Date.new( @now_date.year, 3, @now_date.day ) ) -%><% end -%>
+23: 　<% if @now_date.month == 4 %><b><%= "4月" -%></b><% else %><%= link_to( "4月", :action => 'calendar', :date => Date.new( @now_date.year, 4, @now_date.day ) ) -%><% end -%>
+24: 　<% if @now_date.month == 5 %><b><%= "5月" -%></b><% else %><%= link_to( "5月", :action => 'calendar', :date => Date.new( @now_date.year, 5, @now_date.day ) ) -%><% end -%>
+25: 　<% if @now_date.month == 6 %><b><%= "6月" -%></b><% else %><%= link_to( "6月", :action => 'calendar', :date => Date.new( @now_date.year, 6, @now_date.day ) ) -%><% end -%>
+26: 　<% if @now_date.month == 7 %><b><%= "7月" -%></b><% else %><%= link_to( "7月", :action => 'calendar', :date => Date.new( @now_date.year, 7, @now_date.day ) ) -%><% end -%>
+
+    /Library/Ruby/Site/1.8/date.rb:402:in `new'
+    app/views/schedules/calendar.html.erb:23
+
+Rendered rescues/_trace (63.1ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-11 18:18:37) [GET]
+  Parameters: {"date"=>"2011-01-30"}
+  [4;35;1mSchedule Load (0.3ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-01-01' AND schedule_date <= '2011-01-31') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 213ms (View: 207, DB: 0) | 200 OK [http://0.0.0.0/schedules?date=2011-01-30]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-11 18:19:29) [GET]
+  Parameters: {"date"=>"2011-01-31"}
+  [4;36;1mSchedule Load (0.2ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-01-01' AND schedule_date <= '2011-01-31') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 173ms (View: 168, DB: 0) | 200 OK [http://0.0.0.0/schedules?date=2011-01-31]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-11 18:19:37) [GET]
+  Parameters: {"date"=>"2011-02-11"}
+  [4;35;1mSchedule Load (0.2ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 198ms (View: 193, DB: 0) | 200 OK [http://0.0.0.0/schedules?date=2011-02-11]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-11 18:19:42) [GET]
+  Parameters: {"date"=>"2011-01-01"}
+  [4;36;1mSchedule Load (0.3ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-01-01' AND schedule_date <= '2011-01-31') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 213ms (View: 208, DB: 0) | 200 OK [http://0.0.0.0/schedules?date=2011-01-01]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-11 18:19:46) [GET]
+  Parameters: {"date"=>"2011-02-11"}
+  [4;35;1mSchedule Load (0.3ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 199ms (View: 194, DB: 0) | 200 OK [http://0.0.0.0/schedules?date=2011-02-11]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-11 18:24:46) [GET]
+  Parameters: {"date"=>"2011-02-11"}
+  [4;36;1mSchedule Load (0.2ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+
+ActionView::TemplateError (undefined local variable or method `now_date' for #<ActionView::Base:0x104ff2fd0>) on line #7 of app/views/schedules/calendar.html.erb:
+4: 
+5: <%
+6: now_month = Time.now
+7: last_month = now_date.last_month  # 前月
+8: next_month = now_date.next_month  # 次月
+9: %>
+10: 
+
+    app/views/schedules/calendar.html.erb:7
+
+Rendered rescues/_trace (24.2ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-11 18:24:59) [GET]
+  Parameters: {"date"=>"2011-02-11"}
+  [4;35;1mSchedule Load (0.2ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 158ms (View: 153, DB: 0) | 200 OK [http://0.0.0.0/schedules?date=2011-02-11]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-11 18:25:33) [GET]
+  Parameters: {"date"=>"2011-02-11"}
+  [4;36;1mSchedule Load (0.3ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 202ms (View: 197, DB: 0) | 200 OK [http://0.0.0.0/schedules?date=2011-02-11]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-11 18:25:47) [GET]
+  Parameters: {"date"=>"2011-02-11"}
+  [4;35;1mSchedule Load (0.2ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 200ms (View: 195, DB: 0) | 200 OK [http://0.0.0.0/schedules?date=2011-02-11]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-11 18:25:56) [GET]
+  Parameters: {"date"=>"2011-03-11"}
+  [4;36;1mSchedule Load (0.2ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-03-01' AND schedule_date <= '2011-03-31') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 215ms (View: 209, DB: 0) | 200 OK [http://0.0.0.0/schedules?date=2011-03-11]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-11 18:25:58) [GET]
+  Parameters: {"date"=>"2011-03-11"}
+  [4;35;1mSchedule Load (0.2ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-03-01' AND schedule_date <= '2011-03-31') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 222ms (View: 217, DB: 0) | 200 OK [http://0.0.0.0/schedules?date=2011-03-11]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-11 18:26:12) [GET]
+  Parameters: {"date"=>"2011-02-11"}
+  [4;36;1mSchedule Load (0.2ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 204ms (View: 199, DB: 0) | 200 OK [http://0.0.0.0/schedules?date=2011-02-11]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-11 18:26:49) [GET]
+  Parameters: {"date"=>"2011-02-11"}
+  [4;35;1mSchedule Load (0.3ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 207ms (View: 201, DB: 0) | 200 OK [http://0.0.0.0/schedules?date=2011-02-11]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-11 18:26:51) [GET]
+  Parameters: {"date"=>"2011-03-11"}
+  [4;36;1mSchedule Load (0.3ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-03-01' AND schedule_date <= '2011-03-31') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 168ms (View: 163, DB: 0) | 200 OK [http://0.0.0.0/schedules?date=2011-03-11]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-11 18:26:52) [GET]
+  Parameters: {"date"=>"2011-04-11"}
+  [4;35;1mSchedule Load (0.3ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-04-01' AND schedule_date <= '2011-04-30') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 170ms (View: 165, DB: 0) | 200 OK [http://0.0.0.0/schedules?date=2011-04-11]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-11 18:26:53) [GET]
+  Parameters: {"date"=>"2011-05-11"}
+  [4;36;1mSchedule Load (0.2ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-05-01' AND schedule_date <= '2011-05-31') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 222ms (View: 217, DB: 0) | 200 OK [http://0.0.0.0/schedules?date=2011-05-11]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-11 18:26:54) [GET]
+  Parameters: {"date"=>"2011-06-11"}
+  [4;35;1mSchedule Load (0.3ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-06-01' AND schedule_date <= '2011-06-30') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 224ms (View: 219, DB: 0) | 200 OK [http://0.0.0.0/schedules?date=2011-06-11]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-11 18:26:55) [GET]
+  Parameters: {"date"=>"2011-07-11"}
+  [4;36;1mSchedule Load (0.4ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-07-01' AND schedule_date <= '2011-07-31') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 243ms (View: 236, DB: 0) | 200 OK [http://0.0.0.0/schedules?date=2011-07-11]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-11 18:26:56) [GET]
+  Parameters: {"date"=>"2011-08-11"}
+  [4;35;1mSchedule Load (0.3ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-08-01' AND schedule_date <= '2011-08-31') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 234ms (View: 228, DB: 0) | 200 OK [http://0.0.0.0/schedules?date=2011-08-11]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-11 18:26:57) [GET]
+  Parameters: {"date"=>"2011-09-11"}
+  [4;36;1mSchedule Load (0.3ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-09-01' AND schedule_date <= '2011-09-30') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 190ms (View: 184, DB: 0) | 200 OK [http://0.0.0.0/schedules?date=2011-09-11]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-11 18:26:58) [GET]
+  Parameters: {"date"=>"2011-10-11"}
+  [4;35;1mSchedule Load (0.3ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-10-01' AND schedule_date <= '2011-10-31') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 177ms (View: 172, DB: 0) | 200 OK [http://0.0.0.0/schedules?date=2011-10-11]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-11 18:27:00) [GET]
+  Parameters: {"date"=>"2011-11-11"}
+  [4;36;1mSchedule Load (0.3ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-11-01' AND schedule_date <= '2011-11-30') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 222ms (View: 216, DB: 0) | 200 OK [http://0.0.0.0/schedules?date=2011-11-11]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-11 18:27:01) [GET]
+  Parameters: {"date"=>"2011-12-11"}
+  [4;35;1mSchedule Load (0.3ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-12-01' AND schedule_date <= '2011-12-31') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 229ms (View: 223, DB: 0) | 200 OK [http://0.0.0.0/schedules?date=2011-12-11]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-11 18:27:02) [GET]
+  Parameters: {"date"=>"2012-01-11"}
+  [4;36;1mSchedule Load (0.3ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2012-01-01' AND schedule_date <= '2012-01-31') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 182ms (View: 176, DB: 0) | 200 OK [http://0.0.0.0/schedules?date=2012-01-11]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-11 18:27:04) [GET]
+  Parameters: {"date"=>"2012-02-11"}
+  [4;35;1mSchedule Load (0.3ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2012-02-01' AND schedule_date <= '2012-02-29') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 116ms (View: 111, DB: 0) | 200 OK [http://0.0.0.0/schedules?date=2012-02-11]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-11 18:27:06) [GET]
+  Parameters: {"date"=>"2011-02-11"}
+  [4;36;1mSchedule Load (0.3ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 205ms (View: 199, DB: 0) | 200 OK [http://0.0.0.0/schedules?date=2011-02-11]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-11 18:27:07) [GET]
+  Parameters: {"date"=>"2011-01-11"}
+  [4;35;1mSchedule Load (0.2ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-01-01' AND schedule_date <= '2011-01-31') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 219ms (View: 213, DB: 0) | 200 OK [http://0.0.0.0/schedules?date=2011-01-11]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-11 18:27:08) [GET]
+  Parameters: {"date"=>"2010-12-11"}
+  [4;36;1mSchedule Load (0.2ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2010-12-01' AND schedule_date <= '2010-12-31') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 270ms (View: 264, DB: 0) | 200 OK [http://0.0.0.0/schedules?date=2010-12-11]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-11 18:27:09) [GET]
+  Parameters: {"date"=>"2010-11-11"}
+  [4;35;1mSchedule Load (0.3ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2010-11-01' AND schedule_date <= '2010-11-30') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 247ms (View: 242, DB: 0) | 200 OK [http://0.0.0.0/schedules?date=2010-11-11]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-11 18:27:10) [GET]
+  Parameters: {"date"=>"2010-10-11"}
+  [4;36;1mSchedule Load (0.3ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2010-10-01' AND schedule_date <= '2010-10-31') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 266ms (View: 260, DB: 0) | 200 OK [http://0.0.0.0/schedules?date=2010-10-11]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-11 18:27:11) [GET]
+  Parameters: {"date"=>"2011-02-11"}
+  [4;35;1mSchedule Load (0.3ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 210ms (View: 205, DB: 0) | 200 OK [http://0.0.0.0/schedules?date=2011-02-11]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-11 18:28:12) [GET]
+  Parameters: {"date"=>"2011-02-11"}
+  [4;36;1mSchedule Load (0.2ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 157ms (View: 153, DB: 0) | 200 OK [http://0.0.0.0/schedules?date=2011-02-11]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-11 18:28:14) [GET]
+  Parameters: {"date"=>"2011-03-11"}
+  [4;35;1mSchedule Load (0.3ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-03-01' AND schedule_date <= '2011-03-31') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 214ms (View: 209, DB: 0) | 200 OK [http://0.0.0.0/schedules?date=2011-03-11]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-11 18:28:15) [GET]
+  Parameters: {"date"=>"2011-02-11"}
+  [4;36;1mSchedule Load (0.3ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 201ms (View: 196, DB: 0) | 200 OK [http://0.0.0.0/schedules?date=2011-02-11]
+
+
+Processing SchedulesController#new (for 127.0.0.1 at 2011-02-11 18:28:26) [GET]
+  Parameters: {"schedule_date_day"=>"11", "date"=>"2011-02-11", "schedule_date_month"=>"2", "schedule_date_year"=>"2011"}
+Rendering template within layouts/base
+Rendering schedules/new
+Completed in 16ms (View: 12, DB: 0) | 200 OK [http://0.0.0.0/schedules/new?date=2011-02-11&schedule_date_day=11&schedule_date_month=2&schedule_date_year=2011]
+
+
+Processing SchedulesController#create (for 127.0.0.1 at 2011-02-11 18:28:36) [POST]
+  Parameters: {"commit"=>"作成", "schedule"=>{"schedule_date(1i)"=>"2011", "title"=>"テスト", "schedule_date(2i)"=>"2", "schedule_date(3i)"=>"11", "note"=>"テスト\r\nテスト\r\nテスト\r\n", "cycle_mode"=>"day", "cycle"=>"1"}, "authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "date"=>"2011-02-11"}
+  [4;35;1mSchedule Create (0.3ms)[0m   [0mINSERT INTO "schedules" ("created_at", "title", "schedule_date", "updated_at", "note", "cycle", "cycle_mode") VALUES('2011-02-11 09:28:36', 'テスト', '2011-02-11', '2011-02-11 09:28:36', 'テスト
+テスト
+テスト
+', 1, 'day')[0m
+Redirected to http://0.0.0.0:3000/schedules?date=2011-02-11
+Completed in 7ms (DB: 0) | 302 Found [http://0.0.0.0/schedules/create]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-11 18:28:36) [GET]
+  Parameters: {"date"=>"2011-02-11"}
+  [4;36;1mSchedule Load (0.3ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 197ms (View: 190, DB: 0) | 200 OK [http://0.0.0.0/schedules?date=2011-02-11]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-11 18:28:38) [GET]
+  Parameters: {"id"=>"1", "date"=>"2011-02-11"}
+  [4;35;1mSchedule Load (0.1ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 23ms (View: 20, DB: 0) | 200 OK [http://0.0.0.0/schedules/show/1?date=2011-02-11]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-11 18:30:13) [GET]
+  Parameters: {"id"=>"1", "date"=>"2011-02-11"}
+  [4;36;1mSchedule Load (0.1ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/schedules/show/1?date=2011-02-11]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-11 18:31:09) [GET]
+  Parameters: {"id"=>"1", "date"=>"2011-02-11"}
+  [4;35;1mSchedule Load (0.1ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/schedules/show/1?date=2011-02-11]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-11 18:32:13) [GET]
+  Parameters: {"id"=>"1", "date"=>"2011-02-11"}
+  [4;36;1mSchedule Load (0.1ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/schedules/show/1?date=2011-02-11]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-11 18:32:15) [GET]
+  Parameters: {"date"=>"2011-02-11"}
+  [4;35;1mSchedule Load (0.3ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 198ms (View: 191, DB: 0) | 200 OK [http://0.0.0.0/schedules?date=2011-02-11]
+
+
+Processing SchedulesController#new (for 127.0.0.1 at 2011-02-11 18:32:17) [GET]
+  Parameters: {"schedule_date_day"=>"15", "date"=>"2011-02-11", "schedule_date_month"=>"2", "schedule_date_year"=>"2011"}
+Rendering template within layouts/base
+Rendering schedules/new
+Completed in 13ms (View: 10, DB: 0) | 200 OK [http://0.0.0.0/schedules/new?date=2011-02-11&schedule_date_day=15&schedule_date_month=2&schedule_date_year=2011]
+
+
+Processing SchedulesController#create (for 127.0.0.1 at 2011-02-11 18:32:26) [POST]
+  Parameters: {"commit"=>"作成", "schedule"=>{"schedule_date(1i)"=>"2011", "title"=>"テスト", "schedule_date(2i)"=>"2", "schedule_date(3i)"=>"15", "note"=>"テスト", "cycle_mode"=>"day", "cycle"=>"1"}, "authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "date"=>"2011-02-11"}
+  [4;36;1mSchedule Create (0.2ms)[0m   [0;1mINSERT INTO "schedules" ("created_at", "title", "schedule_date", "updated_at", "note", "cycle", "cycle_mode") VALUES('2011-02-11 09:32:26', 'テスト', '2011-02-15', '2011-02-11 09:32:26', 'テスト', 1, 'day')[0m
+Redirected to http://0.0.0.0:3000/schedules?date=2011-02-11
+Completed in 31ms (DB: 0) | 302 Found [http://0.0.0.0/schedules/create]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-11 18:32:26) [GET]
+  Parameters: {"date"=>"2011-02-11"}
+  [4;35;1mSchedule Load (0.3ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 199ms (View: 193, DB: 0) | 200 OK [http://0.0.0.0/schedules?date=2011-02-11]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-11 18:32:29) [GET]
+  Parameters: {"id"=>"2", "date"=>"2011-02-11"}
+  [4;36;1mSchedule Load (0.1ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 2) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/schedules/show/2?date=2011-02-11]
+
+
+Processing SchedulesController#destroy (for 127.0.0.1 at 2011-02-11 18:32:32) [DELETE]
+  Parameters: {"authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "id"=>"2", "date"=>"2011-02-11"}
+  [4;35;1mSchedule Load (0.1ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 2) [0m
+  [4;36;1mSchedule Destroy (0.2ms)[0m   [0;1mDELETE FROM "schedules" WHERE "id" = 2[0m
+Redirected to http://0.0.0.0:3000/schedules/list?date=2011-02-11
+Completed in 7ms (DB: 0) | 302 Found [http://0.0.0.0/schedules/destroy/2?date=2011-02-11]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-11 18:32:32) [GET]
+  Parameters: {"date"=>"2011-02-11"}
+  [4;35;1mSchedule Load (0.3ms)[0m   [0mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC[0m
+Rendering template within layouts/base
+Rendering schedules/list
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-11]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-11 18:32:36) [GET]
+  Parameters: {"date"=>"2011-02-11"}
+  [4;36;1mSchedule Load (0.3ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 193ms (View: 187, DB: 0) | 200 OK [http://0.0.0.0/schedules?date=2011-02-11]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-11 18:34:25) [GET]
+  Parameters: {"date"=>"2011-02-11"}
+  [4;35;1mSchedule Load (0.3ms)[0m   [0mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC[0m
+Rendering template within layouts/base
+Rendering schedules/list
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-11]
+
+
+Processing SchedulesController#new (for 127.0.0.1 at 2011-02-11 18:34:28) [GET]
+  Parameters: {"date"=>"2011-02-11"}
+Rendering template within layouts/base
+Rendering schedules/new
+Completed in 141ms (View: 138, DB: 0) | 200 OK [http://0.0.0.0/schedules/new?date=2011-02-11]
+
+
+Processing SchedulesController#create (for 127.0.0.1 at 2011-02-11 18:34:31) [POST]
+  Parameters: {"commit"=>"作成", "schedule"=>{"schedule_date(1i)"=>"2011", "title"=>"", "schedule_date(2i)"=>"2", "schedule_date(3i)"=>"11", "note"=>"", "cycle_mode"=>"day", "cycle"=>"1"}, "authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "date"=>"2011-02-11"}
+  [4;36;1mSchedule Create (0.2ms)[0m   [0;1mINSERT INTO "schedules" ("created_at", "title", "schedule_date", "updated_at", "note", "cycle", "cycle_mode") VALUES('2011-02-11 09:34:31', '', '2011-02-11', '2011-02-11 09:34:31', '', 1, 'day')[0m
+Redirected to http://0.0.0.0:3000/schedules?date=2011-02-11
+Completed in 7ms (DB: 0) | 302 Found [http://0.0.0.0/schedules/create]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-11 18:34:31) [GET]
+  Parameters: {"date"=>"2011-02-11"}
+  [4;35;1mSchedule Load (0.3ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 153ms (View: 147, DB: 0) | 200 OK [http://0.0.0.0/schedules?date=2011-02-11]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-11 18:34:34) [GET]
+  Parameters: {"date"=>"2011-02-11"}
+  [4;36;1mSchedule Load (0.3ms)[0m   [0;1mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC[0m
+Rendering template within layouts/base
+Rendering schedules/list
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-11]
+
+
+Processing SchedulesController#edit (for 127.0.0.1 at 2011-02-11 18:34:36) [GET]
+  Parameters: {"id"=>"3", "date"=>"2011-02-11"}
+  [4;35;1mSchedule Load (0.1ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 3) [0m
+Rendering template within layouts/base
+Rendering schedules/edit
+Completed in 29ms (View: 26, DB: 0) | 200 OK [http://0.0.0.0/schedules/edit/3?date=2011-02-11]
+
+
+Processing SchedulesController#update (for 127.0.0.1 at 2011-02-11 18:34:39) [PUT]
+  Parameters: {"commit"=>"保存", "schedule"=>{"schedule_date(1i)"=>"2011", "title"=>"テスト", "schedule_date(2i)"=>"2", "schedule_date(3i)"=>"11", "note"=>"", "cycle_mode"=>"day", "cycle"=>"1"}, "authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "id"=>"3", "date"=>"2011-02-11"}
+  [4;36;1mSchedule Load (0.1ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 3) [0m
+  [4;35;1mSchedule Update (0.2ms)[0m   [0mUPDATE "schedules" SET "updated_at" = '2011-02-11 09:34:39', "title" = 'テスト' WHERE "id" = 3[0m
+Redirected to http://0.0.0.0:3000/schedules/show/3?date=2011-02-11
+Completed in 8ms (DB: 0) | 302 Found [http://0.0.0.0/schedules/update/3]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-11 18:34:39) [GET]
+  Parameters: {"id"=>"3", "date"=>"2011-02-11"}
+  [4;36;1mSchedule Load (0.2ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 3) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/schedules/show/3?date=2011-02-11]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-11 18:34:41) [GET]
+  Parameters: {"id"=>"3", "date"=>"2011-02-11"}
+  [4;35;1mSchedule Load (0.4ms)[0m   [0mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC[0m
+Rendering template within layouts/base
+Rendering schedules/list
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/schedules/list/3?date=2011-02-11]
+
+
+Processing SchedulesController#new (for 127.0.0.1 at 2011-02-11 18:34:43) [GET]
+  Parameters: {"date"=>"2011-02-11"}
+Rendering template within layouts/base
+Rendering schedules/new
+Completed in 13ms (View: 10, DB: 0) | 200 OK [http://0.0.0.0/schedules/new?date=2011-02-11]
+
+
+Processing SchedulesController#create (for 127.0.0.1 at 2011-02-11 18:34:58) [POST]
+  Parameters: {"commit"=>"作成", "schedule"=>{"schedule_date(1i)"=>"2011", "title"=>"test", "schedule_date(2i)"=>"2", "schedule_date(3i)"=>"11", "note"=>"", "cycle_mode"=>"day", "cycle"=>"1"}, "authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "date"=>"2011-02-11"}
+  [4;36;1mSchedule Create (0.2ms)[0m   [0;1mINSERT INTO "schedules" ("created_at", "title", "schedule_date", "updated_at", "note", "cycle", "cycle_mode") VALUES('2011-02-11 09:34:59', 'test', '2011-02-11', '2011-02-11 09:34:59', '', 1, 'day')[0m
+Redirected to http://0.0.0.0:3000/schedules?date=2011-02-11
+Completed in 43ms (DB: 0) | 302 Found [http://0.0.0.0/schedules/create]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-11 18:34:59) [GET]
+  Parameters: {"date"=>"2011-02-11"}
+  [4;35;1mSchedule Load (0.4ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 155ms (View: 149, DB: 0) | 200 OK [http://0.0.0.0/schedules?date=2011-02-11]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-11 18:35:03) [GET]
+  Parameters: {"id"=>"4", "date"=>"2011-02-11"}
+  [4;36;1mSchedule Load (0.1ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 4) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 54ms (View: 51, DB: 0) | 200 OK [http://0.0.0.0/schedules/show/4?date=2011-02-11]
+
+
+Processing SchedulesController#destroy (for 127.0.0.1 at 2011-02-11 18:35:05) [DELETE]
+  Parameters: {"authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "id"=>"4", "date"=>"2011-02-11", "next"=>"calendar"}
+  [4;35;1mSchedule Load (0.1ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 4) [0m
+  [4;36;1mSchedule Destroy (0.2ms)[0m   [0;1mDELETE FROM "schedules" WHERE "id" = 4[0m
+Redirected to http://0.0.0.0:3000/schedules?date=2011-02-11
+Completed in 7ms (DB: 0) | 302 Found [http://0.0.0.0/schedules/destroy/4?date=2011-02-11&next=calendar]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-11 18:35:06) [GET]
+  Parameters: {"date"=>"2011-02-11"}
+  [4;35;1mSchedule Load (0.3ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 156ms (View: 149, DB: 0) | 200 OK [http://0.0.0.0/schedules?date=2011-02-11]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-11 18:35:08) [GET]
+  Parameters: {"date"=>"2011-02-11"}
+  [4;36;1mSchedule Load (0.3ms)[0m   [0;1mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC[0m
+Rendering template within layouts/base
+Rendering schedules/list
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-11]
+
+
+Processing SchedulesController#destroy (for 127.0.0.1 at 2011-02-11 18:35:11) [DELETE]
+  Parameters: {"authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "id"=>"3", "date"=>"2011-02-11", "next"=>"list"}
+  [4;35;1mSchedule Load (0.1ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 3) [0m
+  [4;36;1mSchedule Destroy (0.2ms)[0m   [0;1mDELETE FROM "schedules" WHERE "id" = 3[0m
+Redirected to http://0.0.0.0:3000/schedules/list?date=2011-02-11
+Completed in 135ms (DB: 0) | 302 Found [http://0.0.0.0/schedules/destroy/3?date=2011-02-11&next=list]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-11 18:35:11) [GET]
+  Parameters: {"date"=>"2011-02-11"}
+  [4;35;1mSchedule Load (0.3ms)[0m   [0mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC[0m
+Rendering template within layouts/base
+Rendering schedules/list
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-11]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-12 14:21:59) [GET]
+  Parameters: {"date"=>"2011-02-11"}
+  [4;36;1mSchedule Load (0.3ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 202ms (View: 196, DB: 0) | 200 OK [http://0.0.0.0/schedules?date=2011-02-11]
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSchedules (1)
+Migrating to AddColumnSchedules (2)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mALTER TABLE "schedules" ADD "start_time" time[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mALTER TABLE "schedules" ADD "end_time" time[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('2')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schedules")[0m
+
+
+Processing SchedulesController#new (for 127.0.0.1 at 2011-02-12 14:41:43) [GET]
+  Parameters: {"schedule_date_day"=>"12", "date"=>"2011-02-11", "schedule_date_month"=>"2", "schedule_date_year"=>"2011"}
+Rendering template within layouts/base
+Rendering schedules/new
+Completed in 36ms (View: 32, DB: 0) | 200 OK [http://0.0.0.0/schedules/new?date=2011-02-11&schedule_date_day=12&schedule_date_month=2&schedule_date_year=2011]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSchedules (1)
+Migrating to AddColumnSchedules (2)
+Migrating to AddColumnSchedules02 (3)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mALTER TABLE "schedules" ADD "start_date" time[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mALTER TABLE "schedules" ADD "end_date" time[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('3')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schedules")[0m
+
+
+Processing SchedulesController#new (for 127.0.0.1 at 2011-02-12 14:44:35) [GET]
+  Parameters: {"schedule_date_day"=>"12", "date"=>"2011-02-11", "schedule_date_month"=>"2", "schedule_date_year"=>"2011"}
+Rendering template within layouts/base
+Rendering schedules/new
+Completed in 22ms (View: 18, DB: 0) | 200 OK [http://0.0.0.0/schedules/new?date=2011-02-11&schedule_date_day=12&schedule_date_month=2&schedule_date_year=2011]
+
+
+Processing SchedulesController#new (for 127.0.0.1 at 2011-02-12 14:44:56) [GET]
+  Parameters: {"schedule_date_day"=>"12", "date"=>"2011-02-11", "schedule_date_month"=>"2", "schedule_date_year"=>"2011"}
+Rendering template within layouts/base
+Rendering schedules/new
+Completed in 23ms (View: 19, DB: 0) | 200 OK [http://0.0.0.0/schedules/new?date=2011-02-11&schedule_date_day=12&schedule_date_month=2&schedule_date_year=2011]
+
+
+Processing SchedulesController#new (for 127.0.0.1 at 2011-02-12 14:45:33) [GET]
+  Parameters: {"schedule_date_day"=>"12", "date"=>"2011-02-11", "schedule_date_month"=>"2", "schedule_date_year"=>"2011"}
+Rendering template within layouts/base
+Rendering schedules/new
+Completed in 63ms (View: 59, DB: 0) | 200 OK [http://0.0.0.0/schedules/new?date=2011-02-11&schedule_date_day=12&schedule_date_month=2&schedule_date_year=2011]
+
+
+Processing SchedulesController#new (for 127.0.0.1 at 2011-02-12 14:46:43) [GET]
+  Parameters: {"schedule_date_day"=>"12", "date"=>"2011-02-11", "schedule_date_month"=>"2", "schedule_date_year"=>"2011"}
+Rendering template within layouts/base
+Rendering schedules/new
+Completed in 32ms (View: 28, DB: 0) | 200 OK [http://0.0.0.0/schedules/new?date=2011-02-11&schedule_date_day=12&schedule_date_month=2&schedule_date_year=2011]
+
+
+Processing SchedulesController#new (for 127.0.0.1 at 2011-02-12 14:48:07) [GET]
+  Parameters: {"schedule_date_day"=>"12", "date"=>"2011-02-11", "schedule_date_month"=>"2", "schedule_date_year"=>"2011"}
+Rendering template within layouts/base
+Rendering schedules/new
+Completed in 30ms (View: 25, DB: 0) | 200 OK [http://0.0.0.0/schedules/new?date=2011-02-11&schedule_date_day=12&schedule_date_month=2&schedule_date_year=2011]
+
+
+Processing SchedulesController#new (for 127.0.0.1 at 2011-02-12 14:50:28) [GET]
+  Parameters: {"schedule_date_day"=>"12", "date"=>"2011-02-11", "schedule_date_month"=>"2", "schedule_date_year"=>"2011"}
+Rendering template within layouts/base
+Rendering schedules/new
+Completed in 59ms (View: 55, DB: 0) | 200 OK [http://0.0.0.0/schedules/new?date=2011-02-11&schedule_date_day=12&schedule_date_month=2&schedule_date_year=2011]
+
+
+Processing SchedulesController#create (for 127.0.0.1 at 2011-02-12 14:50:59) [POST]
+  Parameters: {"commit"=>"作成", "schedule"=>{"start_time(1i)"=>"", "start_time(2i)"=>"", "schedule_date(1i)"=>"2011", "title"=>"テスト", "start_time(3i)"=>"", "end_time(1i)"=>"", "start_time(4i)"=>"", "schedule_date(2i)"=>"2", "end_time(2i)"=>"", "start_time(5i)"=>"", "schedule_date(3i)"=>"12", "end_time(3i)"=>"", "note"=>"", "end_time(4i)"=>"", "cycle_mode"=>"day", "cycle"=>"1", "end_time(5i)"=>""}, "authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "date"=>"2011-02-11"}
+  [4;35;1mSchedule Create (0.3ms)[0m   [0mINSERT INTO "schedules" ("start_date", "created_at", "end_time", "title", "schedule_date", "updated_at", "note", "cycle", "cycle_mode", "end_date", "start_time") VALUES(NULL, '2011-02-12 05:50:59', NULL, 'テスト', '2011-02-12', '2011-02-12 05:50:59', '', 1, 'day', NULL, NULL)[0m
+Redirected to http://0.0.0.0:3000/schedules?date=2011-02-11
+Completed in 8ms (DB: 0) | 302 Found [http://0.0.0.0/schedules/create]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-12 14:50:59) [GET]
+  Parameters: {"date"=>"2011-02-11"}
+  [4;36;1mSchedule Load (0.4ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 204ms (View: 197, DB: 0) | 200 OK [http://0.0.0.0/schedules?date=2011-02-11]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-12 14:51:55) [GET]
+  Parameters: {"id"=>"5", "date"=>"2011-02-11"}
+  [4;35;1mSchedule Load (0.1ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 5) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/schedules/show/5?date=2011-02-11]
+
+
+Processing SchedulesController#edit (for 127.0.0.1 at 2011-02-12 14:51:57) [GET]
+  Parameters: {"id"=>"5", "date"=>"2011-02-11"}
+  [4;36;1mSchedule Load (0.1ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 5) [0m
+Rendering template within layouts/base
+Rendering schedules/edit
+Completed in 15ms (View: 12, DB: 0) | 200 OK [http://0.0.0.0/schedules/edit/5?date=2011-02-11]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-12 14:52:09) [GET]
+  Parameters: {"date"=>"2011-02-11"}
+  [4;35;1mSchedule Load (0.4ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 203ms (View: 196, DB: 0) | 200 OK [http://0.0.0.0/schedules?date=2011-02-11]
+
+
+Processing SchedulesController#new (for 127.0.0.1 at 2011-02-12 14:52:10) [GET]
+  Parameters: {"schedule_date_day"=>"12", "date"=>"2011-02-11", "schedule_date_month"=>"2", "schedule_date_year"=>"2011"}
+Rendering template within layouts/base
+Rendering schedules/new
+Completed in 21ms (View: 17, DB: 0) | 200 OK [http://0.0.0.0/schedules/new?date=2011-02-11&schedule_date_day=12&schedule_date_month=2&schedule_date_year=2011]
+
+
+Processing SchedulesController#create (for 127.0.0.1 at 2011-02-12 14:52:37) [POST]
+  Parameters: {"commit"=>"作成", "schedule"=>{"start_time(1i)"=>"", "start_time(2i)"=>"", "schedule_date(1i)"=>"2011", "title"=>"テスト2", "start_time(3i)"=>"", "end_time(1i)"=>"", "start_time(4i)"=>"13", "schedule_date(2i)"=>"2", "end_time(2i)"=>"", "start_time(5i)"=>"00", "schedule_date(3i)"=>"12", "end_time(3i)"=>"", "note"=>"", "end_time(4i)"=>"16", "cycle_mode"=>"day", "cycle"=>"1", "end_time(5i)"=>"00"}, "authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "date"=>"2011-02-11"}
+
+ActiveRecord::MultiparameterAssignmentErrors (2 error(s) on assignment of multiparameter attributes):
+  app/controllers/schedules_controller.rb:89:in `new'
+  app/controllers/schedules_controller.rb:89:in `create'
+
+Rendered rescues/_trace (22.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#new (for 127.0.0.1 at 2011-02-12 14:59:11) [GET]
+  Parameters: {"schedule_date_day"=>"12", "date"=>"2011-02-11", "schedule_date_month"=>"2", "schedule_date_year"=>"2011"}
+
+NoMethodError (undefined method `Parse' for Time:Class):
+  app/controllers/schedules_controller.rb:74:in `new'
+
+Rendered rescues/_trace (62.2ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#new (for 127.0.0.1 at 2011-02-12 14:59:27) [GET]
+  Parameters: {"schedule_date_day"=>"12", "date"=>"2011-02-11", "schedule_date_month"=>"2", "schedule_date_year"=>"2011"}
+Rendering template within layouts/base
+Rendering schedules/new
+Completed in 22ms (View: 17, DB: 0) | 200 OK [http://0.0.0.0/schedules/new?date=2011-02-11&schedule_date_day=12&schedule_date_month=2&schedule_date_year=2011]
+
+
+Processing SchedulesController#create (for 127.0.0.1 at 2011-02-12 14:59:47) [POST]
+  Parameters: {"commit"=>"作成", "schedule"=>{"start_time(1i)"=>"2011", "start_time(2i)"=>"2", "schedule_date(1i)"=>"2011", "title"=>"テスト2", "start_time(3i)"=>"12", "end_time(1i)"=>"2011", "start_time(4i)"=>"00", "schedule_date(2i)"=>"2", "end_time(2i)"=>"2", "start_time(5i)"=>"00", "schedule_date(3i)"=>"12", "end_time(3i)"=>"12", "note"=>"", "end_time(4i)"=>"00", "cycle_mode"=>"day", "cycle"=>"1", "end_time(5i)"=>"00"}, "authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "date"=>"2011-02-11"}
+  [4;36;1mSchedule Create (0.2ms)[0m   [0;1mINSERT INTO "schedules" ("start_date", "created_at", "end_time", "title", "schedule_date", "updated_at", "note", "cycle", "cycle_mode", "end_date", "start_time") VALUES(NULL, '2011-02-12 05:59:47', '2011-02-12 00:00:00', 'テスト2', '2011-02-12', '2011-02-12 05:59:47', '', 1, 'day', NULL, '2011-02-12 00:00:00')[0m
+Redirected to http://0.0.0.0:3000/schedules?date=2011-02-11
+Completed in 8ms (DB: 0) | 302 Found [http://0.0.0.0/schedules/create]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-12 14:59:47) [GET]
+  Parameters: {"date"=>"2011-02-11"}
+  [4;35;1mSchedule Load (0.4ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 207ms (View: 200, DB: 0) | 200 OK [http://0.0.0.0/schedules?date=2011-02-11]
+
+
+Processing SchedulesController#new (for 127.0.0.1 at 2011-02-12 15:00:19) [GET]
+  Parameters: {"schedule_date_day"=>"12", "date"=>"2011-02-11", "schedule_date_month"=>"2", "schedule_date_year"=>"2011"}
+Rendering template within layouts/base
+Rendering schedules/new
+Completed in 22ms (View: 18, DB: 0) | 200 OK [http://0.0.0.0/schedules/new?date=2011-02-11&schedule_date_day=12&schedule_date_month=2&schedule_date_year=2011]
+
+
+Processing SchedulesController#create (for 127.0.0.1 at 2011-02-12 15:00:29) [POST]
+  Parameters: {"commit"=>"作成", "schedule"=>{"start_time(1i)"=>"2011", "start_time(2i)"=>"2", "schedule_date(1i)"=>"2011", "title"=>"テスト3", "start_time(3i)"=>"12", "end_time(1i)"=>"2011", "start_time(4i)"=>"00", "schedule_date(2i)"=>"2", "end_time(2i)"=>"2", "start_time(5i)"=>"00", "schedule_date(3i)"=>"12", "end_time(3i)"=>"12", "note"=>"", "end_time(4i)"=>"00", "cycle_mode"=>"day", "cycle"=>"1", "end_time(5i)"=>"00"}, "authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "date"=>"2011-02-11"}
+  [4;36;1mSchedule Create (0.3ms)[0m   [0;1mINSERT INTO "schedules" ("start_date", "created_at", "end_time", "title", "schedule_date", "updated_at", "note", "cycle", "cycle_mode", "end_date", "start_time") VALUES(NULL, '2011-02-12 06:00:29', '2011-02-12 00:00:00', 'テスト3', '2011-02-12', '2011-02-12 06:00:29', '', 1, 'day', NULL, '2011-02-12 00:00:00')[0m
+Redirected to http://0.0.0.0:3000/schedules?date=2011-02-11
+Completed in 9ms (DB: 0) | 302 Found [http://0.0.0.0/schedules/create]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-12 15:00:29) [GET]
+  Parameters: {"date"=>"2011-02-11"}
+  [4;35;1mSchedule Load (0.4ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 202ms (View: 195, DB: 0) | 200 OK [http://0.0.0.0/schedules?date=2011-02-11]
+
+
+Processing SchedulesController#new (for 127.0.0.1 at 2011-02-12 15:00:38) [GET]
+  Parameters: {"schedule_date_day"=>"12", "date"=>"2011-02-11", "schedule_date_month"=>"2", "schedule_date_year"=>"2011"}
+Rendering template within layouts/base
+Rendering schedules/new
+Completed in 22ms (View: 17, DB: 0) | 200 OK [http://0.0.0.0/schedules/new?date=2011-02-11&schedule_date_day=12&schedule_date_month=2&schedule_date_year=2011]
+
+
+Processing SchedulesController#create (for 127.0.0.1 at 2011-02-12 15:00:57) [POST]
+  Parameters: {"commit"=>"作成", "schedule"=>{"start_time(1i)"=>"2011", "start_time(2i)"=>"2", "schedule_date(1i)"=>"2011", "title"=>"テスト4", "start_time(3i)"=>"12", "end_time(1i)"=>"2011", "start_time(4i)"=>"10", "schedule_date(2i)"=>"2", "end_time(2i)"=>"2", "start_time(5i)"=>"00", "schedule_date(3i)"=>"12", "end_time(3i)"=>"12", "note"=>"", "end_time(4i)"=>"12", "cycle_mode"=>"day", "cycle"=>"1", "end_time(5i)"=>"00"}, "authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "date"=>"2011-02-11"}
+  [4;36;1mSchedule Create (0.3ms)[0m   [0;1mINSERT INTO "schedules" ("start_date", "created_at", "end_time", "title", "schedule_date", "updated_at", "note", "cycle", "cycle_mode", "end_date", "start_time") VALUES(NULL, '2011-02-12 06:00:57', '2011-02-12 12:00:00', 'テスト4', '2011-02-12', '2011-02-12 06:00:57', '', 1, 'day', NULL, '2011-02-12 10:00:00')[0m
+Redirected to http://0.0.0.0:3000/schedules?date=2011-02-11
+Completed in 54ms (DB: 0) | 302 Found [http://0.0.0.0/schedules/create]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-12 15:00:57) [GET]
+  Parameters: {"date"=>"2011-02-11"}
+  [4;35;1mSchedule Load (0.4ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 159ms (View: 151, DB: 0) | 200 OK [http://0.0.0.0/schedules?date=2011-02-11]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-12 15:03:07) [GET]
+  Parameters: {"id"=>"5", "date"=>"2011-02-11"}
+  [4;36;1mSchedule Load (0.1ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 5) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 54ms (View: 51, DB: 0) | 200 OK [http://0.0.0.0/schedules/show/5?date=2011-02-11]
+
+
+Processing SchedulesController#edit (for 127.0.0.1 at 2011-02-12 15:03:10) [GET]
+  Parameters: {"id"=>"5", "date"=>"2011-02-11"}
+  [4;35;1mSchedule Load (0.1ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 5) [0m
+Rendering template within layouts/base
+Rendering schedules/edit
+Completed in 24ms (View: 21, DB: 0) | 200 OK [http://0.0.0.0/schedules/edit/5?date=2011-02-11]
+
+
+Processing SchedulesController#edit (for 127.0.0.1 at 2011-02-12 15:04:08) [GET]
+  Parameters: {"id"=>"5", "date"=>"2011-02-11"}
+  [4;36;1mSchedule Load (0.2ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 5) [0m
+Rendering template within layouts/base
+Rendering schedules/edit
+Completed in 22ms (View: 17, DB: 0) | 200 OK [http://0.0.0.0/schedules/edit/5?date=2011-02-11]
+
+
+Processing SchedulesController#update (for 127.0.0.1 at 2011-02-12 15:04:42) [PUT]
+  Parameters: {"commit"=>"保存", "schedule"=>{"start_time(1i)"=>"2011", "start_time(2i)"=>"2", "schedule_date(1i)"=>"2011", "title"=>"テスト", "start_time(3i)"=>"12", "end_time(1i)"=>"2011", "start_time(4i)"=>"02", "schedule_date(2i)"=>"2", "end_time(2i)"=>"2", "start_time(5i)"=>"00", "schedule_date(3i)"=>"12", "end_time(3i)"=>"12", "note"=>"", "end_time(4i)"=>"05", "cycle_mode"=>"day", "cycle"=>"1", "end_time(5i)"=>"00"}, "authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "id"=>"5", "date"=>"2011-02-11"}
+  [4;35;1mSchedule Load (0.1ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 5) [0m
+  [4;36;1mSchedule Update (0.2ms)[0m   [0;1mUPDATE "schedules" SET "start_time" = '2011-02-12 02:00:00', "updated_at" = '2011-02-12 06:04:42', "end_time" = '2011-02-12 05:00:00' WHERE "id" = 5[0m
+Redirected to http://0.0.0.0:3000/schedules/show/5?date=2011-02-11
+Completed in 8ms (DB: 0) | 302 Found [http://0.0.0.0/schedules/update/5]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-12 15:04:42) [GET]
+  Parameters: {"id"=>"5", "date"=>"2011-02-11"}
+  [4;35;1mSchedule Load (0.1ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 5) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/schedules/show/5?date=2011-02-11]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-12 15:04:44) [GET]
+  Parameters: {"date"=>"2011-02-11"}
+  [4;36;1mSchedule Load (0.4ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 199ms (View: 192, DB: 0) | 200 OK [http://0.0.0.0/schedules?date=2011-02-11]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSchedules (1)
+Migrating to AddColumnSchedules (2)
+Migrating to AddColumn2Schedules (3)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("schedules")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSchedules (1)
+Migrating to AddColumnSchedules (2)
+Migrating to AddColumn2Schedules (3)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSchedules (1)
+Migrating to AddColumnSchedules (2)
+Migrating to AddColumnSchedules2 (3)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mALTER TABLE "schedules" ADD "mode" varchar(255)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('3')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("schedules")[0m
+
+
+Processing SchedulesController#new (for 127.0.0.1 at 2011-02-12 15:15:19) [GET]
+  Parameters: {"schedule_date_day"=>"11", "date"=>"2011-02-11", "schedule_date_month"=>"2", "schedule_date_year"=>"2011"}
+Rendering template within layouts/base
+Rendering schedules/new
+Completed in 23ms (View: 19, DB: 0) | 200 OK [http://0.0.0.0/schedules/new?date=2011-02-11&schedule_date_day=11&schedule_date_month=2&schedule_date_year=2011]
+
+
+Processing SchedulesController#create (for 127.0.0.1 at 2011-02-12 15:15:37) [POST]
+  Parameters: {"commit"=>"作成", "schedule"=>{"start_time(1i)"=>"2011", "start_time(2i)"=>"2", "schedule_date(1i)"=>"2011", "title"=>"1", "mode"=>"公開", "start_time(3i)"=>"12", "end_time(1i)"=>"2011", "start_time(4i)"=>"00", "schedule_date(2i)"=>"2", "end_time(2i)"=>"2", "start_time(5i)"=>"00", "schedule_date(3i)"=>"11", "end_time(3i)"=>"12", "note"=>"", "end_time(4i)"=>"00", "cycle_mode"=>"day", "cycle"=>"1", "end_time(5i)"=>"00"}, "authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "date"=>"2011-02-11"}
+  [4;35;1mSchedule Create (0.2ms)[0m   [0mINSERT INTO "schedules" ("created_at", "end_time", "title", "schedule_date", "updated_at", "mode", "note", "cycle", "cycle_mode", "start_time") VALUES('2011-02-12 06:15:37', '2011-02-12 00:00:00', '1', '2011-02-11', '2011-02-12 06:15:37', '公開', '', 1, 'day', '2011-02-12 00:00:00')[0m
+Redirected to http://0.0.0.0:3000/schedules?date=2011-02-11
+Completed in 8ms (DB: 0) | 302 Found [http://0.0.0.0/schedules/create]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-12 15:15:37) [GET]
+  Parameters: {"date"=>"2011-02-11"}
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 167ms (View: 159, DB: 0) | 200 OK [http://0.0.0.0/schedules?date=2011-02-11]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-12 15:15:58) [GET]
+  Parameters: {"id"=>"9", "date"=>"2011-02-11"}
+  [4;35;1mSchedule Load (0.1ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 9) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/schedules/show/9?date=2011-02-11]
+
+
+Processing SchedulesController#edit (for 127.0.0.1 at 2011-02-12 15:16:00) [GET]
+  Parameters: {"id"=>"9", "date"=>"2011-02-11"}
+  [4;36;1mSchedule Load (0.1ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 9) [0m
+Rendering template within layouts/base
+Rendering schedules/edit
+Completed in 69ms (View: 19, DB: 0) | 200 OK [http://0.0.0.0/schedules/edit/9?date=2011-02-11]
+
+
+Processing SchedulesController#update (for 127.0.0.1 at 2011-02-12 15:16:05) [PUT]
+  Parameters: {"commit"=>"保存", "schedule"=>{"start_time(1i)"=>"2000", "start_time(2i)"=>"1", "schedule_date(1i)"=>"2011", "title"=>"1", "mode"=>"非公開", "start_time(3i)"=>"1", "end_time(1i)"=>"2000", "start_time(4i)"=>"00", "schedule_date(2i)"=>"2", "end_time(2i)"=>"1", "start_time(5i)"=>"00", "schedule_date(3i)"=>"11", "end_time(3i)"=>"1", "note"=>"", "end_time(4i)"=>"00", "cycle_mode"=>"day", "cycle"=>"1", "end_time(5i)"=>"00"}, "authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "id"=>"9", "date"=>"2011-02-11"}
+  [4;35;1mSchedule Load (0.1ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 9) [0m
+  [4;36;1mSchedule Update (0.3ms)[0m   [0;1mUPDATE "schedules" SET "updated_at" = '2011-02-12 06:16:05', "mode" = '非公開' WHERE "id" = 9[0m
+Redirected to http://0.0.0.0:3000/schedules/show/9?date=2011-02-11
+Completed in 9ms (DB: 0) | 302 Found [http://0.0.0.0/schedules/update/9]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-12 15:16:05) [GET]
+  Parameters: {"id"=>"9", "date"=>"2011-02-11"}
+  [4;35;1mSchedule Load (0.2ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 9) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/schedules/show/9?date=2011-02-11]
+
+
+Processing SchedulesController#edit (for 127.0.0.1 at 2011-02-12 15:16:07) [GET]
+  Parameters: {"id"=>"9", "date"=>"2011-02-11"}
+  [4;36;1mSchedule Load (0.1ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 9) [0m
+Rendering template within layouts/base
+Rendering schedules/edit
+Completed in 22ms (View: 17, DB: 0) | 200 OK [http://0.0.0.0/schedules/edit/9?date=2011-02-11]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-12 15:16:09) [GET]
+  Parameters: {"date"=>"2011-02-11"}
+  [4;35;1mSchedule Load (0.4ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 201ms (View: 194, DB: 0) | 200 OK [http://0.0.0.0/schedules?date=2011-02-11]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-12 15:16:11) [GET]
+  Parameters: {"id"=>"9", "date"=>"2011-02-11"}
+  [4;36;1mSchedule Load (0.1ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 9) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/schedules/show/9?date=2011-02-11]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-12 15:19:15) [GET]
+  Parameters: {"id"=>"9", "date"=>"2011-02-11"}
+  [4;35;1mSchedule Load (0.1ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 9) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/schedules/show/9?date=2011-02-11]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-12 15:50:08) [GET]
+  Parameters: {"date"=>"2011-02-11"}
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 218ms (View: 169, DB: 1) | 200 OK [http://0.0.0.0/schedules?date=2011-02-11]
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSchedules (1)
+Migrating to AddColumnSchedules (2)
+Migrating to AddColumnSchedules2 (3)
+Migrating to AddColumnSchedules3 (4)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mALTER TABLE "schedules" ADD "user_id" integer[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('4')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("schedules")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSchedules (1)
+Migrating to AddColumnSchedules (2)
+Migrating to AddColumnSchedules2 (3)
+Migrating to AddColumnSchedules3 (4)
+Migrating to CreateUsers (20110212114956)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login_id" varchar(255), "hashed_password" varchar(255), "salt" varchar(255), "level" varchar(255), "twitter_id" varchar(255), "mail_address" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110212114956')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("schedules")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("users")[0m
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-12 21:06:55) [GET]
+  Parameters: {"date"=>"2011-02-11"}
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 206ms (View: 198, DB: 0) | 200 OK [http://0.0.0.0/schedules?date=2011-02-11]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-12 21:07:31) [GET]
+  Parameters: {"date"=>"2011-02-11"}
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 206ms (View: 198, DB: 0) | 200 OK [http://0.0.0.0/schedules?date=2011-02-11]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-02-12 21:07:35) [GET]
+
+ActionController::RoutingError (No route matches "/entry/input" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing EntryController#input (for 127.0.0.1 at 2011-02-12 21:08:13) [GET]
+Rendering entry/input
+Completed in 41ms (View: 38, DB: 0) | 200 OK [http://0.0.0.0/entry/input]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-02-12 21:08:13) [GET]
+
+ActionController::RoutingError (No route matches "/images/web-app-theme/tick.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-02-12 21:08:13) [GET]
+
+ActionController::RoutingError (No route matches "/images/web-app-theme/cross.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing EntryController#input (for 127.0.0.1 at 2011-02-12 21:08:56) [GET]
+Rendering template within layouts/base
+Rendering entry/input
+Completed in 13ms (View: 10, DB: 0) | 200 OK [http://0.0.0.0/entry/input]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-02-12 21:08:56) [GET]
+
+ActionController::RoutingError (No route matches "/images/web-app-theme/tick.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-02-12 21:08:56) [GET]
+
+ActionController::RoutingError (No route matches "/images/web-app-theme/cross.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing EntryController#input (for 127.0.0.1 at 2011-02-12 21:10:59) [GET]
+Rendering template within layouts/base
+Rendering entry/input
+Completed in 15ms (View: 12, DB: 0) | 200 OK [http://0.0.0.0/entry/input]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-02-12 21:10:59) [GET]
+
+ActionController::RoutingError (No route matches "/images/web-app-theme/cross.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-02-12 21:10:59) [GET]
+
+ActionController::RoutingError (No route matches "/images/web-app-theme/tick.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing EntryController#input (for 127.0.0.1 at 2011-02-12 21:15:01) [GET]
+Rendering template within layouts/base
+Rendering entry/input
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/entry/input]
+
+
+Processing EntryController#input (for 127.0.0.1 at 2011-02-12 21:16:18) [GET]
+Rendering template within layouts/base
+Rendering entry/input
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/entry/input]
+
+
+Processing EntryController#input (for 127.0.0.1 at 2011-02-12 21:17:20) [GET]
+Rendering template within layouts/base
+Rendering entry/input
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/entry/input]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-02-12 21:17:21) [GET]
+
+ActionController::RoutingError (No route matches "/images/web-app-theme/tick.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-02-12 21:17:21) [GET]
+
+ActionController::RoutingError (No route matches "/images/web-app-theme/cross.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing EntryController#input (for 127.0.0.1 at 2011-02-12 21:17:54) [GET]
+Rendering template within layouts/base
+Rendering entry/input
+Completed in 14ms (View: 11, DB: 0) | 200 OK [http://0.0.0.0/entry/input]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-02-12 21:17:55) [GET]
+
+ActionController::RoutingError (No route matches "/images/web-app-theme/cross.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing EntryController#input (for 127.0.0.1 at 2011-02-12 21:18:18) [GET]
+Rendering template within layouts/base
+Rendering entry/input
+Completed in 58ms (View: 55, DB: 0) | 200 OK [http://0.0.0.0/entry/input]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-02-12 21:18:18) [GET]
+
+ActionController::RoutingError (No route matches "/images/web-app-theme/cross.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing EntryController#input (for 127.0.0.1 at 2011-02-12 21:18:56) [GET]
+Rendering template within layouts/base
+Rendering entry/input
+Completed in 16ms (View: 13, DB: 0) | 200 OK [http://0.0.0.0/entry/input]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-02-12 21:18:56) [GET]
+
+ActionController::RoutingError (No route matches "/images/web-app-theme/cross.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing EntryController#input (for 127.0.0.1 at 2011-02-12 21:19:44) [GET]
+Rendering template within layouts/base
+Rendering entry/input
+Completed in 16ms (View: 12, DB: 0) | 200 OK [http://0.0.0.0/entry/input]
+
+
+Processing EntryController#confirmation (for 127.0.0.1 at 2011-02-12 21:20:46) [POST]
+  Parameters: {"authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "user"=>{"password_confirmation"=>"test", "login_id"=>"test", "password"=>"test"}}
+Rendering template within layouts/base
+Rendering entry/confirmation
+Completed in 24ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/entry/confirmation]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-02-12 21:20:46) [GET]
+
+ActionController::RoutingError (No route matches "/images/web-app-theme/tick.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-02-12 21:20:46) [GET]
+
+ActionController::RoutingError (No route matches "/images/web-app-theme/cross.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing EntryController#confirmation (for 127.0.0.1 at 2011-02-12 21:22:08) [POST]
+  Parameters: {"authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "user"=>{"password_confirmation"=>"test", "login_id"=>"test", "password"=>"test"}}
+Rendering template within layouts/base
+Rendering entry/confirmation
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/entry/confirmation]
+
+
+Processing EntryController#complete (for 127.0.0.1 at 2011-02-12 21:22:18) [POST]
+  Parameters: {"authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "user"=>{"login_id"=>"test", "password"=>"test"}}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login_id" = 'test') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("salt", "mail_address", "created_at", "updated_at", "hashed_password", "level", "twitter_id", "login_id") VALUES('21996233200.626111909238159', NULL, '2011-02-12 12:22:18', '2011-02-12 12:22:18', '70be0ccc0093ce562197317a7d39d5c40c97e931', NULL, NULL, 'test')[0m
+Redirected to http://0.0.0.0:3000/top
+Completed in 7ms (DB: 0) | 302 Found [http://0.0.0.0/entry/complete]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-02-12 21:22:18) [GET]
+
+ActionController::RoutingError (No route matches "/top" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-12 21:27:56) [GET]
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 209ms (View: 202, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing EntryController#input (for 127.0.0.1 at 2011-02-12 21:27:59) [GET]
+Rendering template within layouts/base
+Rendering entry/input
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/entry/input]
+
+
+Processing EntryController#confirmation (for 127.0.0.1 at 2011-02-12 21:28:07) [POST]
+  Parameters: {"authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "user"=>{"password_confirmation"=>"test", "login_id"=>"test", "password"=>"test"}}
+Rendering template within layouts/base
+Rendering entry/confirmation
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/entry/confirmation]
+
+
+Processing EntryController#complete (for 127.0.0.1 at 2011-02-12 21:28:11) [POST]
+  Parameters: {"authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "user"=>{"login_id"=>"test", "password"=>"test"}}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login_id" = 'test') LIMIT 1[0m
+Rendering template within layouts/base
+Rendering entry/input
+Completed in 28ms (View: 23, DB: 0) | 200 OK [http://0.0.0.0/entry/complete]
+
+
+Processing EntryController#confirmation (for 127.0.0.1 at 2011-02-12 21:28:46) [POST]
+  Parameters: {"authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "user"=>{"password_confirmation"=>"test", "login_id"=>"test2", "password"=>"test"}}
+Rendering template within layouts/base
+Rendering entry/confirmation
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/entry/confirmation]
+
+
+Processing EntryController#complete (for 127.0.0.1 at 2011-02-12 21:28:50) [POST]
+  Parameters: {"authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "user"=>{"login_id"=>"test2", "password"=>"test"}}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login_id" = 'test2') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("salt", "mail_address", "created_at", "updated_at", "hashed_password", "level", "twitter_id", "login_id") VALUES('22003665400.973136400562206', NULL, '2011-02-12 12:28:50', '2011-02-12 12:28:50', '44e98ffe61c737a9cab8837465098ffd56cd5f60', NULL, NULL, 'test2')[0m
+
+NoMethodError (undefined method `root_url' for #<EntryController:0x1064497b8>):
+  app/controllers/entry_controller.rb:26:in `complete'
+
+Rendered rescues/_trace (22.3ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EntryController#complete (for 127.0.0.1 at 2011-02-12 21:29:45) [POST]
+  Parameters: {"authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "user"=>{"login_id"=>"test2", "password"=>"test"}}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login_id" = 'test2') LIMIT 1[0m
+Rendering template within layouts/base
+Rendering entry/input
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://0.0.0.0/entry/complete]
+
+
+Processing EntryController#confirmation (for 127.0.0.1 at 2011-02-12 21:29:52) [POST]
+  Parameters: {"authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "user"=>{"password_confirmation"=>"", "login_id"=>"test2", "password"=>"test"}}
+Rendering template within layouts/base
+Rendering entry/confirmation
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/entry/confirmation]
+
+
+Processing EntryController#complete (for 127.0.0.1 at 2011-02-12 21:29:54) [POST]
+  Parameters: {"authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "user"=>{"login_id"=>"test2", "password"=>"test"}}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login_id" = 'test2') LIMIT 1[0m
+Rendering template within layouts/base
+Rendering entry/input
+Completed in 49ms (View: 44, DB: 0) | 200 OK [http://0.0.0.0/entry/complete]
+
+
+Processing EntryController#confirmation (for 127.0.0.1 at 2011-02-12 21:30:24) [POST]
+  Parameters: {"authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "user"=>{"password_confirmation"=>"test", "login_id"=>"test3", "password"=>"test"}}
+Rendering template within layouts/base
+Rendering entry/confirmation
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/entry/confirmation]
+
+
+Processing EntryController#complete (for 127.0.0.1 at 2011-02-12 21:30:26) [POST]
+  Parameters: {"authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "user"=>{"login_id"=>"test3", "password"=>"test"}}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login_id" = 'test3') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("salt", "mail_address", "created_at", "updated_at", "hashed_password", "level", "twitter_id", "login_id") VALUES('21997226800.828931547505898', NULL, '2011-02-12 12:30:26', '2011-02-12 12:30:26', '9fb306cbdd535ebe798426f89a91eac09a3a2df6', NULL, NULL, 'test3')[0m
+Redirected to http://0.0.0.0:3000/
+Completed in 7ms (DB: 0) | 302 Found [http://0.0.0.0/entry/complete]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-12 21:30:26) [GET]
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 203ms (View: 196, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing EntryController#login (for 127.0.0.1 at 2011-02-12 21:30:31) [GET]
+Rendering template within layouts/base
+Rendering entry/login
+Completed in 13ms (View: 10, DB: 0) | 200 OK [http://0.0.0.0/entry/login]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-02-12 21:30:31) [GET]
+
+ActionController::RoutingError (No route matches "/images/web-app-theme/tick.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing EntryController#login (for 127.0.0.1 at 2011-02-12 21:30:34) [POST]
+  Parameters: {"authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "user"=>{"login_id"=>"test", "password"=>"test"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login_id" = 'test') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/top
+Completed in 24ms (DB: 0) | 302 Found [http://0.0.0.0/entry/login]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-02-12 21:30:34) [GET]
+
+ActionController::RoutingError (No route matches "/top" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-02-12 21:30:52) [GET]
+
+ActionController::RoutingError (No route matches "/top" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing EntryController#login (for 127.0.0.1 at 2011-02-12 21:30:55) [GET]
+Rendering template within layouts/base
+Rendering entry/login
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/entry/login]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-02-12 21:30:55) [GET]
+
+ActionController::RoutingError (No route matches "/images/web-app-theme/tick.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing EntryController#login (for 127.0.0.1 at 2011-02-12 21:30:57) [POST]
+  Parameters: {"authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "user"=>{"login_id"=>"test", "password"=>"test"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login_id" = 'test') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/
+Completed in 5ms (DB: 0) | 302 Found [http://0.0.0.0/entry/login]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-12 21:30:57) [GET]
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 199ms (View: 154, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-12 21:34:56) [GET]
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 215ms (View: 204, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing EntryController#edit (for 127.0.0.1 at 2011-02-12 21:35:35) [GET]
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/base
+Rendering entry/edit
+Completed in 14ms (View: 11, DB: 0) | 200 OK [http://0.0.0.0/entry/edit]
+
+
+Processing EntryController#edit (for 127.0.0.1 at 2011-02-12 21:36:08) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/base
+Rendering entry/edit
+Completed in 60ms (View: 56, DB: 0) | 200 OK [http://0.0.0.0/entry/edit]
+
+
+Processing EntryController#edit (for 127.0.0.1 at 2011-02-12 21:37:02) [GET]
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/base
+Rendering entry/edit
+ERROR: compiling _run_erb_app47views47entry47edit46html46erb RAISED compile error
+/Users/raisondetre0115/Mine/workspace/taurus/app/views/entry/edit.html.erb:35: odd number list for Hash
+...o 'キャンセル', { :root }, :class => 'button' ).to_s); ...
+                              ^
+Function body:           def _run_erb_app47views47entry47edit46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<div class=\"block\">\n\n  <div class=\"content\">\n\n    <h2 class=\"title\">\347\231\273\351\214\262\346\203\205\345\240\261\345\244\211\346\233\264</h2>\n\n    <div class=\"inner\">\n\n      "
+
+
+
+
+
+
+
+; @output_buffer.concat "\n      "
+;  form_for :user, :url => { :controller => "entry", :action => "confirmation" }, :html => { :class => :form } do |f| 
+@output_buffer.concat "        "; @output_buffer.concat(( Utility.replace_message( :message => f.error_messages )   ).to_s); @output_buffer.concat "\n\n        <div class=\"group\">\n          "
+
+
+; @output_buffer.concat(( f.label :login_id, t("activerecord.attributes.user.login_id", :default => "Login ID"), :class => :label ).to_s); @output_buffer.concat "\n          "
+; @output_buffer.concat(( f.text_field :login_id, :class => 'text_field' ).to_s); @output_buffer.concat "\n          <span class=\"description\">Ex: a simple text</span>\n        </div>\n\n        <div class=\"group\">\n          "
+
+
+
+
+; @output_buffer.concat(( f.label :password, t("activerecord.attributes.user.password", :default => "Password"), :class => :label ).to_s); @output_buffer.concat "\n          "
+; @output_buffer.concat(( f.password_field :password, :class => 'password_field' ).to_s); @output_buffer.concat "\n          <span class=\"description\">Ex: a simple text</span>\n        </div>\n\n        <div class=\"group\">\n          "
+
+
+
+
+; @output_buffer.concat(( f.label :password_confirmation, t("activerecord.attributes.user.password_confirmation", :default => "Password Confirmation"), :class => :label ).to_s); @output_buffer.concat "\n          "
+; @output_buffer.concat(( f.password_field :password_confirmation, :class => 'password_field' ).to_s); @output_buffer.concat "\n          <span class=\"description\">Ex: a simple text</span>\n        </div>\n\n        <div class=\"group navform wat-cf\">\n          "
+
+
+
+
+; @output_buffer.concat "\n          <button class=\"button\" type=\"submit\">\345\244\211\346\233\264</button>\n          "
+
+; @output_buffer.concat "\n          "
+; @output_buffer.concat(( link_to 'キャンセル', { :root }, :class => 'button' ).to_s); @output_buffer.concat "\n        </div>\n      "
+
+;  end 
+@output_buffer.concat "\n    </div>\n  </div>\n</div>\n\n"
+
+
+
+
+
+@output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/raisondetre0115/Mine/workspace/taurus/app/views/entry/edit.html.erb:47:in `compile!'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:61:in `compile'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:28:in `render'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:260:in `render'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:343:in `_render_with_layout'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:257:in `render'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1326:in `default_render'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `send'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:606:in `process'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:391:in `process'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:386:in `call'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:437:in `call'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:9:in `cache'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:28:in `call'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/params_parser.rb:15:in `call'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/failsafe.rb:26:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/reloader.rb:34:in `run'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/rails-2.3.4/lib/rails/rack/static.rb:31:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/rails-2.3.4/lib/rails/rack/log_tailer.rb:17:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/rails-2.3.4/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:29:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/raisondetre0115/Mine/workspace/taurus/app/views/entry/edit.html.erb:35: odd number list for Hash
+...o 'キャンセル', { :root }, :class => 'button' ).to_s); ...
+                              ^) on line #35 of app/views/entry/edit.html.erb:
+32:           <%# 変更 %>
+33:           <button class="button" type="submit">変更</button>
+34:           <%# キャンセル %>
+35:           <%= link_to 'キャンセル', { :root }, :class => 'button' %>
+36:         </div>
+37:       <% end -%>
+38: 
+
+    app/views/entry/edit.html.erb:47:in `compile!'
+
+Rendered rescues/_trace (23.7ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EntryController#edit (for 127.0.0.1 at 2011-02-12 21:37:19) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/base
+Rendering entry/edit
+Completed in 20ms (View: 16, DB: 0) | 200 OK [http://0.0.0.0/entry/edit]
+
+
+Processing EntryController#edit (for 127.0.0.1 at 2011-02-12 21:37:21) [GET]
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/base
+Rendering entry/edit
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/entry/edit]
+
+
+Processing EntryController#edit (for 127.0.0.1 at 2011-02-12 21:37:54) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/base
+Rendering entry/edit
+Completed in 17ms (View: 13, DB: 0) | 200 OK [http://0.0.0.0/entry/edit]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-12 21:37:57) [GET]
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 209ms (View: 202, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing EntryController#edit (for 127.0.0.1 at 2011-02-12 21:37:59) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/base
+Rendering entry/edit
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/entry/edit]
+
+
+Processing EntryController#confirmation (for 127.0.0.1 at 2011-02-12 21:38:02) [POST]
+  Parameters: {"authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "user"=>{"password_confirmation"=>"", "login_id"=>"test", "password"=>""}}
+Rendering template within layouts/base
+Rendering entry/confirmation
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/entry/confirmation]
+
+
+Processing EntryController#edit (for 127.0.0.1 at 2011-02-12 21:38:20) [GET]
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/base
+Rendering entry/edit
+Completed in 16ms (View: 13, DB: 0) | 200 OK [http://0.0.0.0/entry/edit]
+
+
+Processing EntryController#edit (for 127.0.0.1 at 2011-02-12 21:38:24) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/base
+Rendering entry/edit
+Completed in 15ms (View: 11, DB: 0) | 200 OK [http://0.0.0.0/entry/edit]
+
+
+Processing EntryController#update (for 127.0.0.1 at 2011-02-12 21:38:26) [POST]
+  Parameters: {"authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "user"=>{"password_confirmation"=>"", "login_id"=>"test", "password"=>""}}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/entry/edit
+Completed in 5ms (DB: 0) | 302 Found [http://0.0.0.0/entry/update]
+
+
+Processing EntryController#edit (for 127.0.0.1 at 2011-02-12 21:38:26) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/base
+Rendering entry/edit
+Completed in 50ms (View: 47, DB: 0) | 200 OK [http://0.0.0.0/entry/edit]
+
+
+Processing EntryController#edit (for 127.0.0.1 at 2011-02-12 21:39:43) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/base
+Rendering entry/edit
+Completed in 17ms (View: 13, DB: 0) | 200 OK [http://0.0.0.0/entry/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-02-12 21:39:43) [GET]
+
+ActionController::RoutingError (No route matches "/images/web-app-theme/tick.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing EntryController#edit (for 127.0.0.1 at 2011-02-12 21:40:30) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/base
+Rendering entry/edit
+Completed in 16ms (View: 12, DB: 0) | 200 OK [http://0.0.0.0/entry/edit]
+
+
+Processing EntryController#edit (for 127.0.0.1 at 2011-02-12 21:43:57) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/base
+Rendering entry/edit
+Completed in 17ms (View: 11, DB: 0) | 200 OK [http://0.0.0.0/entry/edit]
+
+
+Processing EntryController#edit (for 127.0.0.1 at 2011-02-12 21:44:34) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/base
+Rendering entry/edit
+Completed in 65ms (View: 16, DB: 0) | 200 OK [http://0.0.0.0/entry/edit]
+
+
+Processing EntryController#update (for 127.0.0.1 at 2011-02-12 21:45:32) [POST]
+  Parameters: {"authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "user"=>{"edit_password"=>"", "edit_password_confirmation"=>"", "login_id"=>"test", "password"=>""}}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/entry/edit
+Completed in 6ms (DB: 0) | 302 Found [http://0.0.0.0/entry/update]
+
+
+Processing EntryController#edit (for 127.0.0.1 at 2011-02-12 21:45:32) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/base
+Rendering entry/edit
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/entry/edit]
+
+
+Processing EntryController#update (for 127.0.0.1 at 2011-02-12 21:45:37) [POST]
+  Parameters: {"authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "user"=>{"edit_password"=>"", "edit_password_confirmation"=>"", "login_id"=>"test", "password"=>"test"}}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login_id" = 'test' AND "users".id <> 1) LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "updated_at" = '2011-02-12 12:45:37', "salt" = '21865552000.202490527944982', "hashed_password" = 'ea1e9909a0b91e626b3d43d0759d1592b124277a' WHERE "id" = 1[0m
+Redirected to http://0.0.0.0:3000/entry/show
+Completed in 183ms (DB: 1) | 302 Found [http://0.0.0.0/entry/update]
+
+
+Processing EntryController#show (for 127.0.0.1 at 2011-02-12 21:45:37) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+
+ActionView::MissingTemplate (Missing template entry/show.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EntryController#show (for 127.0.0.1 at 2011-02-12 21:46:30) [GET]
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/base
+Rendering entry/show
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://0.0.0.0/entry/show]
+
+
+Processing EntryController#show (for 127.0.0.1 at 2011-02-12 21:48:19) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/base
+Rendering entry/show
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/entry/show]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-12 21:48:20) [GET]
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 226ms (View: 219, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing EntryController#input (for 127.0.0.1 at 2011-02-12 21:48:30) [GET]
+Rendering template within layouts/base
+Rendering entry/input
+Completed in 15ms (View: 12, DB: 0) | 200 OK [http://0.0.0.0/entry/input]
+
+
+Processing EntryController#confirmation (for 127.0.0.1 at 2011-02-12 21:48:33) [POST]
+  Parameters: {"authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "user"=>{"password_confirmation"=>"", "login_id"=>"", "password"=>""}}
+Rendering template within layouts/base
+Rendering entry/confirmation
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/entry/confirmation]
+
+
+Processing EntryController#complete (for 127.0.0.1 at 2011-02-12 21:48:35) [POST]
+  Parameters: {"authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "user"=>{"login_id"=>"", "password"=>""}}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login_id" = '') LIMIT 1[0m
+Rendering template within layouts/base
+Rendering entry/input
+Completed in 20ms (View: 14, DB: 0) | 200 OK [http://0.0.0.0/entry/complete]
+
+
+Processing EntryController#confirmation (for 127.0.0.1 at 2011-02-12 21:50:26) [POST]
+  Parameters: {"authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "user"=>{"password_confirmation"=>"", "login_id"=>"", "password"=>""}}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login_id" = '') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/entry/input
+Completed in 5ms (DB: 0) | 302 Found [http://0.0.0.0/entry/confirmation]
+
+
+Processing EntryController#input (for 127.0.0.1 at 2011-02-12 21:50:26) [GET]
+Rendering template within layouts/base
+Rendering entry/input
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/entry/input]
+
+
+Processing EntryController#confirmation (for 127.0.0.1 at 2011-02-12 21:50:28) [POST]
+  Parameters: {"authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "user"=>{"password_confirmation"=>"", "login_id"=>"", "password"=>""}}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login_id" = '') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/entry/input
+Completed in 5ms (DB: 0) | 302 Found [http://0.0.0.0/entry/confirmation]
+
+
+Processing EntryController#input (for 127.0.0.1 at 2011-02-12 21:50:28) [GET]
+Rendering template within layouts/base
+Rendering entry/input
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/entry/input]
+
+
+Processing EntryController#confirmation (for 127.0.0.1 at 2011-02-12 21:51:19) [POST]
+  Parameters: {"authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "user"=>{"password_confirmation"=>"", "login_id"=>"", "password"=>""}}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login_id" = '') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/entry/input?user%5Blogin_id%5D=&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=
+Completed in 5ms (DB: 0) | 302 Found [http://0.0.0.0/entry/confirmation]
+
+
+Processing EntryController#input (for 127.0.0.1 at 2011-02-12 21:51:19) [GET]
+  Parameters: {"user"=>{"password_confirmation"=>"", "login_id"=>"", "password"=>""}}
+Rendering template within layouts/base
+Rendering entry/input
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/entry/input?user%5Blogin_id%5D=&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=]
+
+
+Processing EntryController#confirmation (for 127.0.0.1 at 2011-02-12 21:51:20) [POST]
+  Parameters: {"authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "user"=>{"password_confirmation"=>"", "login_id"=>"", "password"=>""}}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login_id" = '') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/entry/input?user%5Blogin_id%5D=&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=
+Completed in 6ms (DB: 0) | 302 Found [http://0.0.0.0/entry/confirmation]
+
+
+Processing EntryController#input (for 127.0.0.1 at 2011-02-12 21:51:20) [GET]
+  Parameters: {"user"=>{"password_confirmation"=>"", "login_id"=>"", "password"=>""}}
+Rendering template within layouts/base
+Rendering entry/input
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/entry/input?user%5Blogin_id%5D=&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=]
+
+
+Processing EntryController#confirmation (for 127.0.0.1 at 2011-02-12 21:51:21) [POST]
+  Parameters: {"authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "user"=>{"password_confirmation"=>"", "login_id"=>"", "password"=>""}}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login_id" = '') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/entry/input?user%5Blogin_id%5D=&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=
+Completed in 40ms (DB: 0) | 302 Found [http://0.0.0.0/entry/confirmation]
+
+
+Processing EntryController#input (for 127.0.0.1 at 2011-02-12 21:51:21) [GET]
+  Parameters: {"user"=>{"password_confirmation"=>"", "login_id"=>"", "password"=>""}}
+Rendering template within layouts/base
+Rendering entry/input
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/entry/input?user%5Blogin_id%5D=&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=]
+
+
+Processing EntryController#confirmation (for 127.0.0.1 at 2011-02-12 21:52:32) [POST]
+  Parameters: {"authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "user"=>{"password_confirmation"=>"", "login_id"=>"", "password"=>""}}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login_id" = '') LIMIT 1[0m
+Rendering template within layouts/base
+Rendering entry/input
+Completed in 17ms (View: 13, DB: 0) | 200 OK [http://0.0.0.0/entry/confirmation]
+
+
+Processing EntryController#confirmation (for 127.0.0.1 at 2011-02-12 21:56:34) [POST]
+  Parameters: {"authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "user"=>{"password_confirmation"=>"", "login_id"=>"", "password"=>""}}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login_id" = '') LIMIT 1[0m
+Rendering template within layouts/base
+Rendering entry/input
+Completed in 18ms (View: 13, DB: 0) | 200 OK [http://0.0.0.0/entry/confirmation]
+
+
+Processing EntryController#confirmation (for 127.0.0.1 at 2011-02-12 22:01:10) [POST]
+  Parameters: {"authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "user"=>{"password_confirmation"=>"", "login_id"=>"", "password"=>""}}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login_id" = '') LIMIT 1[0m
+Rendering template within layouts/base
+Rendering entry/input
+
+ActionView::TemplateError (uninitialized constant Utility::TEST_FLAG) on line #11 of app/views/entry/input.html.erb:
+8: 
+9:       <%# ユーザ情報入力 %>
+10:       <% form_for :user, :url => { :controller => "entry", :action => "confirmation" }, :html => { :class => :form } do |f| -%>
+11:         <%= Utility.error_replace_message( :errors => @user.errors )   %>
+12: 
+13:         <div class="group">
+14:           <%= f.label :login_id, t("activerecord.attributes.user.login_id", :default => "Login ID"), :class => :label %>
+
+    app/models/utility.rb:24:in `error_replace_message'
+    app/views/entry/input.html.erb:11
+    app/views/entry/input.html.erb:10
+    app/controllers/entry_controller.rb:18:in `confirmation'
+
+Rendered rescues/_trace (64.4ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EntryController#confirmation (for 127.0.0.1 at 2011-02-12 22:01:23) [POST]
+  Parameters: {"authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "user"=>{"password_confirmation"=>"", "login_id"=>"", "password"=>""}}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login_id" = '') LIMIT 1[0m
+Rendering template within layouts/base
+Rendering entry/input
+Completed in 17ms (View: 12, DB: 0) | 200 OK [http://0.0.0.0/entry/confirmation]
+
+
+Processing EntryController#confirmation (for 127.0.0.1 at 2011-02-12 22:02:29) [POST]
+  Parameters: {"authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "user"=>{"password_confirmation"=>"", "login_id"=>"", "password"=>""}}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login_id" = '') LIMIT 1[0m
+Rendering template within layouts/base
+Rendering entry/input
+Completed in 15ms (View: 11, DB: 0) | 200 OK [http://0.0.0.0/entry/confirmation]
+
+
+Processing EntryController#confirmation (for 127.0.0.1 at 2011-02-12 22:03:02) [POST]
+  Parameters: {"authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "user"=>{"password_confirmation"=>"", "login_id"=>"", "password"=>""}}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login_id" = '') LIMIT 1[0m
+Rendering template within layouts/base
+Rendering entry/input
+Completed in 55ms (View: 51, DB: 0) | 200 OK [http://0.0.0.0/entry/confirmation]
+
+
+Processing EntryController#confirmation (for 127.0.0.1 at 2011-02-12 22:03:47) [POST]
+  Parameters: {"authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "user"=>{"password_confirmation"=>"", "login_id"=>"test", "password"=>"test"}}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login_id" = 'test') LIMIT 1[0m
+Rendering template within layouts/base
+Rendering entry/input
+Completed in 15ms (View: 11, DB: 0) | 200 OK [http://0.0.0.0/entry/confirmation]
+
+
+Processing EntryController#confirmation (for 127.0.0.1 at 2011-02-12 22:04:14) [POST]
+  Parameters: {"authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "user"=>{"password_confirmation"=>"", "login_id"=>"test", "password"=>"test"}}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login_id" = 'test') LIMIT 1[0m
+Rendering template within layouts/base
+Rendering entry/input
+Completed in 15ms (View: 11, DB: 0) | 200 OK [http://0.0.0.0/entry/confirmation]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-02-12 22:05:28) [GET]
+
+ActionController::RoutingError (No route matches "/top" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing EntryController#confirmation (for 127.0.0.1 at 2011-02-12 22:06:25) [POST]
+  Parameters: {"authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "user"=>{"password_confirmation"=>"", "login_id"=>"test", "password"=>"test"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login_id" = 'test') LIMIT 1[0m
+Rendering template within layouts/base
+Rendering entry/input
+Completed in 19ms (View: 14, DB: 0) | 200 OK [http://0.0.0.0/entry/confirmation]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-12 22:06:28) [GET]
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 199ms (View: 192, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing EntryController#input (for 127.0.0.1 at 2011-02-12 22:06:30) [GET]
+Rendering template within layouts/base
+Rendering entry/input
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/entry/input]
+
+
+Processing EntryController#confirmation (for 127.0.0.1 at 2011-02-12 22:06:31) [POST]
+  Parameters: {"authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "user"=>{"password_confirmation"=>"", "login_id"=>"", "password"=>""}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login_id" = '') LIMIT 1[0m
+Rendering template within layouts/base
+Rendering entry/input
+Completed in 17ms (View: 11, DB: 0) | 200 OK [http://0.0.0.0/entry/confirmation]
+
+
+Processing EntryController#edit (for 127.0.0.1 at 2011-02-12 22:06:34) [GET]
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/base
+Rendering entry/edit
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/entry/edit]
+
+
+Processing EntryController#update (for 127.0.0.1 at 2011-02-12 22:06:35) [POST]
+  Parameters: {"authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "user"=>{"edit_password"=>"", "edit_password_confirmation"=>"", "login_id"=>"test", "password"=>""}}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/entry/edit
+Completed in 5ms (DB: 0) | 302 Found [http://0.0.0.0/entry/update]
+
+
+Processing EntryController#edit (for 127.0.0.1 at 2011-02-12 22:06:35) [GET]
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/base
+Rendering entry/edit
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/entry/edit]
+
+
+Processing EntryController#edit (for 127.0.0.1 at 2011-02-12 22:07:59) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/base
+Rendering entry/edit
+Completed in 18ms (View: 13, DB: 0) | 200 OK [http://0.0.0.0/entry/edit]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-12 22:08:01) [GET]
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 219ms (View: 211, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-12 22:08:44) [GET]
+  Parameters: {"date"=>"2011-02-12"}
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC[0m
+Rendering template within layouts/base
+Rendering schedules/list
+Completed in 24ms (View: 21, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-12]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-12 22:10:05) [GET]
+  Parameters: {"date"=>"2011-02-12"}
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `paginate' for #<Class:0x10456c278>):
+  app/controllers/schedules_controller.rb:53:in `list'
+
+Rendered rescues/_trace (21.1ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-12 22:10:48) [GET]
+  Parameters: {"date"=>"2011-02-12"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `paginate' for #<Class:0x104cb9eb8>):
+  app/controllers/schedules_controller.rb:53:in `list'
+
+Rendered rescues/_trace (20.8ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-12 22:10:55) [GET]
+  Parameters: {"date"=>"2011-02-12"}
+
+ArgumentError (:page parameter required):
+  /Library/Ruby/Gems/1.8/gems/will_paginate-2.3.15/lib/will_paginate/finder.rb:244:in `wp_parse_options'
+  /Library/Ruby/Gems/1.8/gems/will_paginate-2.3.15/lib/will_paginate/finder.rb:66:in `paginate'
+  app/controllers/schedules_controller.rb:53:in `list'
+
+Rendered rescues/_trace (22.5ms)
+Rendered rescues/_request_and_response (0.9ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-12 22:12:55) [GET]
+  Parameters: {"date"=>"2011-02-12"}
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 5 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+Completed in 45ms (View: 41, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-12]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-12 22:16:55) [GET]
+  Parameters: {"date"=>"2011-02-12"}
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 5 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:9)
+Completed in 63ms (View: 58, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-12]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-12 22:26:25) [GET]
+  Parameters: {"date"=>"2011-02-12"}
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 5 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:9)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:38)
+Completed in 26ms (View: 22, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-12]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-12 22:26:27) [GET]
+  Parameters: {"date"=>"2011-02-12", "page"=>"2"}
+  [4;36;1mSchedule Load (0.4ms)[0m   [0;1mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 5 OFFSET 5[0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:9)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:38)
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-12&page=2]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-12 22:26:29) [GET]
+  Parameters: {"date"=>"2011-02-12", "page"=>"1"}
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 5 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:9)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:38)
+Completed in 22ms (View: 18, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-12&page=1]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-12 22:26:47) [GET]
+  Parameters: {"date"=>"2011-02-12", "page"=>"2"}
+  [4;35;1mSchedule Load (0.4ms)[0m   [0mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 10 OFFSET 10[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-12&page=2]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-12 22:26:49) [GET]
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 217ms (View: 170, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-12 22:26:51) [GET]
+  Parameters: {"date"=>"2011-02-12"}
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/base
+Rendering schedules/list
+Completed in 22ms (View: 19, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-12]

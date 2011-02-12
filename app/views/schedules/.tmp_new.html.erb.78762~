@@ -12,14 +12,7 @@
 
   <p>
     <b>日付</b><br />
-    <%= f.date_select :schedule_date, :start_year => 1900, :use_month_numbers => true %>
-  </p>
-
-  <p>
-    <b>時間</b><br />
-    <%= f.time_select :start_time, :include_blank => false %>
-    〜
-    <%= f.time_select :end_time, :include_blank => false %>
+    <%= f.date_select :schedule_date, :start_year => 1900, :use_month_numbers => true, :use_month_numbers => true %>
   </p>
 
   <p>
@@ -30,11 +23,6 @@
   <p>
     <b>周期間隔</b><br />
     <%= select( "schedule", "cycle_mode", $cycle_mode, { :selected => "day" } )%><br />
-  </p>
-
-  <p>
-    <b>公開設定</b><br />
-    <%= select( "schedule", "mode", $mode, { :selected => @schedule.mode } )%><br />
   </p>
 
   <p>

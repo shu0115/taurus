@@ -2,10 +2,9 @@ class SchedulesController < ApplicationController
 
   require 'date'
 
-  layout "base"
-
   $wdays = [ "日", "月", "火", "水", "木", "金", "土" ]
   $cycle_mode = [ "day", "month", "year" ]
+  $mode = [ '公開', '非公開' ]
 
   #----------#
   # calendar #
@@ -51,7 +50,7 @@ class SchedulesController < ApplicationController
   #------#
   def list
     @now_date = Date.parse( params[:date] )
-    @schedules = Schedule.find( :all, :order => "schedule_date DESC, id ASC" )
+    @schedules = Schedule.paginate( :page => params[:page], :per_page => 10, :order => "schedule_date DESC, id ASC" )
   end
 
   #------#
@@ -71,6 +70,8 @@ class SchedulesController < ApplicationController
       schedule_date = Date.new( params[:schedule_date_year].to_i, params[:schedule_date_month].to_i, params[:schedule_date_day].to_i )
     end
     @schedule = Schedule.new( :schedule_date => schedule_date )
+    @schedule.start_time = Time.parse("00:00")
+    @schedule.end_time = Time.parse("00:00")
   end
 
   #------#
@@ -79,6 +80,8 @@ class SchedulesController < ApplicationController
   def edit
     @now_date = Date.parse( params[:date] )
     @schedule = Schedule.find( params[:id] ) unless params[:id].blank?
+    @schedule.start_time = Time.parse("00:00") if @schedule.start_time.blank?
+    @schedule.end_time = Time.parse("00:00") if @schedule.end_time.blank?
   end
 
   #--------#
@@ -136,7 +139,7 @@ print "【 Date.valid_date? 】>> " ; p Date.valid_date?( params[:schedule]["sch
     @schedule = Schedule.find( params[:id] ) unless params[:id].blank?
     @schedule.destroy unless @schedule.blank?
 
-    redirect_to :action => "list", :date => @now_date
+    redirect_to :action => params[:next], :date => @now_date
   end
 
 end

@@ -7,10 +7,7 @@
 		<%= stylesheet_link_tag 'base' %>
 	</head>
 	<body>
-    <%= link_to( "Top", :controller => 'schedules' ) -%>
-    　<%= link_to( "Entry", :controller => 'entry', :action => 'input' ) -%>
-    　<%= link_to( "Login", :controller => 'entry', :action => 'login' ) -%>
-    　<%= link_to( "Edit", :controller => 'entry', :action => 'edit' ) -%><br />
+    <%= link_to( "Entry", :controller => 'entry', :action => 'input' ) -%><br />
 
 		<p style="color: green"><%= flash[:notice] %></p>
 		<%= yield  %>

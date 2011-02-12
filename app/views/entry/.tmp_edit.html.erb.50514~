@@ -17,13 +17,6 @@
   </p>
 
   <p>
-    <b>時間</b><br />
-    <%= f.time_select :start_time, :include_blank => false %>
-    〜
-    <%= f.time_select :end_time, :include_blank => false %>
-  </p>
-
-  <p>
     <b>周期</b><br />
     <%= f.text_field :cycle %>
   </p>
@@ -34,23 +27,17 @@
   </p>
 
   <p>
-    <b>公開設定</b><br />
-    <%= select( "schedule", "mode", $mode, { :selected => @schedule.mode } )%><br />
-  </p>
-
-  <p>
     <b>備考</b><br />
     <%= f.text_area :note %>
   </p>
 
   <p>
-    <%= hidden_field_tag :date, @now_date %>
     <%= f.submit "保存" %>
   </p>
 <% end %>
 
-<%= link_to '閲覧', { :controller => "schedules", :action => "show", :id => @schedule.id, :date => @now_date } %> |
+<%= link_to '閲覧', "/schedules/show/#{@schedule.id}" %> |
 <% end %>
-<%= link_to '一覧', { :controller => "schedules", :action => "list", :id => @schedule.id, :date => @now_date } %><br />
+<%= link_to '一覧', "/schedules/list" %><br />
 <br />
-<%= link_to 'カレンダー', :action => "calendar", :date => @now_date %><br />
+<%= link_to 'カレンダー', :action => "calendar" %><br />

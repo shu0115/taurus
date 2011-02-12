@@ -13,11 +13,6 @@
 </p>
 
 <p>
-  <b>時間:</b>
-  <%=h @schedule.start_time %>〜<%=h @schedule.end_time %>
-</p>
-
-<p>
   <b>周期:</b>
   <%=h @schedule.cycle %>
 </p>
@@ -25,11 +20,6 @@
 <p>
   <b>周期間隔:</b>
   <%=h @schedule.cycle_mode %>
-</p>
-
-<p>
-  <b>公開設定:</b>
-  <%=h @schedule.mode %>
 </p>
 
 <p>

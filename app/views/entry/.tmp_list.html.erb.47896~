@@ -6,10 +6,6 @@
 
 <br />
 
-<%= will_paginate @schedules, :prev_label => 'Prev', :next_label => 'Next' %>
-
-<br />
-
 <table>
   <tr>
     <th>Title</th>
@@ -28,14 +24,10 @@
     <td><%=h schedule.note %></td>
     <td><%= link_to '閲覧', { :controller => "schedules", :action => "show", :id => schedule.id, :date => @now_date } %></td>
     <td><%= link_to '編集', { :controller => "schedules", :action => "edit", :id => schedule.id, :date => @now_date } %></td>
-    <td><%= link_to '削除', { :controller => "schedules", :action => "destroy", :id => schedule.id, :date => @now_date, :next => 'list' }, :confirm => '本当に削除してよろしいですか?', :method => :delete %></td>
+    <td><%= link_to '削除', { :controller => "schedules", :action => "destroy", :id => schedule.id, :date => @now_date }, :confirm => '本当に削除してよろしいですか?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
-
-<br />
-
-<%= will_paginate @schedules, :prev_label => 'Prev', :next_label => 'Next' %>
 
 <br />
 

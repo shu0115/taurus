@@ -1,5 +1,33 @@
 class Utility
 
+  #----------------------#
+  # self.replace_message #
+  #----------------------#
+  # メッセージ置換
+  def self.replace_message( args )
+    print "【 args[:message] 】>> " ; p args[:message] ;
+    message = args[:message]
+    message = message.gsub( "Member was successfully created.", "メンバーの作成が正常に完了しました。" )
+    message = message.gsub( "Member was successfully updated.", "メンバーの更新が正常に完了しました。" )
+    message = message.gsub( "User was successfully created.", "ユーザ登録が正常に完了しました。" )
+
+    print "【 message 】>> " ; p message ;
+    return message
+  end
+
+  #----------------------------#
+  # self.error_replace_message #
+  #----------------------------#
+  # エラーメッセージ置換
+  def self.error_replace_message( args )
+
+    message = ""
+
+    args[:errors].each{ |data| message += "#{data[1]}<br />" }
+
+    return message
+  end
+  
   #-------------------#
   # self.fmt_holidays #
   #-------------------#

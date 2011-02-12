@@ -6,10 +6,6 @@
 
 <br />
 
-<%= will_paginate @schedules, :prev_label => 'Prev', :next_label => 'Next' %>
-
-<br />
-
 <table>
   <tr>
     <th>Title</th>
@@ -32,10 +28,6 @@
   </tr>
 <% end %>
 </table>
-
-<br />
-
-<%= will_paginate @schedules, :prev_label => 'Prev', :next_label => 'Next' %>
 
 <br />
 

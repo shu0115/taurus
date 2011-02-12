@@ -9,14 +9,29 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 1) do
+ActiveRecord::Schema.define(:version => 20110212114956) do
 
   create_table "schedules", :force => true do |t|
-    t.string   "title"
-    t.date     "schedule_date"
-    t.integer  "cycle"
-    t.string   "cycle_mode"
-    t.text     "note"
+    t.string    "title"
+    t.date      "schedule_date"
+    t.integer   "cycle"
+    t.string    "cycle_mode"
+    t.text      "note"
+    t.timestamp "created_at"
+    t.timestamp "updated_at"
+    t.time      "start_time"
+    t.time      "end_time"
+    t.string    "mode"
+    t.integer   "user_id"
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "login_id"
+    t.string   "hashed_password"
+    t.string   "salt"
+    t.string   "level"
+    t.string   "twitter_id"
+    t.text     "mail_address"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

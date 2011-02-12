@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  login_id: MyString
+  hashed_password: MyString
+  salt: MyString
+  level: MyString
+  twitter_id: MyString
+  mail_address: MyText
+
+two:
+  login_id: MyString
+  hashed_password: MyString
+  salt: MyString
+  level: MyString
+  twitter_id: MyString
+  mail_address: MyText
