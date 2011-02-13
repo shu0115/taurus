@@ -12,6 +12,19 @@ class User < ActiveRecord::Base
   validates_uniqueness_of :login_id, :message => '指定された ログインID は既に登録されています。'  # 一意検証
   validates_confirmation_of :password, :message => 'パスワード が一致しません。'  # 再入力検証
 
+  #--------------------------#
+  # self.login_id_duplicate? #
+  #--------------------------#
+  # ログインID重複チェック
+  def self.login_id_duplicate?( login_id, user_id )
+    user = self.find_by_login_id( login_id )
+    if user.id == user_id
+      true
+    else
+      false
+    end
+  end
+
   #----------#
   # validate #
   #----------#

@@ -27,7 +27,11 @@ class EntryController < ApplicationController
     @user = User.new( params[:user] )
 
     if @user.save
-      flash[:notice] = 'User was successfully created.'
+      # ユーザID／ログインIDをセッションに格納
+      session[:user_id] = @user.id
+      session[:login_id] = @user.login_id
+
+      flash[:notice] = 'ユーザ登録が完了しました。'
       redirect_to :root
       return
     else
@@ -52,7 +56,7 @@ class EntryController < ApplicationController
       unless user.blank?
         # ユーザID／ログインIDをセッションに格納
         session[:user_id] = user.id
-        session[:login_id] = user.login_id  # IDをセッションに格納
+        session[:login_id] = user.login_id
 
         flash[:notice] = "ログインに成功しました。"
         redirect_to params[:request_url]
@@ -97,7 +101,7 @@ class EntryController < ApplicationController
     @user = User.find_by_id( session[:user_id] )
 
     if params[:user].blank?
-      flash[:notice] = 'ユーザ情報がありません。'
+      flash[:notice] = '登録情報がありません。'
       redirect_to :action => "edit"
       return
     end
@@ -109,7 +113,7 @@ class EntryController < ApplicationController
       return
     end
 
-    if !params[:user][:edit_password].blank? and !params[:user][:edit_password_confirmation].blank?
+    if !params[:user][:edit_password].blank? or !params[:user][:edit_password_confirmation].blank?
       # 変更するパスワードと再入力パスワードが一致しなければ
       unless params[:user][:edit_password] == params[:user][:edit_password_confirmation]
         flash[:notice] = '「変更するパスワード」と「変更するパスワード(再入力)」が一致しません。'
@@ -119,15 +123,26 @@ class EntryController < ApplicationController
         # パスワード更新
         params[:user][:password] = params[:user][:edit_password]
       end
+    else
+      flash[:notice] = '「変更するパスワード」と「変更するパスワード(再入力)」を入力して下さい。'
+      redirect_to :action => "edit"
+      return
+    end
+
+    # バリデーションチェック
+    unless User.login_id_duplicate?( params[:user][:login_id], session[:user_id] )
+      flash[:notice] = '指定された ログインID は既に登録されています。'
+      redirect_to :action => "edit"
+      return
     end
 
     # ユーザ情報を更新
     if @user.update_attributes( params[:user] )
-      flash[:notice] = 'ユーザ情報を更新しました。'
+      flash[:notice] = '登録情報を更新しました。'
       redirect_to :action => "show"
       return
     else
-      flash[:notice] = 'ユーザ情報の更新に失敗しました。'
+      flash[:notice] = '登録情報の更新に失敗しました。'
       redirect_to :action => "edit"
       return
     end

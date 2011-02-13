@@ -297,6 +297,15 @@ a:hover, a:active {
   width: 200px;
 }
 
+/* password_fieldクラス */
+.password_field {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border: 1px solid #aaa;
+  padding: 5px;
+  width: 200px;
+}
+
 /* radius_borderクラス */
 .radius_border {
   -moz-border-radius: 20px;
@@ -321,7 +330,7 @@ a:hover, a:active {
   border: 1px solid #bbb;
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
-  padding: 5px;
+  padding: 8px;
 }
 
 /* カレンダー内 リンク */
@@ -332,7 +341,6 @@ a:hover, a:active {
 
 /* カレンダー内 スタイル */
 .calendar_area th, .calendar_area td {
-  padding: 5px;
   text-align: left;
   vertical-align: top;
 }

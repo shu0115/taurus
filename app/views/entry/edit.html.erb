@@ -2,7 +2,7 @@
 
   <div class="content">
 
-    <h2 class="title">登録情報変更</h2>
+    <h3 class="title">登録情報変更</h3>
 
     <div class="inner">
 
@@ -13,37 +13,46 @@
         <div class="group">
           <%= f.label :login_id, t("activerecord.attributes.user.login_id", :default => "Login ID"), :class => :label %>
           <%= f.text_field :login_id, :class => 'text_field' %>
-          <span class="description">Ex: a simple text</span>
         </div>
+
+        <br />
 
         <div class="group">
           <%= f.label :password, t("entry.password", :default => "Password"), :class => :label %>
           <%= f.password_field :password, :class => 'password_field' %>
-          <span class="description">Ex: a simple text</span>
         </div>
+
+        <br />
 
         <div class="group">
           <%= f.label :edit_password, t("entry.edit_password", :default => "Edit Password"), :class => :label %>
           <%= f.password_field :edit_password, :class => 'password_field' %>
-          <span class="description">Ex: a simple text</span>
         </div>
+
+        <br />
 
         <div class="group">
           <%= f.label :edit_password_confirmation, t("entry.edit_password_confirmation", :default => "Edit Password Confirmation"), :class => :label %>
           <%= f.password_field :edit_password_confirmation, :class => 'password_field' %>
-          <span class="description">Ex: a simple text</span>
         </div>
+
+        <br />
+        <br />
 
         <div class="group navform wat-cf">
           <%# 変更 %>
           <button class="button" type="submit"><%= t("entry.edit", :default => "Edit") %></button>
+
+          <br /><br />
+
           <%# 戻る %>
           <%= link_to '戻る', { :controller => 'schedules' }, :class => 'button' %>
         </div>
       <% end -%>
 
+      <br />
+      <br />
+
     </div>
   </div>
 </div>
-
-<%# content_for :sidebar, render(:partial => 'sidebar') -%>

@@ -5,13 +5,12 @@ class Utility
   #----------------------#
   # メッセージ置換
   def self.replace_message( args )
-    print "【 args[:message] 】>> " ; p args[:message] ;
+
     message = args[:message]
     message = message.gsub( "Member was successfully created.", "メンバーの作成が正常に完了しました。" )
     message = message.gsub( "Member was successfully updated.", "メンバーの更新が正常に完了しました。" )
     message = message.gsub( "User was successfully created.", "ユーザ登録が正常に完了しました。" )
 
-    print "【 message 】>> " ; p message ;
     return message
   end
 

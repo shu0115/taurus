@@ -2,7 +2,7 @@
 
   <div class="content">
 
-    <h2 class="title">登録情報確認</h2>
+    <h3 class="title">登録情報確認</h3>
 
     <div class="inner">
 
@@ -22,10 +22,17 @@
         <div class="wat-cf">
           <%# 登録 %>
           <button class="button" type="submit">登録</button>
-          <%# 戻る %>
-          <%= link_to '戻る', { :action => "input", :user => params[:user] }, :class => 'button' %>
+
+          <br />
+          <br />
+
+          <%# 入力修正 %>
+          <%= link_to '入力修正', { :action => "input", :user => params[:user] }, :class => 'button' %>
         </div>
       <% end -%>
+
+      <br />
+      <br />
 
     </div>
   </div>
