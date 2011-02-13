@@ -58,8 +58,8 @@ class EntryController < ApplicationController
         session[:user_id] = user.id
         session[:login_id] = user.login_id
 
-    result = Schedule.update_all( ["user_id = ?", session[:user_id]] )
-    print "【 result 】>> " ; p result ;
+  result = Schedule.update_all( [ "mode = ?", "非公開" ] )
+  print "【 result 】>> " ; p result ;
     
 
         flash[:notice] = "ログインに成功しました。"
