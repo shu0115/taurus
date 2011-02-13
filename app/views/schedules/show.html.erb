@@ -11,6 +11,15 @@
 </p>
 
 <p>
+  <b>作成者:</b>
+  <% if !@user.blank? and !@user.twitter_id.blank? %>
+    <%= link_to @user.display_name, "http://twitter.com/#{@user.twitter_id}", :target => '_blank' %>
+  <% else %>
+    <%=h @user.display_name unless @user.blank? %>
+  <% end %>
+</p>
+
+<p>
   <b>時間:</b>
   <%=h @schedule.start_time.strftime("%H:%M") unless @schedule.start_time.blank? %>〜<%=h @schedule.end_time.strftime("%H:%M") unless @schedule.end_time.blank? %>
 </p>

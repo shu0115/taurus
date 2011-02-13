@@ -68,6 +68,7 @@ class SchedulesController < ApplicationController
 
     @now_date = Date.parse( params[:date] )
     @schedule = Schedule.find( params[:id] ) unless params[:id].blank?
+    @user = User.find_by_id( @schedule.user_id ) unless @schedule.blank?
 
     # アクセス権限チェック
     if !@schedule.blank? and ( @schedule.mode == "非公開" and session[:user_id] != @schedule.user_id )
