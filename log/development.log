@@ -7826,3 +7826,2185 @@ Rendering schedules/list
 DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:9)
 DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:38)
 Completed in 21ms (View: 17, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 15:24:55) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 221ms (View: 214, DB: 1) | 200 OK [http://0.0.0.0/?date=2011-02-13]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-13 15:49:11) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"10"}
+  [4;36;1mSchedule Load (0.2ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 10) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/schedules/show?date=2011-02-13&id=10]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-13 15:51:23) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"10"}
+  [4;35;1mSchedule Load (0.1ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 10) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 15ms (View: 12, DB: 0) | 200 OK [http://0.0.0.0/schedules/show?date=2011-02-13&id=10]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-13 15:51:23) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"10"}
+  [4;36;1mSchedule Load (0.2ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 10) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/schedules/show?date=2011-02-13&id=10]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-13 15:51:39) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"10"}
+  [4;35;1mSchedule Load (0.1ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 10) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 60ms (View: 56, DB: 0) | 200 OK [http://0.0.0.0/schedules/show?date=2011-02-13&id=10]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-13 15:51:39) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"10"}
+  [4;36;1mSchedule Load (0.1ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 10) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/schedules/show?date=2011-02-13&id=10]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-13 15:51:48) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"10"}
+  [4;35;1mSchedule Load (0.2ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 10) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 15ms (View: 12, DB: 0) | 200 OK [http://0.0.0.0/schedules/show?date=2011-02-13&id=10]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-13 15:52:03) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"10"}
+  [4;36;1mSchedule Load (0.2ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 10) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 16ms (View: 12, DB: 0) | 200 OK [http://0.0.0.0/schedules/show?date=2011-02-13&id=10]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-13 15:52:03) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"10"}
+  [4;35;1mSchedule Load (0.1ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 10) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/schedules/show?date=2011-02-13&id=10]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 15:52:06) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 214ms (View: 203, DB: 1) | 200 OK [http://0.0.0.0/?date=2011-02-13]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-13 15:52:09) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"10"}
+  [4;35;1mSchedule Load (0.2ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 10) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/schedules/show?date=2011-02-13&id=10]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-13 15:52:22) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"10"}
+  [4;36;1mSchedule Load (0.2ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 10) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 15ms (View: 11, DB: 0) | 200 OK [http://0.0.0.0/schedules/show?date=2011-02-13&id=10]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-13 15:52:22) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"10"}
+  [4;35;1mSchedule Load (0.1ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 10) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/schedules/show?date=2011-02-13&id=10]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-13 15:52:36) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"10"}
+  [4;36;1mSchedule Load (0.2ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 10) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 15ms (View: 12, DB: 0) | 200 OK [http://0.0.0.0/schedules/show?date=2011-02-13&id=10]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-13 15:52:36) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"10"}
+  [4;35;1mSchedule Load (0.1ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 10) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/schedules/show?date=2011-02-13&id=10]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 15:52:37) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 235ms (View: 226, DB: 1) | 200 OK [http://0.0.0.0/?date=2011-02-13]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-13 15:52:39) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"10"}
+  [4;35;1mSchedule Load (0.2ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 10) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/schedules/show?date=2011-02-13&id=10]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 15:53:28) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 228ms (View: 220, DB: 1) | 200 OK [http://0.0.0.0/?date=2011-02-13]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-13 15:53:31) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"1"}
+  [4;35;1mSchedule Load (0.3ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://0.0.0.0/schedules/show?date=2011-02-13&id=1]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-13 15:53:47) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"1"}
+  [4;36;1mSchedule Load (0.1ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 15ms (View: 11, DB: 0) | 200 OK [http://0.0.0.0/schedules/show?date=2011-02-13&id=1]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 15:53:54) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 227ms (View: 219, DB: 1) | 200 OK [http://0.0.0.0/?date=2011-02-13]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-13 15:53:56) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"10"}
+  [4;36;1mSchedule Load (0.2ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 10) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/schedules/show?date=2011-02-13&id=10]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 15:54:00) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 220ms (View: 212, DB: 1) | 200 OK [http://0.0.0.0/?date=2011-02-13]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-13 15:54:02) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"11"}
+  [4;36;1mSchedule Load (0.2ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 11) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/schedules/show?date=2011-02-13&id=11]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 15:54:12) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 220ms (View: 212, DB: 1) | 200 OK [http://0.0.0.0/?date=2011-02-13]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-13 15:54:14) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"1"}
+  [4;36;1mSchedule Load (0.2ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/schedules/show?date=2011-02-13&id=1]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-13 15:54:23) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"1"}
+  [4;35;1mSchedule Load (0.1ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 15ms (View: 12, DB: 0) | 200 OK [http://0.0.0.0/schedules/show?date=2011-02-13&id=1]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 15:54:25) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"1"}
+  [4;36;1mSchedule Load (0.4ms)[0m   [0;1mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 3 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:9)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:38)
+Completed in 21ms (View: 17, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13&id=1]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-13 15:54:30) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"5"}
+  [4;36;1mSchedule Load (0.1ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 5) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/schedules/show?date=2011-02-13&id=5]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 15:54:31) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 220ms (View: 211, DB: 1) | 200 OK [http://0.0.0.0/?date=2011-02-13]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 15:54:50) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 3 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:9)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:38)
+Completed in 21ms (View: 17, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#edit (for 127.0.0.1 at 2011-02-13 15:54:54) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"5"}
+  [4;36;1mSchedule Load (0.2ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 5) [0m
+Rendering template within layouts/base
+Rendering schedules/edit
+Completed in 73ms (View: 69, DB: 0) | 200 OK [http://0.0.0.0/schedules/edit?date=2011-02-13&id=5]
+
+
+Processing SchedulesController#edit (for 127.0.0.1 at 2011-02-13 15:55:29) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"5"}
+  [4;35;1mSchedule Load (0.1ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 5) [0m
+Rendering template within layouts/base
+Rendering schedules/edit
+Completed in 28ms (View: 23, DB: 0) | 200 OK [http://0.0.0.0/schedules/edit?date=2011-02-13&id=5]
+
+
+Processing SchedulesController#edit (for 127.0.0.1 at 2011-02-13 15:55:29) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"5"}
+  [4;36;1mSchedule Load (0.1ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 5) [0m
+Rendering template within layouts/base
+Rendering schedules/edit
+Completed in 25ms (View: 20, DB: 0) | 200 OK [http://0.0.0.0/schedules/edit?date=2011-02-13&id=5]
+
+
+Processing SchedulesController#edit (for 127.0.0.1 at 2011-02-13 15:55:51) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"5"}
+  [4;35;1mSchedule Load (0.2ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 5) [0m
+Rendering template within layouts/base
+Rendering schedules/edit
+Completed in 29ms (View: 24, DB: 0) | 200 OK [http://0.0.0.0/schedules/edit?date=2011-02-13&id=5]
+
+
+Processing SchedulesController#edit (for 127.0.0.1 at 2011-02-13 15:55:51) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"5"}
+  [4;36;1mSchedule Load (0.1ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 5) [0m
+Rendering template within layouts/base
+Rendering schedules/edit
+Completed in 67ms (View: 62, DB: 0) | 200 OK [http://0.0.0.0/schedules/edit?date=2011-02-13&id=5]
+
+
+Processing SchedulesController#edit (for 127.0.0.1 at 2011-02-13 15:56:02) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"5"}
+  [4;35;1mSchedule Load (0.2ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 5) [0m
+Rendering template within layouts/base
+Rendering schedules/edit
+Completed in 28ms (View: 23, DB: 0) | 200 OK [http://0.0.0.0/schedules/edit?date=2011-02-13&id=5]
+
+
+Processing SchedulesController#edit (for 127.0.0.1 at 2011-02-13 15:56:03) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"5"}
+  [4;36;1mSchedule Load (0.1ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 5) [0m
+Rendering template within layouts/base
+Rendering schedules/edit
+Completed in 24ms (View: 20, DB: 0) | 200 OK [http://0.0.0.0/schedules/edit?date=2011-02-13&id=5]
+
+
+Processing SchedulesController#edit (for 127.0.0.1 at 2011-02-13 15:56:17) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"5"}
+  [4;35;1mSchedule Load (0.1ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 5) [0m
+Rendering template within layouts/base
+Rendering schedules/edit
+Completed in 27ms (View: 23, DB: 0) | 200 OK [http://0.0.0.0/schedules/edit?date=2011-02-13&id=5]
+
+
+Processing SchedulesController#edit (for 127.0.0.1 at 2011-02-13 15:56:17) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"5"}
+  [4;36;1mSchedule Load (0.2ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 5) [0m
+Rendering template within layouts/base
+Rendering schedules/edit
+Completed in 66ms (View: 20, DB: 0) | 200 OK [http://0.0.0.0/schedules/edit?date=2011-02-13&id=5]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 15:56:23) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 219ms (View: 211, DB: 1) | 200 OK [http://0.0.0.0/?date=2011-02-13]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 15:56:26) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 3 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:9)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:38)
+Completed in 21ms (View: 17, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-13 15:56:33) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"7"}
+  [4;36;1mSchedule Load (0.2ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 7) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 15ms (View: 12, DB: 0) | 200 OK [http://0.0.0.0/schedules/show?date=2011-02-13&id=7]
+
+
+Processing SchedulesController#edit (for 127.0.0.1 at 2011-02-13 15:56:35) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"7"}
+  [4;35;1mSchedule Load (0.1ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 7) [0m
+Rendering template within layouts/base
+Rendering schedules/edit
+Completed in 25ms (View: 21, DB: 0) | 200 OK [http://0.0.0.0/schedules/edit?date=2011-02-13&id=7]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-13 15:56:42) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"7"}
+  [4;36;1mSchedule Load (0.1ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 7) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/schedules/show?date=2011-02-13&id=7]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 15:56:45) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 214ms (View: 206, DB: 1) | 200 OK [http://0.0.0.0/?date=2011-02-13]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-13 15:57:24) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"10"}
+  [4;36;1mSchedule Load (0.2ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 10) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/schedules/show?date=2011-02-13&id=10]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-13 15:57:24) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"10"}
+  [4;35;1mSchedule Load (0.1ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 10) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/schedules/show?date=2011-02-13&id=10]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-13 16:00:50) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"10"}
+  [4;36;1mSchedule Load (0.1ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 10) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 16ms (View: 12, DB: 0) | 200 OK [http://0.0.0.0/schedules/show?date=2011-02-13&id=10]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 16:01:11) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 171ms (View: 163, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#new (for 127.0.0.1 at 2011-02-13 16:01:14) [GET]
+  Parameters: {"schedule_date_day"=>"9", "date"=>"2011-02-13", "schedule_date_month"=>"2", "schedule_date_year"=>"2011"}
+Rendering template within layouts/base
+Rendering schedules/new
+Completed in 73ms (View: 68, DB: 0) | 200 OK [http://0.0.0.0/schedules/new?date=2011-02-13&schedule_date_day=9&schedule_date_month=2&schedule_date_year=2011]
+
+
+Processing SchedulesController#new (for 127.0.0.1 at 2011-02-13 16:01:24) [GET]
+  Parameters: {"schedule_date_day"=>"9", "date"=>"2011-02-13", "schedule_date_month"=>"2", "schedule_date_year"=>"2011"}
+Rendering template within layouts/base
+Rendering schedules/new
+Completed in 27ms (View: 23, DB: 0) | 200 OK [http://0.0.0.0/schedules/new?date=2011-02-13&schedule_date_day=9&schedule_date_month=2&schedule_date_year=2011]
+
+
+Processing SchedulesController#new (for 127.0.0.1 at 2011-02-13 16:01:24) [GET]
+  Parameters: {"schedule_date_day"=>"9", "date"=>"2011-02-13", "schedule_date_month"=>"2", "schedule_date_year"=>"2011"}
+Rendering template within layouts/base
+Rendering schedules/new
+Completed in 26ms (View: 21, DB: 0) | 200 OK [http://0.0.0.0/schedules/new?date=2011-02-13&schedule_date_day=9&schedule_date_month=2&schedule_date_year=2011]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 16:01:25) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 244ms (View: 236, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 16:01:30) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 3 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:9)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:38)
+Completed in 21ms (View: 17, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 16:02:17) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 3 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:5)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:34)
+Completed in 24ms (View: 20, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 16:02:34) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.4ms)[0m   [0mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 3 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:5)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:34)
+Completed in 70ms (View: 66, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 16:02:34) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 3 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:5)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:34)
+Completed in 23ms (View: 17, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 16:02:53) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 3 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:5)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:34)
+Completed in 23ms (View: 19, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 16:02:53) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.4ms)[0m   [0mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 3 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:5)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:34)
+Completed in 23ms (View: 18, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 16:03:05) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.7ms)[0m   [0mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 3 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:5)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:34)
+Completed in 28ms (View: 22, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 16:03:05) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 3 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:5)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:34)
+Completed in 120ms (View: 116, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 16:03:08) [GET]
+  Parameters: {"date"=>"2011-02-13", "page"=>"2"}
+  [4;35;1mSchedule Load (0.4ms)[0m   [0mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 3 OFFSET 3[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:5)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:34)
+Completed in 22ms (View: 18, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13&page=2]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 16:03:15) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.7ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 231ms (View: 223, DB: 1) | 200 OK [http://0.0.0.0/?date=2011-02-13]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-13 16:03:48) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"10"}
+  [4;36;1mSchedule Load (0.1ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 10) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/schedules/show?date=2011-02-13&id=10]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 16:03:54) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"10"}
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 3 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:5)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:34)
+Completed in 21ms (View: 17, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13&id=10]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-13 16:03:56) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"7"}
+  [4;35;1mSchedule Load (0.2ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 7) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/schedules/show?date=2011-02-13&id=7]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-13 16:03:56) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"7"}
+  [4;36;1mSchedule Load (0.2ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 7) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/schedules/show?date=2011-02-13&id=7]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-13 16:07:08) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"7"}
+  [4;35;1mSchedule Load (0.2ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 7) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+ERROR: compiling _run_erb_app47views47schedules47show46html46erb RAISED compile error
+/Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/show.html.erb:10: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\n</p>\n\n<p>\n  <b>\346\231\20...
+                              ^
+/Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/show.html.erb:10: unknown regexp option - b
+/Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/show.html.erb:10: syntax error, unexpected $undefined
+...\346\231\202\351\226\223:</b>\n  "
+                              ^
+/Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/show.html.erb:15: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\343\200\234"; @output_buffer.c...
+                              ^
+/Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/show.html.erb:15: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\n</p>\n\n<p>\n  <b>\345\221\25...
+                              ^
+/Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/show.html.erb:15: unknown regexp option - b
+/Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/show.html.erb:15: syntax error, unexpected $undefined
+...\345\221\250\346\234\237:</b>\n  "
+                              ^
+/Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/show.html.erb:20: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\n</p>\n\n<p>\n  <b>\345\221\25...
+                              ^
+/Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/show.html.erb:20: unknown regexp option - b
+/Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/show.html.erb:20: syntax error, unexpected $undefined
+...\351\226\223\351\232\224:</b>\n  "
+                              ^
+/Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/show.html.erb:25: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\n</p>\n\n<p>\n  <b>\345\205\25...
+                              ^
+/Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/show.html.erb:25: unknown regexp option - b
+/Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/show.html.erb:25: syntax error, unexpected $undefined
+...\350\250\255\345\256\232:</b>\n  "
+                              ^
+/Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/show.html.erb:30: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\n</p>\n\n<p>\n  <b>\345\202\23...
+                              ^
+/Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/show.html.erb:30: unknown regexp option - b
+/Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/show.html.erb:30: syntax error, unexpected $undefined
+...\345\202\231\350\200\203:</b>\n  <pre>"
+                              ^
+/Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/show.html.erb:35: unknown regexp option - p
+/Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/show.html.erb:35: syntax error, unexpected $undefined
+...t_buffer.concat "</pre>\n</p>\n\n"
+                              ^
+/Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/show.html.erb:38: syntax error, unexpected $undefined, expecting ')'
+; @output_buffer.concat "\n<div class=\"pagination\">\n\n"
+                          ^
+/Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/show.html.erb:38: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+; @output_buffer.concat "\n<div class=\"pagination\">\n\n"
+                                     ^
+/Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/show.html.erb:54: syntax error, unexpected kENSURE, expecting ')'
+/Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/show.html.erb:56: syntax error, unexpected kEND, expecting ')'
+Function body:           def _run_erb_app47views47schedules47show46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<span class=\"menu_title\">\351\226\262\350\246\247</span><br />\n\n<p>\n  <b>\343\202\277\343\202\244\343\203\210\343\203\253:</b>\n  "
+
+
+
+; @output_buffer.concat((h @schedule.title ).to_s); @output_buffer.concat "\n</p>\n\n<p>\n  <b>\346\227\245\344\273\230:</b>\n  "
+
+
+
+
+; @output_buffer.concat((h @schedule.schedule_date.strftime("%Y-%m-%d) ).to_s); @output_buffer.concat "\n</p>\n\n<p>\n  <b>\346\231\202\351\226\223:</b>\n  "
+
+
+
+
+; @output_buffer.concat((h @schedule.start_time ).to_s); @output_buffer.concat "\343\200\234"; @output_buffer.concat((h @schedule.end_time ).to_s); @output_buffer.concat "\n</p>\n\n<p>\n  <b>\345\221\250\346\234\237:</b>\n  "
+
+
+
+
+; @output_buffer.concat((h @schedule.cycle ).to_s); @output_buffer.concat "\n</p>\n\n<p>\n  <b>\345\221\250\346\234\237\351\226\223\351\232\224:</b>\n  "
+
+
+
+
+; @output_buffer.concat((h @schedule.cycle_mode ).to_s); @output_buffer.concat "\n</p>\n\n<p>\n  <b>\345\205\254\351\226\213\350\250\255\345\256\232:</b>\n  "
+
+
+
+
+; @output_buffer.concat((h @schedule.mode ).to_s); @output_buffer.concat "\n</p>\n\n<p>\n  <b>\345\202\231\350\200\203:</b>\n  <pre>"
+
+
+
+
+; @output_buffer.concat((h @schedule.note ).to_s); @output_buffer.concat "</pre>\n</p>\n\n"
+
+
+; @output_buffer.concat "\n<div class=\"pagination\">\n\n"
+
+
+; @output_buffer.concat(( link_to '一覧', { :controller => "schedules", :action => "list", :id => @schedule.id, :date => @now_date } ).to_s); @output_buffer.concat "\n"
+; @output_buffer.concat(( link_to '編集', { :controller => "schedules", :action => "edit", :id => @schedule.id, :date => @now_date } ).to_s); @output_buffer.concat "\n"
+; @output_buffer.concat(( link_to '削除', { :controller => "schedules", :action => "destroy", :id => @schedule.id, :date => @now_date, :next => 'calendar' }, :confirm => '本当に削除してよろしいですか?', :method => :delete ).to_s); @output_buffer.concat "<br />\n\n<br />\n<br />\n\n"
+
+
+
+
+; @output_buffer.concat(( link_to 'トップ', :action => "calendar", :date => @now_date ).to_s); @output_buffer.concat "<br />\n\n</div>\n\n<br />\n"
+
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/show.html.erb:56:in `compile!'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:61:in `compile'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:28:in `render'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:260:in `render'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:343:in `_render_with_layout'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:257:in `render'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1326:in `default_render'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `send'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:606:in `process'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:391:in `process'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:386:in `call'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:437:in `call'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:9:in `cache'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:28:in `call'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/params_parser.rb:15:in `call'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/failsafe.rb:26:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/reloader.rb:34:in `run'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/rails-2.3.4/lib/rails/rack/static.rb:31:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/rails-2.3.4/lib/rails/rack/log_tailer.rb:17:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/Users/raisondetre0115/.gem/ruby/1.8/gems/rails-2.3.4/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:29:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/show.html.erb:10: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\n</p>\n\n<p>\n  <b>\346\231\20...
+                              ^
+/Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/show.html.erb:10: unknown regexp option - b
+/Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/show.html.erb:10: syntax error, unexpected $undefined
+...\346\231\202\351\226\223:</b>\n  "
+                              ^
+/Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/show.html.erb:15: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\343\200\234"; @output_buffer.c...
+                              ^
+/Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/show.html.erb:15: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\n</p>\n\n<p>\n  <b>\345\221\25...
+                              ^
+/Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/show.html.erb:15: unknown regexp option - b
+/Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/show.html.erb:15: syntax error, unexpected $undefined
+...\345\221\250\346\234\237:</b>\n  "
+                              ^
+/Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/show.html.erb:20: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\n</p>\n\n<p>\n  <b>\345\221\25...
+                              ^
+/Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/show.html.erb:20: unknown regexp option - b
+/Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/show.html.erb:20: syntax error, unexpected $undefined
+...\351\226\223\351\232\224:</b>\n  "
+                              ^
+/Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/show.html.erb:25: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\n</p>\n\n<p>\n  <b>\345\205\25...
+                              ^
+/Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/show.html.erb:25: unknown regexp option - b
+/Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/show.html.erb:25: syntax error, unexpected $undefined
+...\350\250\255\345\256\232:</b>\n  "
+                              ^
+/Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/show.html.erb:30: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\n</p>\n\n<p>\n  <b>\345\202\23...
+                              ^
+/Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/show.html.erb:30: unknown regexp option - b
+/Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/show.html.erb:30: syntax error, unexpected $undefined
+...\345\202\231\350\200\203:</b>\n  <pre>"
+                              ^
+/Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/show.html.erb:35: unknown regexp option - p
+/Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/show.html.erb:35: syntax error, unexpected $undefined
+...t_buffer.concat "</pre>\n</p>\n\n"
+                              ^
+/Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/show.html.erb:38: syntax error, unexpected $undefined, expecting ')'
+; @output_buffer.concat "\n<div class=\"pagination\">\n\n"
+                          ^
+/Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/show.html.erb:38: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+; @output_buffer.concat "\n<div class=\"pagination\">\n\n"
+                                     ^
+/Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/show.html.erb:54: syntax error, unexpected kENSURE, expecting ')'
+/Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/show.html.erb:56: syntax error, unexpected kEND, expecting ')') on line #10 of app/views/schedules/show.html.erb:
+7: 
+8: <p>
+9:   <b>日付:</b>
+10:   <%=h @schedule.schedule_date.strftime("%Y-%m-%d) %>
+11: </p>
+12: 
+13: <p>
+
+    app/views/schedules/show.html.erb:56:in `compile!'
+
+Rendered rescues/_trace (67.8ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-13 16:11:25) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"7"}
+  [4;36;1mSchedule Load (0.2ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 7) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 15ms (View: 12, DB: 0) | 200 OK [http://0.0.0.0/schedules/show?date=2011-02-13&id=7]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-13 16:13:09) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"7"}
+  [4;35;1mSchedule Load (0.2ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 7) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 16ms (View: 12, DB: 0) | 200 OK [http://0.0.0.0/schedules/show?date=2011-02-13&id=7]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-13 16:13:38) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"7"}
+  [4;36;1mSchedule Load (0.1ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 7) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 15ms (View: 12, DB: 0) | 200 OK [http://0.0.0.0/schedules/show?date=2011-02-13&id=7]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-13 16:13:38) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"7"}
+  [4;35;1mSchedule Load (0.1ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 7) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/schedules/show?date=2011-02-13&id=7]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-13 16:15:49) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"7"}
+  [4;36;1mSchedule Load (0.1ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 7) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 15ms (View: 12, DB: 0) | 200 OK [http://0.0.0.0/schedules/show?date=2011-02-13&id=7]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-13 16:15:49) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"7"}
+  [4;35;1mSchedule Load (0.1ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 7) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/schedules/show?date=2011-02-13&id=7]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-13 16:17:09) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"7"}
+  [4;36;1mSchedule Load (0.2ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 7) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 16ms (View: 13, DB: 0) | 200 OK [http://0.0.0.0/schedules/show?date=2011-02-13&id=7]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-13 16:17:09) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"7"}
+  [4;35;1mSchedule Load (0.1ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 7) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/schedules/show?date=2011-02-13&id=7]
+
+
+Processing SchedulesController#edit (for 127.0.0.1 at 2011-02-13 16:17:25) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"7"}
+  [4;36;1mSchedule Load (0.1ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 7) [0m
+Rendering template within layouts/base
+Rendering schedules/edit
+Completed in 24ms (View: 20, DB: 0) | 200 OK [http://0.0.0.0/schedules/edit?date=2011-02-13&id=7]
+
+
+Processing SchedulesController#update (for 127.0.0.1 at 2011-02-13 16:17:29) [PUT]
+  Parameters: {"commit"=>"保存", "schedule"=>{"start_time(1i)"=>"2000", "start_time(2i)"=>"1", "schedule_date(1i)"=>"2011", "title"=>"テスト3", "mode"=>"公開", "start_time(3i)"=>"1", "end_time(1i)"=>"2000", "start_time(4i)"=>"00", "schedule_date(2i)"=>"2", "end_time(2i)"=>"1", "start_time(5i)"=>"00", "schedule_date(3i)"=>"12", "end_time(3i)"=>"1", "note"=>"", "end_time(4i)"=>"00", "cycle_mode"=>"day", "cycle"=>"1", "end_time(5i)"=>"00"}, "authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "id"=>"7", "date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.1ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 7) [0m
+  [4;36;1mSchedule Update (0.3ms)[0m   [0;1mUPDATE "schedules" SET "updated_at" = '2011-02-13 07:17:29', "mode" = '公開' WHERE "id" = 7[0m
+Redirected to http://0.0.0.0:3000/schedules/show?date=2011-02-13&id=7
+Completed in 9ms (DB: 0) | 302 Found [http://0.0.0.0/schedules/update/7]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-13 16:17:29) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"7"}
+  [4;35;1mSchedule Load (0.2ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 7) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/schedules/show?date=2011-02-13&id=7]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-13 16:17:29) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"7"}
+  [4;36;1mSchedule Load (0.1ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 7) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/schedules/show?date=2011-02-13&id=7]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 16:17:36) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"7"}
+  [4;35;1mSchedule Load (0.4ms)[0m   [0mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 3 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:5)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:34)
+Completed in 21ms (View: 17, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13&id=7]
+
+
+Processing SchedulesController#edit (for 127.0.0.1 at 2011-02-13 16:18:12) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"5"}
+  [4;35;1mSchedule Load (0.1ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 5) [0m
+Rendering template within layouts/base
+Rendering schedules/edit
+Completed in 26ms (View: 21, DB: 0) | 200 OK [http://0.0.0.0/schedules/edit?date=2011-02-13&id=5]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 16:18:17) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"5"}
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 3 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:5)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:34)
+Completed in 20ms (View: 17, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13&id=5]
+
+
+Processing EntryController#edit (for 127.0.0.1 at 2011-02-13 16:23:04) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/base
+Rendering entry/edit
+Completed in 57ms (View: 54, DB: 0) | 200 OK [http://0.0.0.0/entry/edit]
+
+
+Processing EntryController#edit (for 127.0.0.1 at 2011-02-13 16:23:04) [GET]
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/base
+Rendering entry/edit
+Completed in 15ms (View: 12, DB: 0) | 200 OK [http://0.0.0.0/entry/edit]
+
+
+Processing EntryController#update (for 127.0.0.1 at 2011-02-13 16:23:06) [POST]
+  Parameters: {"authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "user"=>{"edit_password"=>"", "edit_password_confirmation"=>"", "login_id"=>"test5", "password"=>""}}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/entry/edit
+Completed in 5ms (DB: 0) | 302 Found [http://0.0.0.0/entry/update]
+
+
+Processing EntryController#edit (for 127.0.0.1 at 2011-02-13 16:23:06) [GET]
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/base
+Rendering entry/edit
+Completed in 15ms (View: 11, DB: 0) | 200 OK [http://0.0.0.0/entry/edit]
+
+
+Processing EntryController#update (for 127.0.0.1 at 2011-02-13 16:23:12) [POST]
+  Parameters: {"authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "user"=>{"edit_password"=>"test", "edit_password_confirmation"=>"test", "login_id"=>"test5", "password"=>"test"}}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login_id" = 'test5') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login_id" = 'test5' AND "users".id <> 8) LIMIT 1[0m
+  [4;35;1mUser Update (0.2ms)[0m   [0mUPDATE "users" SET "updated_at" = '2011-02-13 07:23:12', "salt" = '21944443200.0480411011888795', "hashed_password" = '360b39ca1bbc18e8dac224d07486230c167031d3' WHERE "id" = 8[0m
+Redirected to http://0.0.0.0:3000/entry/show
+Completed in 8ms (DB: 1) | 302 Found [http://0.0.0.0/entry/update]
+
+
+Processing EntryController#show (for 127.0.0.1 at 2011-02-13 16:23:12) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/base
+Rendering entry/show
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/entry/show]
+
+
+Processing EntryController#show (for 127.0.0.1 at 2011-02-13 16:23:12) [GET]
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/base
+Rendering entry/show
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/entry/show]
+
+
+Processing EntryController#show (for 127.0.0.1 at 2011-02-13 16:23:44) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/base
+Rendering entry/show
+Completed in 57ms (View: 51, DB: 0) | 200 OK [http://0.0.0.0/entry/show]
+
+
+Processing EntryController#show (for 127.0.0.1 at 2011-02-13 16:23:44) [GET]
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/base
+Rendering entry/show
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/entry/show]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 16:26:11) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 224ms (View: 216, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 16:26:32) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 3 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:5)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:38)
+Completed in 25ms (View: 21, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 16:26:32) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.4ms)[0m   [0mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 3 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:5)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:38)
+Completed in 22ms (View: 19, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 16:27:32) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.4ms)[0m   [0mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 3 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:5)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:38)
+Completed in 25ms (View: 21, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 16:27:32) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.4ms)[0m   [0mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 3 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:5)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:38)
+Completed in 22ms (View: 18, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 16:29:48) [GET]
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 161ms (View: 154, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 16:30:29) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;36;1mSchedule Load (0.4ms)[0m   [0;1mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 3 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:5)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:38)
+Completed in 73ms (View: 69, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 16:30:29) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;36;1mSchedule Load (0.4ms)[0m   [0;1mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 3 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:5)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:38)
+Completed in 21ms (View: 18, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 16:37:52) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 3 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:5)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:38)
+Completed in 25ms (View: 21, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 16:37:52) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;36;1mSchedule Load (0.4ms)[0m   [0;1mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 3 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:5)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:38)
+Completed in 21ms (View: 17, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 16:38:08) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;36;1mSchedule Load (0.4ms)[0m   [0;1mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 3 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:5)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:38)
+Completed in 24ms (View: 20, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 16:38:08) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 3 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:5)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:38)
+Completed in 62ms (View: 17, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 16:39:20) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;36;1mSchedule Load (0.4ms)[0m   [0;1mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 3 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:8)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:41)
+Completed in 24ms (View: 21, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 16:39:20) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;36;1mSchedule Load (0.4ms)[0m   [0;1mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 3 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:8)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:41)
+Completed in 20ms (View: 17, DB: 0) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 16:40:03) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 3 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:8)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:41)
+Completed in 21ms (View: 18, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 16:40:03) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;36;1mSchedule Load (0.4ms)[0m   [0;1mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 3 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:8)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:41)
+Completed in 21ms (View: 17, DB: 0) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 16:40:27) [GET]
+  Parameters: {"date"=>"2011-02-13", "page"=>"2"}
+  [4;36;1mSchedule Load (0.4ms)[0m   [0;1mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 3 OFFSET 3[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:8)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:41)
+Completed in 23ms (View: 19, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13&page=2]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 16:41:51) [GET]
+  Parameters: {"date"=>"2011-02-13", "page"=>"2"}
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 5 OFFSET 5[0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:8)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:41)
+Completed in 21ms (View: 17, DB: 0) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13&page=2]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 16:41:51) [GET]
+  Parameters: {"date"=>"2011-02-13", "page"=>"2"}
+  [4;35;1mSchedule Load (0.4ms)[0m   [0mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 5 OFFSET 5[0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:8)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:41)
+Completed in 20ms (View: 17, DB: 0) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13&page=2]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 16:44:28) [GET]
+  Parameters: {"date"=>"2011-02-13", "page"=>"2"}
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 5 OFFSET 5[0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:8)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:41)
+Completed in 27ms (View: 24, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13&page=2]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 16:44:28) [GET]
+  Parameters: {"date"=>"2011-02-13", "page"=>"2"}
+  [4;35;1mSchedule Load (0.4ms)[0m   [0mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 5 OFFSET 5[0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:8)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:41)
+Completed in 61ms (View: 58, DB: 0) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13&page=2]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 16:44:46) [GET]
+  Parameters: {"date"=>"2011-02-13", "page"=>"2"}
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 5 OFFSET 5[0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:8)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:41)
+Completed in 21ms (View: 17, DB: 0) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13&page=2]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 16:44:46) [GET]
+  Parameters: {"date"=>"2011-02-13", "page"=>"2"}
+  [4;35;1mSchedule Load (0.4ms)[0m   [0mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 5 OFFSET 5[0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:8)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:41)
+Completed in 20ms (View: 17, DB: 0) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13&page=2]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 16:44:50) [GET]
+  Parameters: {"date"=>"2011-02-13", "page"=>"2"}
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 5 OFFSET 5[0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:8)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:41)
+Completed in 21ms (View: 18, DB: 0) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13&page=2]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 16:44:51) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 222ms (View: 215, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 16:44:51) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 223ms (View: 215, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 16:44:57) [GET]
+  Parameters: {"date"=>"2011-02-13", "page"=>"2"}
+  [4;35;1mSchedule Load (0.4ms)[0m   [0mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 5 OFFSET 5[0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:8)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:41)
+Completed in 20ms (View: 17, DB: 0) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13&page=2]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 16:45:01) [GET]
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 206ms (View: 199, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 16:50:36) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 212ms (View: 204, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 16:50:36) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 211ms (View: 203, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 16:50:40) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 5 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:8)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:41)
+Completed in 25ms (View: 21, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 16:50:40) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 5 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:8)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:41)
+Completed in 30ms (View: 25, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 16:51:06) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 5 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:8)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:41)
+Completed in 28ms (View: 24, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 16:51:06) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 5 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:8)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:41)
+Completed in 24ms (View: 21, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 16:52:04) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 5 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:8)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:41)
+Completed in 26ms (View: 22, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 16:52:04) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 5 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:8)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:41)
+Completed in 25ms (View: 22, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 16:52:14) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 5 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:8)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:41)
+Completed in 26ms (View: 22, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 16:52:15) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.4ms)[0m   [0mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 5 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:8)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:41)
+Completed in 25ms (View: 21, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 16:52:46) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 5 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:8)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:41)
+Completed in 26ms (View: 22, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 16:52:46) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 5 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:8)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:41)
+Completed in 28ms (View: 23, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 16:53:29) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 5 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:8)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:41)
+Completed in 26ms (View: 21, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 16:53:29) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 5 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:8)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:41)
+Completed in 25ms (View: 21, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 16:53:34) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 216ms (View: 208, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 16:53:34) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 218ms (View: 210, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#new (for 127.0.0.1 at 2011-02-13 16:53:46) [GET]
+  Parameters: {"schedule_date_day"=>"10", "date"=>"2011-02-13", "schedule_date_month"=>"2", "schedule_date_year"=>"2011"}
+Rendering template within layouts/base
+Rendering schedules/new
+Completed in 23ms (View: 19, DB: 0) | 200 OK [http://0.0.0.0/schedules/new?date=2011-02-13&schedule_date_day=10&schedule_date_month=2&schedule_date_year=2011]
+
+
+Processing SchedulesController#new (for 127.0.0.1 at 2011-02-13 16:56:04) [GET]
+  Parameters: {"schedule_date_day"=>"10", "date"=>"2011-02-13", "schedule_date_month"=>"2", "schedule_date_year"=>"2011"}
+Rendering template within layouts/base
+Rendering schedules/new
+Completed in 70ms (View: 65, DB: 0) | 200 OK [http://0.0.0.0/schedules/new?date=2011-02-13&schedule_date_day=10&schedule_date_month=2&schedule_date_year=2011]
+
+
+Processing SchedulesController#new (for 127.0.0.1 at 2011-02-13 16:56:04) [GET]
+  Parameters: {"schedule_date_day"=>"10", "date"=>"2011-02-13", "schedule_date_month"=>"2", "schedule_date_year"=>"2011"}
+Rendering template within layouts/base
+Rendering schedules/new
+Completed in 22ms (View: 18, DB: 0) | 200 OK [http://0.0.0.0/schedules/new?date=2011-02-13&schedule_date_day=10&schedule_date_month=2&schedule_date_year=2011]
+
+
+Processing SchedulesController#new (for 127.0.0.1 at 2011-02-13 16:58:31) [GET]
+  Parameters: {"schedule_date_day"=>"10", "date"=>"2011-02-13", "schedule_date_month"=>"2", "schedule_date_year"=>"2011"}
+Rendering template within layouts/base
+Rendering schedules/new
+Completed in 27ms (View: 22, DB: 0) | 200 OK [http://0.0.0.0/schedules/new?date=2011-02-13&schedule_date_day=10&schedule_date_month=2&schedule_date_year=2011]
+
+
+Processing SchedulesController#new (for 127.0.0.1 at 2011-02-13 16:58:31) [GET]
+  Parameters: {"schedule_date_day"=>"10", "date"=>"2011-02-13", "schedule_date_month"=>"2", "schedule_date_year"=>"2011"}
+Rendering template within layouts/base
+Rendering schedules/new
+Completed in 22ms (View: 19, DB: 0) | 200 OK [http://0.0.0.0/schedules/new?date=2011-02-13&schedule_date_day=10&schedule_date_month=2&schedule_date_year=2011]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 16:58:46) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 202ms (View: 194, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 16:58:46) [GET]
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 208ms (View: 201, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 16:58:50) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 5 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:8)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:41)
+Completed in 25ms (View: 21, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 16:58:50) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 5 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:8)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:41)
+Completed in 25ms (View: 21, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 16:58:53) [GET]
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 204ms (View: 152, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 16:59:45) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 208ms (View: 200, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 16:59:45) [GET]
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 208ms (View: 201, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 17:00:32) [GET]
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 215ms (View: 207, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 17:00:32) [GET]
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 214ms (View: 206, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#new (for 127.0.0.1 at 2011-02-13 17:00:38) [GET]
+  Parameters: {"schedule_date_day"=>"10", "date"=>"2011-02-13", "schedule_date_month"=>"2", "schedule_date_year"=>"2011"}
+Rendering template within layouts/base
+Rendering schedules/new
+Completed in 23ms (View: 19, DB: 0) | 200 OK [http://0.0.0.0/schedules/new?date=2011-02-13&schedule_date_day=10&schedule_date_month=2&schedule_date_year=2011]
+
+
+Processing SchedulesController#new (for 127.0.0.1 at 2011-02-13 17:00:38) [GET]
+  Parameters: {"schedule_date_day"=>"10", "date"=>"2011-02-13", "schedule_date_month"=>"2", "schedule_date_year"=>"2011"}
+Rendering template within layouts/base
+Rendering schedules/new
+Completed in 23ms (View: 19, DB: 0) | 200 OK [http://0.0.0.0/schedules/new?date=2011-02-13&schedule_date_day=10&schedule_date_month=2&schedule_date_year=2011]
+
+
+Processing SchedulesController#new (for 127.0.0.1 at 2011-02-13 17:00:40) [GET]
+  Parameters: {"schedule_date_day"=>"10", "date"=>"2011-02-13", "schedule_date_month"=>"2", "schedule_date_year"=>"2011"}
+Rendering template within layouts/base
+Rendering schedules/new
+Completed in 24ms (View: 20, DB: 0) | 200 OK [http://0.0.0.0/schedules/new?date=2011-02-13&schedule_date_day=10&schedule_date_month=2&schedule_date_year=2011]
+
+
+Processing SchedulesController#new (for 127.0.0.1 at 2011-02-13 17:01:39) [GET]
+  Parameters: {"schedule_date_day"=>"10", "date"=>"2011-02-13", "schedule_date_month"=>"2", "schedule_date_year"=>"2011"}
+Rendering template within layouts/base
+Rendering schedules/new
+Completed in 66ms (View: 62, DB: 0) | 200 OK [http://0.0.0.0/schedules/new?date=2011-02-13&schedule_date_day=10&schedule_date_month=2&schedule_date_year=2011]
+
+
+Processing SchedulesController#new (for 127.0.0.1 at 2011-02-13 17:01:39) [GET]
+  Parameters: {"schedule_date_day"=>"10", "date"=>"2011-02-13", "schedule_date_month"=>"2", "schedule_date_year"=>"2011"}
+Rendering template within layouts/base
+Rendering schedules/new
+Completed in 23ms (View: 19, DB: 0) | 200 OK [http://0.0.0.0/schedules/new?date=2011-02-13&schedule_date_day=10&schedule_date_month=2&schedule_date_year=2011]
+
+
+Processing SchedulesController#new (for 127.0.0.1 at 2011-02-13 17:02:40) [GET]
+  Parameters: {"schedule_date_day"=>"10", "date"=>"2011-02-13", "schedule_date_month"=>"2", "schedule_date_year"=>"2011"}
+Rendering template within layouts/base
+Rendering schedules/new
+Completed in 26ms (View: 21, DB: 0) | 200 OK [http://0.0.0.0/schedules/new?date=2011-02-13&schedule_date_day=10&schedule_date_month=2&schedule_date_year=2011]
+
+
+Processing SchedulesController#new (for 127.0.0.1 at 2011-02-13 17:02:40) [GET]
+  Parameters: {"schedule_date_day"=>"10", "date"=>"2011-02-13", "schedule_date_month"=>"2", "schedule_date_year"=>"2011"}
+Rendering template within layouts/base
+Rendering schedules/new
+Completed in 22ms (View: 18, DB: 0) | 200 OK [http://0.0.0.0/schedules/new?date=2011-02-13&schedule_date_day=10&schedule_date_month=2&schedule_date_year=2011]
+
+
+Processing SchedulesController#new (for 127.0.0.1 at 2011-02-13 17:02:54) [GET]
+  Parameters: {"schedule_date_day"=>"10", "date"=>"2011-02-13", "schedule_date_month"=>"2", "schedule_date_year"=>"2011"}
+Rendering template within layouts/base
+Rendering schedules/new
+Completed in 25ms (View: 21, DB: 0) | 200 OK [http://0.0.0.0/schedules/new?date=2011-02-13&schedule_date_day=10&schedule_date_month=2&schedule_date_year=2011]
+
+
+Processing SchedulesController#new (for 127.0.0.1 at 2011-02-13 17:02:54) [GET]
+  Parameters: {"schedule_date_day"=>"10", "date"=>"2011-02-13", "schedule_date_month"=>"2", "schedule_date_year"=>"2011"}
+Rendering template within layouts/base
+Rendering schedules/new
+Completed in 23ms (View: 19, DB: 0) | 200 OK [http://0.0.0.0/schedules/new?date=2011-02-13&schedule_date_day=10&schedule_date_month=2&schedule_date_year=2011]
+
+
+Processing SchedulesController#new (for 127.0.0.1 at 2011-02-13 17:03:06) [GET]
+  Parameters: {"schedule_date_day"=>"10", "date"=>"2011-02-13", "schedule_date_month"=>"2", "schedule_date_year"=>"2011"}
+Rendering template within layouts/base
+Rendering schedules/new
+Completed in 27ms (View: 22, DB: 0) | 200 OK [http://0.0.0.0/schedules/new?date=2011-02-13&schedule_date_day=10&schedule_date_month=2&schedule_date_year=2011]
+
+
+Processing SchedulesController#new (for 127.0.0.1 at 2011-02-13 17:03:06) [GET]
+  Parameters: {"schedule_date_day"=>"10", "date"=>"2011-02-13", "schedule_date_month"=>"2", "schedule_date_year"=>"2011"}
+Rendering template within layouts/base
+Rendering schedules/new
+Completed in 23ms (View: 19, DB: 0) | 200 OK [http://0.0.0.0/schedules/new?date=2011-02-13&schedule_date_day=10&schedule_date_month=2&schedule_date_year=2011]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 17:03:09) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 158ms (View: 151, DB: 1) | 200 OK [http://0.0.0.0/?date=2011-02-13]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 17:03:09) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 208ms (View: 201, DB: 1) | 200 OK [http://0.0.0.0/?date=2011-02-13]
+
+
+Processing SchedulesController#new (for 127.0.0.1 at 2011-02-13 17:03:11) [GET]
+  Parameters: {"schedule_date_day"=>"10", "date"=>"2011-02-13", "schedule_date_month"=>"2", "schedule_date_year"=>"2011"}
+Rendering template within layouts/base
+Rendering schedules/new
+Completed in 23ms (View: 19, DB: 0) | 200 OK [http://0.0.0.0/schedules/new?date=2011-02-13&schedule_date_day=10&schedule_date_month=2&schedule_date_year=2011]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 17:03:16) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 5 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:8)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:41)
+Completed in 72ms (View: 68, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 17:03:16) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 5 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:8)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:41)
+Completed in 26ms (View: 22, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 17:03:45) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 5 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:8)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:41)
+Completed in 29ms (View: 25, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 17:03:56) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 5 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:8)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:41)
+Completed in 28ms (View: 24, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 17:03:56) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;36;1mSchedule Load (0.4ms)[0m   [0;1mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 5 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:8)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:41)
+Completed in 69ms (View: 65, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 17:03:59) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 159ms (View: 151, DB: 1) | 200 OK [http://0.0.0.0/?date=2011-02-13]
+
+
+Processing SchedulesController#new (for 127.0.0.1 at 2011-02-13 17:04:05) [GET]
+  Parameters: {"schedule_date_day"=>"10", "date"=>"2011-02-13", "schedule_date_month"=>"2", "schedule_date_year"=>"2011"}
+Rendering template within layouts/base
+Rendering schedules/new
+Completed in 23ms (View: 18, DB: 0) | 200 OK [http://0.0.0.0/schedules/new?date=2011-02-13&schedule_date_day=10&schedule_date_month=2&schedule_date_year=2011]
+
+
+Processing SchedulesController#new (for 127.0.0.1 at 2011-02-13 17:05:04) [GET]
+  Parameters: {"schedule_date_day"=>"10", "date"=>"2011-02-13", "schedule_date_month"=>"2", "schedule_date_year"=>"2011"}
+Rendering template within layouts/base
+Rendering schedules/new
+Completed in 24ms (View: 19, DB: 0) | 200 OK [http://0.0.0.0/schedules/new?date=2011-02-13&schedule_date_day=10&schedule_date_month=2&schedule_date_year=2011]
+
+
+Processing SchedulesController#new (for 127.0.0.1 at 2011-02-13 17:05:04) [GET]
+  Parameters: {"schedule_date_day"=>"10", "date"=>"2011-02-13", "schedule_date_month"=>"2", "schedule_date_year"=>"2011"}
+Rendering template within layouts/base
+Rendering schedules/new
+Completed in 22ms (View: 19, DB: 0) | 200 OK [http://0.0.0.0/schedules/new?date=2011-02-13&schedule_date_day=10&schedule_date_month=2&schedule_date_year=2011]
+
+
+Processing SchedulesController#create (for 127.0.0.1 at 2011-02-13 17:05:15) [POST]
+  Parameters: {"commit"=>"作成", "schedule"=>{"start_time(1i)"=>"2011", "start_time(2i)"=>"2", "schedule_date(1i)"=>"2011", "title"=>"test", "mode"=>"非公開", "start_time(3i)"=>"13", "end_time(1i)"=>"2011", "start_time(4i)"=>"00", "schedule_date(2i)"=>"2", "end_time(2i)"=>"2", "start_time(5i)"=>"00", "schedule_date(3i)"=>"10", "user_id"=>"8", "end_time(3i)"=>"13", "note"=>"", "end_time(4i)"=>"00", "cycle_mode"=>"day", "cycle"=>"1", "end_time(5i)"=>"00"}, "authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "date"=>"2011-02-13"}
+  [4;35;1mSchedule Create (0.2ms)[0m   [0mINSERT INTO "schedules" ("created_at", "end_time", "title", "schedule_date", "updated_at", "mode", "user_id", "note", "cycle", "cycle_mode", "start_time") VALUES('2011-02-13 08:05:15', '2011-02-13 00:00:00', 'test', '2011-02-10', '2011-02-13 08:05:15', '非公開', 8, '', 1, 'day', '2011-02-13 00:00:00')[0m
+Redirected to http://0.0.0.0:3000/?date=2011-02-13
+Completed in 8ms (DB: 0) | 302 Found [http://0.0.0.0/schedules/create]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 17:05:15) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 199ms (View: 192, DB: 1) | 200 OK [http://0.0.0.0/?date=2011-02-13]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 17:05:15) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 208ms (View: 200, DB: 1) | 200 OK [http://0.0.0.0/?date=2011-02-13]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-13 17:05:21) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"10"}
+  [4;36;1mSchedule Load (0.2ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 10) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/schedules/show?date=2011-02-13&id=10]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-13 17:05:21) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"10"}
+  [4;35;1mSchedule Load (0.1ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 10) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/schedules/show?date=2011-02-13&id=10]
+
+
+Processing SchedulesController#edit (for 127.0.0.1 at 2011-02-13 17:05:32) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"10"}
+  [4;36;1mSchedule Load (0.3ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 10) [0m
+Rendering template within layouts/base
+Rendering schedules/edit
+Completed in 24ms (View: 19, DB: 0) | 200 OK [http://0.0.0.0/schedules/edit?date=2011-02-13&id=10]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-13 17:05:37) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"10"}
+  [4;35;1mSchedule Load (0.1ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 10) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/schedules/show?date=2011-02-13&id=10]
+
+
+Processing SchedulesController#destroy (for 127.0.0.1 at 2011-02-13 17:05:39) [DELETE]
+  Parameters: {"authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "date"=>"2011-02-13", "id"=>"10", "next"=>"calendar"}
+  [4;36;1mSchedule Load (0.2ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 10) [0m
+  [4;35;1mSchedule Destroy (0.2ms)[0m   [0mDELETE FROM "schedules" WHERE "id" = 10[0m
+Redirected to http://0.0.0.0:3000/?date=2011-02-13
+Completed in 7ms (DB: 0) | 302 Found [http://0.0.0.0/schedules/destroy?date=2011-02-13&id=10&next=calendar]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 17:05:39) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 210ms (View: 202, DB: 1) | 200 OK [http://0.0.0.0/?date=2011-02-13]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 17:05:40) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 160ms (View: 153, DB: 1) | 200 OK [http://0.0.0.0/?date=2011-02-13]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 17:05:46) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 5 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:8)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:41)
+Completed in 70ms (View: 66, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 17:05:48) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;36;1mSchedule Load (0.7ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 181ms (View: 171, DB: 1) | 200 OK [http://0.0.0.0/?date=2011-02-13]
+
+
+Processing SchedulesController#new (for 127.0.0.1 at 2011-02-13 17:05:57) [GET]
+  Parameters: {"schedule_date_day"=>"10", "date"=>"2011-02-13", "schedule_date_month"=>"2", "schedule_date_year"=>"2011"}
+Rendering template within layouts/base
+Rendering schedules/new
+Completed in 69ms (View: 19, DB: 0) | 200 OK [http://0.0.0.0/schedules/new?date=2011-02-13&schedule_date_day=10&schedule_date_month=2&schedule_date_year=2011]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 17:06:01) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 5 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:8)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:41)
+Completed in 25ms (View: 21, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-13 17:06:02) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"1"}
+  [4;35;1mSchedule Load (0.1ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.strftime) on line #15 of app/views/schedules/show.html.erb:
+12: 
+13: <p>
+14:   <b>時間:</b>
+15:   <%=h @schedule.start_time.strftime("%H:%M") %>〜<%=h @schedule.end_time.strftime("%H:%M") %>
+16: </p>
+17: 
+18: <p>
+
+    app/views/schedules/show.html.erb:15
+
+Rendered rescues/_trace (25.3ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-13 17:06:02) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"1"}
+  [4;36;1mSchedule Load (0.2ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.strftime) on line #15 of app/views/schedules/show.html.erb:
+12: 
+13: <p>
+14:   <b>時間:</b>
+15:   <%=h @schedule.start_time.strftime("%H:%M") %>〜<%=h @schedule.end_time.strftime("%H:%M") %>
+16: </p>
+17: 
+18: <p>
+
+    app/views/schedules/show.html.erb:15
+
+Rendered rescues/_trace (25.8ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-13 17:09:20) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"1"}
+  [4;35;1mSchedule Load (0.2ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 15ms (View: 11, DB: 0) | 200 OK [http://0.0.0.0/schedules/show?date=2011-02-13&id=1]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 17:09:25) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"1"}
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 5 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:8)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:41)
+Completed in 28ms (View: 23, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13&id=1]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 17:09:25) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"1"}
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 5 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:8)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:41)
+Completed in 26ms (View: 22, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13&id=1]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 17:14:17) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"1"}
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 5 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:8)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:41)
+Completed in 29ms (View: 25, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13&id=1]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 17:14:17) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"1"}
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 5 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:8)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:41)
+Completed in 25ms (View: 22, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13&id=1]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 17:14:30) [GET]
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 206ms (View: 198, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 17:14:31) [GET]
+  [4;35;1mSchedule Load (0.7ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 209ms (View: 201, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-13 17:14:39) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"1"}
+  [4;36;1mSchedule Load (0.1ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/schedules/show?date=2011-02-13&id=1]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-13 17:14:39) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"1"}
+  [4;35;1mSchedule Load (0.1ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/schedules/show?date=2011-02-13&id=1]
+
+
+Processing SchedulesController#edit (for 127.0.0.1 at 2011-02-13 17:14:43) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"1"}
+  [4;36;1mSchedule Load (0.1ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/base
+Rendering schedules/edit
+Completed in 23ms (View: 19, DB: 0) | 200 OK [http://0.0.0.0/schedules/edit?date=2011-02-13&id=1]
+
+
+Processing SchedulesController#update (for 127.0.0.1 at 2011-02-13 17:14:47) [PUT]
+  Parameters: {"commit"=>"保存", "schedule"=>{"start_time(1i)"=>"2011", "start_time(2i)"=>"2", "schedule_date(1i)"=>"2011", "title"=>"テスト", "mode"=>"公開", "start_time(3i)"=>"13", "end_time(1i)"=>"2011", "start_time(4i)"=>"00", "schedule_date(2i)"=>"2", "end_time(2i)"=>"2", "start_time(5i)"=>"00", "schedule_date(3i)"=>"11", "end_time(3i)"=>"13", "note"=>"テスト\r\nテスト\r\nテスト\r\n", "end_time(4i)"=>"00", "cycle_mode"=>"day", "cycle"=>"1", "end_time(5i)"=>"00"}, "authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "id"=>"1", "date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.1ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+  [4;36;1mSchedule Update (0.3ms)[0m   [0;1mUPDATE "schedules" SET "start_time" = '2011-02-13 00:00:00', "updated_at" = '2011-02-13 08:14:47', "mode" = '公開', "end_time" = '2011-02-13 00:00:00' WHERE "id" = 1[0m
+Redirected to http://0.0.0.0:3000/schedules/show?date=2011-02-13&id=1
+Completed in 8ms (DB: 0) | 302 Found [http://0.0.0.0/schedules/update/1]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-13 17:14:47) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"1"}
+  [4;35;1mSchedule Load (0.2ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 56ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/schedules/show?date=2011-02-13&id=1]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-13 17:14:47) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"1"}
+  [4;36;1mSchedule Load (0.1ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/schedules/show?date=2011-02-13&id=1]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 17:14:50) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 205ms (View: 198, DB: 1) | 200 OK [http://0.0.0.0/?date=2011-02-13]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 17:14:50) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 161ms (View: 153, DB: 1) | 200 OK [http://0.0.0.0/?date=2011-02-13]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-13 17:14:52) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"9"}
+  [4;35;1mSchedule Load (0.2ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 9) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 57ms (View: 54, DB: 0) | 200 OK [http://0.0.0.0/schedules/show?date=2011-02-13&id=9]
+
+
+Processing SchedulesController#edit (for 127.0.0.1 at 2011-02-13 17:14:54) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"9"}
+  [4;36;1mSchedule Load (0.2ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 9) [0m
+Rendering template within layouts/base
+Rendering schedules/edit
+Completed in 24ms (View: 20, DB: 0) | 200 OK [http://0.0.0.0/schedules/edit?date=2011-02-13&id=9]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-13 17:14:57) [GET]
+  Parameters: {"date"=>"2011-02-13", "id"=>"9"}
+  [4;35;1mSchedule Load (0.2ms)[0m   [0mSELECT * FROM "schedules" WHERE ("schedules"."id" = 9) [0m
+Rendering template within layouts/base
+Rendering schedules/show
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/schedules/show?date=2011-02-13&id=9]
+
+
+Processing SchedulesController#destroy (for 127.0.0.1 at 2011-02-13 17:15:01) [DELETE]
+  Parameters: {"authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "date"=>"2011-02-13", "id"=>"9", "next"=>"calendar"}
+  [4;36;1mSchedule Load (0.1ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 9) [0m
+  [4;35;1mSchedule Destroy (0.2ms)[0m   [0mDELETE FROM "schedules" WHERE "id" = 9[0m
+Redirected to http://0.0.0.0:3000/?date=2011-02-13
+Completed in 7ms (DB: 0) | 302 Found [http://0.0.0.0/schedules/destroy?date=2011-02-13&id=9&next=calendar]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 17:15:01) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 206ms (View: 198, DB: 0) | 200 OK [http://0.0.0.0/?date=2011-02-13]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 17:15:01) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 209ms (View: 201, DB: 0) | 200 OK [http://0.0.0.0/?date=2011-02-13]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 17:15:03) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 5 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:8)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:41)
+Completed in 26ms (View: 22, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 17:15:03) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 5 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:8)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:41)
+Completed in 25ms (View: 21, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#destroy (for 127.0.0.1 at 2011-02-13 17:15:08) [DELETE]
+  Parameters: {"authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "date"=>"2011-02-13", "id"=>"7", "next"=>"list"}
+  [4;36;1mSchedule Load (0.2ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 7) [0m
+  [4;35;1mSchedule Destroy (0.2ms)[0m   [0mDELETE FROM "schedules" WHERE "id" = 7[0m
+Redirected to http://0.0.0.0:3000/schedules/list?date=2011-02-13
+Completed in 7ms (DB: 0) | 302 Found [http://0.0.0.0/schedules/destroy?date=2011-02-13&id=7&next=list]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 17:15:08) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 5 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:8)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:41)
+Completed in 26ms (View: 22, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 17:15:08) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 5 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:8)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:41)
+Completed in 67ms (View: 63, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 17:15:11) [GET]
+  Parameters: {"date"=>"2011-02-13", "page"=>"2"}
+  [4;36;1mSchedule Load (0.3ms)[0m   [0;1mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 5 OFFSET 5[0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:8)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:41)
+Completed in 15ms (View: 12, DB: 0) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13&page=2]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 17:15:11) [GET]
+  Parameters: {"date"=>"2011-02-13", "page"=>"2"}
+  [4;35;1mSchedule Load (0.4ms)[0m   [0mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 5 OFFSET 5[0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:8)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:41)
+Completed in 15ms (View: 13, DB: 0) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13&page=2]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 17:15:12) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 212ms (View: 204, DB: 1) | 200 OK [http://0.0.0.0/?date=2011-02-13]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 17:15:13) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 210ms (View: 203, DB: 0) | 200 OK [http://0.0.0.0/?date=2011-02-13]

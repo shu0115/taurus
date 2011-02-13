@@ -1,7 +1,5 @@
 <span class="menu_title">新規作成</span><br />
 
-<br />
-
 <%= error_messages_for :schedule %>
 
 <% form_for @schedule, :url => { :controller => "schedules", :action => "create" } do |f| %>
@@ -49,6 +47,13 @@
   </p>
 <% end %>
 
-<%= link_to '一覧', { :controller => "schedules", :action => "list", :id => @schedule.id, :date => @now_date } %><br />
-<br />
-<%= link_to 'カレンダー', :action => "calendar", :date => @now_date %><br />
+<div class="pagination">
+  <%= link_to '一覧', { :controller => "schedules", :action => "list", :id => @schedule.id, :date => @now_date } %><br />
+  
+  <br />
+  <br />
+  
+  <%= link_to 'トップ', :action => "calendar", :date => @now_date %><br />
+
+  <br />
+</div>

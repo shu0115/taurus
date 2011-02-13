@@ -1,4 +1,5 @@
 
+/* ページ */
 body {
   background-color: #fff;
   color: #000;
@@ -10,88 +11,6 @@ body, p, ol, ul, td {
   line-height: 18px;
 }
 
-.fieldWithErrors {
-  padding: 2px;
-  background-color: red;
-  display: table;
-}
-
-#errorExplanation {
-  width: 400px;
-  border: 2px solid red;
-  padding: 7px;
-  padding-bottom: 12px;
-  margin-bottom: 20px;
-  background-color: #f0f0f0;
-}
-
-#errorExplanation h2 {
-  text-align: left;
-  font-weight: bold;
-  padding: 5px 5px 5px 15px;
-  font-size: 12px;
-  margin: -7px;
-  background-color: #c00;
-  color: #fff;
-}
-
-#errorExplanation p {
-  color: #333;
-  margin-bottom: 0;
-  padding: 5px;
-}
-
-#errorExplanation ul li {
-  font-size: 12px;
-  list-style: square;
-}
-
-
-
-/* ページネーション */
-  .pagination {
-    padding: 3px;
-    margin: 3px;
-  }
-  .pagination a {
-    padding: 2px 5px 2px 5px;
-    margin: 2px;
-    border: 1px solid #aaaadd;
-    text-decoration: none;
-    /*color: #00afcc;*/
-    color: #ff7500;
-  }
-  .pagination a:hover, .pagination a:active {
-    /*border: 1px solid #00afcc;*/
-    border: 1px solid #ff7500;
-    /*background-color: #00afcc;*/
-    background-color: #ff7500;
-    color: #fff;
-    text-decoration: none;
-  }
-  .pagination span.current {
-    padding: 2px 5px 2px 5px;
-    margin: 2px;
-    /*border: 1px solid #00afcc;*/
-    border: 1px solid #ff7500;
-    font-weight: bold;
-    /*background-color: #00afcc;*/
-    background-color: #ff7500;
-    color: #fff;
-  }
-  .pagination span.disabled {
-    padding: 2px 5px 2px 5px;
-    margin: 2px;
-    border: 1px solid #eee;
-    color: #ddd;
-  }
-
-
-
-form {
-	display: inline;	
-}
-
 div {
   display: inline-block;
 }
@@ -100,7 +19,13 @@ pre {
   background-color: #fff;
   padding: 10px;
   font-size: 14px;
-#  border: 1px solid #aaa;
+}
+
+
+
+/* フォーム */
+form {
+  display: inline;  
 }
 
 textarea {
@@ -113,10 +38,21 @@ textarea {
   font-size: 14px;
 }
 
+
+
+/* テーブル */
+table {
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  padding: 15px;
+  border: 1px solid #ff7500;
+}
+
 td {
-  #border: 1px solid #00afcc;
   padding: 5px;
 }
+
+
 
 /* リンク */
 a {
@@ -127,261 +63,3 @@ a {
 a:hover, a:active {
   text-decoration: underline;
 }
-
-.active_link a {
-  font-weight: bold;
-}
-
-/* タイトル */
-#title {
-  display: inline-block;
-  font-family: "Times New Roman", verdana, arial, helvetica, sans-serif;
-  font-size:   50px;
-  line-height: 50px;
-  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.5, transparent), to(white));
-  -webkit-text-stroke: 1px #ff4c00; /* 縁取り */
-}
-
-/* タイトルリンク */
-#title a {
-  color: #ffc500; /* 文字色 */
-  text-decoration: none;
-}
-
-.menu_title {
-  font-style: bold;
-  font-size:   18px;
-  line-height: 18px;
-}
-
-.menu a {
-  #top: 0px;
-  #left: 0px;
-  line-height: 12px;
-  margin: 0px 0px 0px 0px;
-  padding: 5px 15px 5px 15px;
-  display: inline-block;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-
-  color: #00afcc;
-  #color: #40E0D0;
-  background: #fff repeat-x;
-  #background: #00afcc repeat-x;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  #-moz-box-shadow: 3px 3px 5px #555;
-  #-webkit-box-shadow: 3px 3px 5px #555;
-  #cursor: pointer;
-  border: 1px solid #00afcc;
-}
-
-.menu a:hover {
-  color: #fff;
-}
-
-.list a {
-  color: #55f;
-  border: 1px solid #55f;
-#  -webkit-box-shadow: 0px 0px 5px #55f;
-}
-.list a:hover {
-  background: #55f repeat-x;
-  border: 1px solid #55f;
-}
-
-.new a {
-  color: #50a0a6;
-  border: 1px solid #50a0a6;
-#  -webkit-box-shadow: 0px 0px 5px #50a0a6;
-}
-.new a:hover {
-  background: #50a0a6 repeat-x;
-  border: 1px solid #50a0a6;
-}
-
-.show a {
-  color: #00afcc;
-  border: 1px solid #00afcc;
-#  -webkit-box-shadow: 0px 0px 5px #00afcc;
-}
-.show a:hover {
-  background: #00afcc repeat-x;
-  border: 1px solid #00afcc;
-}
-
-.edit a {
-  color: #0c0;
-  border: 1px solid #0c0;
-#  -webkit-box-shadow: 0px 0px 5px #0c0;
-}
-.edit a:hover {
-  background: #0c0 repeat-x;
-  border: 1px solid #0c0;
-}
-
-.delete a {
-  color: #f00;
-  border: 1px solid #f00;
-#  -webkit-box-shadow: 0px 0px 5px #f00;
-}
-.delete a:hover {
-  background: #f00 repeat-x;
-  border: 1px solid #f00;
-}
-
-.pre_style {
-  -moz-border-radius: 20px;
-  -webkit-border-radius: 20px;
-#  border: 1px solid #aaa;
-  border: 1px solid #00afcc;
-  padding: 15px;
-}
-
-.table_style {
-  -moz-border-radius: 20px;
-  -webkit-border-radius: 20px;
-  border: 1px solid #00afcc;
-  padding: 15px;
-}
-
-/* memos */
-#memo_title, #memo_category, #memo_sub_category {
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border: 1px solid #aaa;
-  padding: 5px;
-}
-
-/* header_menu */
-.header_menu {
-	display: block;
-  text-align: right;
-}
-
-/* mode */
-.mode a {
-  line-height: 24px;
-}
-
-/* memo_title */
-.memo_title_field {
-  width: 300px;
-}
-
-/* page_boxクラス */
-.page_box {
-  -moz-border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-box-shadow: 0px 0px 5px #bbb;
-  -webkit-box-shadow: 0px 0px 5px #bbb;
-  border: 1px solid #ccc;
-  padding: 10px;
-	margin: 0px auto;
-  width: 98%;
-	align: left;
-	/*display: block;*/
-}
-.page_box .category_box {
-  padding: 5px;
-  width: 95%;
-}
-
-/* text_fieldクラス */
-.text_field {
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border: 1px solid #aaa;
-  padding: 5px;
-  width: 200px;
-}
-
-/* password_fieldクラス */
-.password_field {
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border: 1px solid #aaa;
-  padding: 5px;
-  width: 200px;
-}
-
-/* radius_borderクラス */
-.radius_border {
-  -moz-border-radius: 20px;
-  -webkit-border-radius: 20px;
-  border: 1px solid #aaa;
-  padding: 5px;
-}
-
-
-
-
-
-/* メニュータイトル */
-.menu_title {
-  font-size: 18px;
-  font-weight: bold;
-}
-
-/* カレンダー */
-.calendar_area table, .calendar_area td, .calendar_area th {
-  /*border: 1px solid #ff7500;*/
-  border: 1px solid #bbb;
-  -moz-border-radius: 20px;
-  -webkit-border-radius: 20px;
-  padding: 8px;
-}
-
-/* カレンダー内 リンク */
-.calendar_area a {
-  color: #000000;
-  text-decoration: underline;
-}
-
-/* カレンダー内 スタイル */
-.calendar_area th, .calendar_area td {
-  text-align: left;
-  vertical-align: top;
-}
-
-/* カレンダー内 曜日カラム */
-.calendar_area .calendar th {
-  padding: 5px;
-  text-align: center;
-  vertical-align: middle;
-  -moz-border-radius: 20px;
-  -webkit-border-radius: 20px;
-}
-
-/* カレンダー内 日付 */
-.calendar_area .calendar td {
-  padding: 5px;
-  width: 100px;
-  height: 100px;
-  text-align: left;
-  vertical-align: top;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-}
-
-/* 日曜日 */
-.calendar_area .sunday, .calendar_area .sunday a {
-  color: #ff0000;
-}
-
-/* 土曜日 */
-.calendar_area .saturday, .calendar_area .saturday a {
-  color: #0000ff;
-}
-
-/* 今日 */
-.calendar_area .today {
-  background-color: #ddeeff;
-}
-
-/* カレンダー内部スケジュール名 */
-.calendar_area .schedule_title {
-  font-size: 12px;
-}
-

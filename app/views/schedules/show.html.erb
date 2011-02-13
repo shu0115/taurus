@@ -1,7 +1,5 @@
 <span class="menu_title">閲覧</span><br />
 
-<br />
-
 <p>
   <b>タイトル:</b>
   <%=h @schedule.title %>
@@ -9,12 +7,12 @@
 
 <p>
   <b>日付:</b>
-  <%=h @schedule.schedule_date %>
+  <%=h @schedule.schedule_date.strftime("%Y年%m月%d日") unless @schedule.schedule_date.blank? %>
 </p>
 
 <p>
   <b>時間:</b>
-  <%=h @schedule.start_time %>〜<%=h @schedule.end_time %>
+  <%=h @schedule.start_time.strftime("%H:%M") unless @schedule.start_time.blank? %>〜<%=h @schedule.end_time.strftime("%H:%M") unless @schedule.end_time.blank? %>
 </p>
 
 <p>
@@ -34,15 +32,21 @@
 
 <p>
   <b>備考:</b>
-  <pre class="pre_style"><%=h @schedule.note %></pre>
+  <pre><%=h @schedule.note %></pre>
 </p>
 
-<br />
+<%# ページネーション %>
+<div class="pagination">
 
 <%= link_to '一覧', { :controller => "schedules", :action => "list", :id => @schedule.id, :date => @now_date } %>
- | <%= link_to '編集', { :controller => "schedules", :action => "edit", :id => @schedule.id, :date => @now_date } %>
- | <%= link_to '削除', { :controller => "schedules", :action => "destroy", :id => @schedule.id, :date => @now_date, :next => 'calendar' }, :confirm => '本当に削除してよろしいですか?', :method => :delete %><br />
+<%= link_to '編集', { :controller => "schedules", :action => "edit", :id => @schedule.id, :date => @now_date } %>
+<%= link_to '削除', { :controller => "schedules", :action => "destroy", :id => @schedule.id, :date => @now_date, :next => 'calendar' }, :confirm => '本当に削除してよろしいですか?', :method => :delete %><br />
 
 <br />
+<br />
 
-<%= link_to 'カレンダー', :action => "calendar", :date => @now_date %><br />
+<%= link_to 'トップ', :action => "calendar", :date => @now_date %><br />
+
+</div>
+
+<br />

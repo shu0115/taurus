@@ -12,9 +12,16 @@ class ApplicationController < ActionController::Base
 
   layout 'base'
 
+  # 曜日
   $wdays = [ "日", "月", "火", "水", "木", "金", "土" ]
+
+  # 周期
   $cycle_mode = [ "day", "month", "year" ]
+
+  # 公開設定
   $mode = [ '公開', '非公開' ]
-  $per_page = 3
+
+  # ページ内件数
+  $per_page = 5
 
 end

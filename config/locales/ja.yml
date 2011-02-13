@@ -5,6 +5,11 @@ ja:
   menu:
     list: 一覧
 
+  schedule:
+    title: タイトル
+    schedule_date: 日付
+    note: 備考
+
   web-app-theme:
     save: 保存
     cancel: キャンセル

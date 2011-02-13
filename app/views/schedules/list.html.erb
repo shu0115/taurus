@@ -1,30 +1,33 @@
+
+<div class="pagination">
+
 <span class="menu_title">一覧</span><br />
 
 <br />
 
-<%= link_to 'カレンダー', :action => "calendar", :date => @now_date %><br />
-
-<br />
-
-<%= will_paginate @schedules, :prev_label => 'Prev', :next_label => 'Next' %>
+<%= will_paginate @schedules, :prev_label => 'Prev', :next_label => 'Next' %><br />
 
 <br />
 
 <table>
   <tr>
-    <th>Title</th>
-    <th>Schedule date</th>
+    <th><%= t( "schedule.title", :default => 'Title' ) %></th>
+    <th><%= t( "schedule.schedule_date", :default => 'Schedule date' ) %></th>
+<% if false %>
     <th>Cycle</th>
     <th>Cycle mode</th>
-    <th>Note</th>
+<% end %>
+    <th><%= t( "schedule.note", :default => 'note' ) %></th>
   </tr>
 
 <% for schedule in @schedules %>
   <tr>
     <td><%=h schedule.title %></td>
-    <td><%=h schedule.schedule_date %></td>
+    <td><%=h schedule.schedule_date.strftime("%Y年%m月%d日") %></td>
+<% if false %>
     <td><%=h schedule.cycle %></td>
     <td><%=h schedule.cycle_mode %></td>
+<% end %>
     <td><%=h schedule.note %></td>
     <td><%= link_to '閲覧', { :controller => "schedules", :action => "show", :id => schedule.id, :date => @now_date } %></td>
     <td><%= link_to '編集', { :controller => "schedules", :action => "edit", :id => schedule.id, :date => @now_date } %></td>
@@ -35,10 +38,12 @@
 
 <br />
 
-<%= will_paginate @schedules, :prev_label => 'Prev', :next_label => 'Next' %>
+<%= will_paginate @schedules, :prev_label => 'Prev', :next_label => 'Next' %><br />
 
 <br />
 
-<%= link_to '新規作成', { :controller => "schedules", :action => "new", :date => @now_date } %><br />
+<%= link_to 'トップ', :action => "calendar", :date => @now_date %><br />
+
 <br />
-<%= link_to 'カレンダー', :action => "calendar", :date => @now_date %><br />
+
+</div>

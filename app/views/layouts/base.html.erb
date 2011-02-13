@@ -5,9 +5,8 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 		<title>Taurus</title>
 		<%= javascript_include_tag :defaults %>
-		<%#= stylesheet_link_tag 'base' %>
     <%= stylesheet_link_tag 'base' %>
-    <%#= stylesheet_link_tag 'will_paginate' %>
+    <%= stylesheet_link_tag 'base_override' %>
 	</head>
 
 	<body>
@@ -35,8 +34,8 @@
         <%# ログインID %>
         <%= session[:login_id] -%>：
 
-        <%# Profile %>
-        <%= link_to( "Profile", :controller => 'entry', :action => 'edit' ) -%>
+        <%# Edit %>
+        <%= link_to( "Edit", :controller => 'entry', :action => 'edit' ) -%>
 
         <%# ログアウト %>
         <% form_tag :controller => 'entry', :action => 'logout' do -%>

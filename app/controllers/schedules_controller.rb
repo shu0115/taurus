@@ -66,6 +66,7 @@ class SchedulesController < ApplicationController
     @schedule = Schedule.new( :schedule_date => schedule_date )
     @schedule.start_time = Time.parse("00:00")
     @schedule.end_time = Time.parse("00:00")
+    @schedule.mode = '非公開'
   end
 
   #------#
