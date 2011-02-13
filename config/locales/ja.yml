@@ -49,6 +49,7 @@ ja:
     attributes:
       user:
         display_name: 表示名
+        twitter_id: TwitterID
         level: レベル
         login_id: ログインID
         mail_address: メールアドレス

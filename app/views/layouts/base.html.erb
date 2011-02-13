@@ -37,7 +37,11 @@
       <% else %>
         <%# --- ログイン後 --- %>
         <%# ログインID %>
-        <%= session[:login_id] -%>：
+        <% unless session[:display_name].blank? %>
+          <%= session[:display_name] -%>：
+        <% else %>
+          <%= session[:login_id] -%>：
+        <% end %>
 
         <%# Schedule %>
         <%= link_to( t( 'menu.schedule' ), :controller => 'schedules' ) -%>

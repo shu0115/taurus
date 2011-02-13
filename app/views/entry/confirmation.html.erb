@@ -7,14 +7,31 @@
     <div class="inner">
 
       <% form_for :user, :url => { :controller => "entry", :action => "complete" }, :html => { :class => :form } do |f| -%>
+
+        <%# ログインID %>
         <p>
-          <b><%= t("activerecord.attributes.user.login_id", :default => t("activerecord.labels.login_id", :default => "Login ID")) %>:</b>
+          <b><%= t("activerecord.attributes.user.login_id") %>:</b>
           <%= @user.login_id %>
           <%= f.hidden_field :login_id, :value => @user.login_id %>
         </p>
 
+        <%# 表示名 %>
         <p>
-          <b><%= t("activerecord.attributes.user.password", :default => t("activerecord.labels.password", :default => "Password")) %>:</b>
+          <b><%= t("activerecord.attributes.user.display_name") %>:</b>
+          <%= @user.display_name %>
+          <%= f.hidden_field :display_name, :value => @user.display_name %>
+        </p>
+
+        <%# Twitter ID %>
+        <p>
+          <b><%= t("activerecord.attributes.user.twitter_id") %>:</b>
+          <%= @user.twitter_id %>
+          <%= f.hidden_field :twitter_id, :value => @user.twitter_id %>
+        </p>
+
+        <%# パスワード %>
+        <p>
+          <b><%= t("activerecord.attributes.user.password") %>:</b>
           <% @user.password.length.times{ |index| %>*<% } %>
           <%= f.hidden_field :password, :value => @user.password %>
         </p>
@@ -26,9 +43,12 @@
           <br />
           <br />
 
-          <%# 入力修正 %>
-          <%= link_to '入力修正', { :action => "input", :user => params[:user] }, :class => 'button' %>
+          <%# 修正 %>
+          <div class="pagination">
+            <%= link_to '修正', { :action => "input", :user => params[:user] }, :class => 'button' %>
+          </div>
         </div>
+
       <% end -%>
 
       <br />

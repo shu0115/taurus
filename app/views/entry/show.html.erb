@@ -5,14 +5,30 @@
     <h3 class="title">登録情報閲覧</h3>
 
     <div class="inner">
-      <b><%= t( "activerecord.attributes.user.login_id", :default => 'Login ID' ) %>:</b>
-      <%= @user.login_id %>
+
+      <%# ログインID %>
+      <b><%= t( "activerecord.attributes.user.login_id" ) %>：</b>
+      <%= @user.login_id %><br />
+
+      <br />
+
+      <%# 表示名 %>
+      <b><%= t( "activerecord.attributes.user.display_name" ) %>：</b>
+      <%= @user.display_name %><br />
+
+      <br />
+
+      <%# TwitterID %>
+      <b><%= t( "activerecord.attributes.user.twitter_id" ) %>：</b>
+      <%= @user.twitter_id %><br />
 
       <br />
       <br />
 
       <%# トップ %>
-      <%= link_to 'トップ', { :controller => 'schedules' }, :class => 'button' %>
+      <div class="pagination">
+        <%= link_to t( "menu.top" ), { :controller => 'schedules' }, :class => 'button' %>
+      </div>
     </div>
 
     <br />

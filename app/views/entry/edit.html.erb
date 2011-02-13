@@ -10,29 +10,50 @@
       <% form_for :user, :url => { :controller => "entry", :action => "update" }, :html => { :class => :form } do |f| -%>
         <%= Utility.replace_message( :message => f.error_messages )   %>
 
+        <%# ログインID %>
         <div class="group">
-          <%= f.label :login_id, t("activerecord.attributes.user.login_id", :default => "Login ID"), :class => :label %>
+          <%= f.label :login_id, t("activerecord.attributes.user.login_id", :default => "Login ID"), :class => :label %>：
           <%= f.text_field :login_id, :class => 'text_field' %>
         </div>
 
         <br />
 
+        <%# 表示名 %>
         <div class="group">
-          <%= f.label :password, t("entry.password", :default => "Password"), :class => :label %>
-          <%= f.password_field :password, :class => 'password_field' %>
+          <%= f.label :display_name, t("activerecord.attributes.user.display_name"), :class => :label %>：
+          <%= f.text_field :display_name, :class => 'text_field' %>
         </div>
 
         <br />
 
+        <%# TwitterID %>
         <div class="group">
-          <%= f.label :edit_password, t("entry.edit_password", :default => "Edit Password"), :class => :label %>
+          <%= f.label :twitter_id, t("activerecord.attributes.user.twitter_id"), :class => :label %>：
+          <%= f.text_field :twitter_id, :class => 'text_field' %>
+        </div>
+
+        <br />
+
+        <%# パスワード %>
+        <div class="group">
+          <%= f.label :password, t("entry.password", :default => "Password"), :class => :label %>：
+          <%= f.password_field :password, :class => 'password_field' %>
+        </div>
+
+        <br />
+        <br />
+
+        <%# 変更パスワード %>
+        <div class="group">
+          <%= f.label :edit_password, t("entry.edit_password", :default => "Edit Password"), :class => :label %>：
           <%= f.password_field :edit_password, :class => 'password_field' %>
         </div>
 
         <br />
 
+        <%# 変更パスワード確認 %>
         <div class="group">
-          <%= f.label :edit_password_confirmation, t("entry.edit_password_confirmation", :default => "Edit Password Confirmation"), :class => :label %>
+          <%= f.label :edit_password_confirmation, t("entry.edit_password_confirmation", :default => "Edit Password Confirmation"), :class => :label %>：
           <%= f.password_field :edit_password_confirmation, :class => 'password_field' %>
         </div>
 
@@ -45,8 +66,10 @@
 
           <br /><br />
 
-          <%# 戻る %>
-          <%= link_to '戻る', { :controller => 'schedules' }, :class => 'button' %>
+          <%# トップ %>
+          <div class="pagination">
+            <%= link_to t( "menu.top" ), { :controller => 'schedules' }, :class => 'button' %>
+          </div>
         </div>
       <% end -%>
 
