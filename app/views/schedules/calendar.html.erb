@@ -8,10 +8,8 @@
 
 <%# 前月 %>
 <%= link_to( "前月", { :action => 'calendar', :date => Date.new( last_month.year, last_month.month, last_month.day ) } ) -%>
-
 <%# 今月 %>
  | <%= link_to( "今月", :action => 'calendar', :date => Date.new( Time.now.year, Time.now.month, Time.now.day ) ) -%>
-
 <%# 次月 %>
  | <%= link_to( "次月", :action => 'calendar', :date => Date.new( next_month.year, next_month.month, next_month.day ) ) -%>
 
@@ -61,6 +59,7 @@
 <br />
 
 <br />
+<%# リスト %>
 <%= link_to t( "menu.list", :default => 'List' ), :action => "list", :date => @now_date %><br />
 <br />
 

@@ -20,7 +20,7 @@
       <% if session[:user_id].blank? -%>
         <%# --- ログイン前 --- %>
         <%# Entry %>
-        <%= link_to( "Entry", :controller => 'entry', :action => 'input' ) -%>
+        <%= link_to( t( 'menu.entry' ), :controller => 'entry', :action => 'input' ) -%>
 
         <%# Login %>
         <% form_tag :controller => "entry", :action => "login" do -%>
@@ -35,7 +35,7 @@
         <%= session[:login_id] -%>：
 
         <%# Edit %>
-        <%= link_to( "Edit", :controller => 'entry', :action => 'edit' ) -%>
+        <%= link_to( t( 'menu.edit' ), :controller => 'entry', :action => 'edit' ) -%>
 
         <%# ログアウト %>
         <% form_tag :controller => 'entry', :action => 'logout' do -%>
