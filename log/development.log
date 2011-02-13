@@ -4974,3 +4974,1461 @@ Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-12 23:13:15) [
 Rendering template within layouts/base
 Rendering schedules/calendar
 Completed in 176ms (View: 168, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 11:16:34) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 169ms (View: 161, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 11:24:14) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 216ms (View: 207, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 11:25:56) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 215ms (View: 207, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 11:26:56) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 214ms (View: 206, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 11:27:54) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 214ms (View: 206, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 11:28:39) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 216ms (View: 208, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 11:33:09) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 222ms (View: 213, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 11:34:17) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 219ms (View: 210, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 11:34:28) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 216ms (View: 207, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 11:35:07) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 167ms (View: 158, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 11:36:40) [GET]
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 165ms (View: 157, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 11:37:13) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 212ms (View: 204, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 11:37:45) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 214ms (View: 206, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 11:38:01) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 219ms (View: 209, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 11:38:23) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 214ms (View: 206, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 11:38:50) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 217ms (View: 209, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 11:39:11) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 215ms (View: 207, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 11:39:26) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 166ms (View: 158, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 11:41:19) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 172ms (View: 164, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 11:44:18) [GET]
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 177ms (View: 170, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 11:44:43) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 174ms (View: 167, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 11:49:04) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 223ms (View: 167, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing EntryController#logout (for 127.0.0.1 at 2011-02-13 11:49:16) [POST]
+  Parameters: {"commit"=>"ログアウト", "authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "request_url"=>"http://0.0.0.0:3000/"}
+Redirected to http://0.0.0.0:3000/
+Completed in 1ms (DB: 0) | 302 Found [http://0.0.0.0/entry/logout]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 11:49:16) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 169ms (View: 161, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 11:50:43) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 227ms (View: 218, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing EntryController#login (for 127.0.0.1 at 2011-02-13 11:50:53) [GET]
+Rendering template within layouts/base
+Rendering entry/login
+Completed in 39ms (View: 35, DB: 0) | 200 OK [http://0.0.0.0/entry/login]
+
+
+Processing EntryController#login (for 127.0.0.1 at 2011-02-13 11:56:30) [GET]
+Rendering template within layouts/base
+Rendering entry/login
+Completed in 67ms (View: 15, DB: 0) | 200 OK [http://0.0.0.0/entry/login]
+
+
+Processing EntryController#login (for 127.0.0.1 at 2011-02-13 11:57:46) [GET]
+Rendering template within layouts/base
+Rendering entry/login
+Completed in 18ms (View: 15, DB: 0) | 200 OK [http://0.0.0.0/entry/login]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 11:57:48) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 218ms (View: 210, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 11:58:04) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 225ms (View: 216, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing EntryController#login (for 127.0.0.1 at 2011-02-13 11:58:07) [POST]
+  Parameters: {"commit"=>"ログイン", "authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "login"=>{"login_id"=>"test", "password"=>"test"}, "request_url"=>"http://0.0.0.0:3000/schedules"}
+Rendering template within layouts/base
+Rendering entry/login
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://0.0.0.0/entry/login]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 11:59:12) [GET]
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 215ms (View: 207, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 12:00:54) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 221ms (View: 213, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing EntryController#login (for 127.0.0.1 at 2011-02-13 12:00:56) [POST]
+  Parameters: {"commit"=>"ログイン", "authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "login"=>{"login_id"=>"test", "password"=>"test"}, "request_url"=>"http://0.0.0.0:3000/schedules"}
+Rendering template within layouts/base
+Rendering entry/login
+Completed in 14ms (View: 11, DB: 0) | 200 OK [http://0.0.0.0/entry/login]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 12:01:05) [GET]
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 214ms (View: 206, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 12:03:14) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 174ms (View: 166, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing EntryController#login (for 127.0.0.1 at 2011-02-13 12:03:22) [POST]
+  Parameters: {"commit"=>"ログイン", "authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "login"=>{"login_id"=>"test", "password"=>"test"}, "request_url"=>"http://0.0.0.0:3000/schedules"}
+Rendering template within layouts/base
+Rendering entry/login
+Completed in 13ms (View: 10, DB: 0) | 200 OK [http://0.0.0.0/entry/login]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 12:05:06) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 169ms (View: 161, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 12:05:06) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 169ms (View: 161, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 12:05:10) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 226ms (View: 218, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing EntryController#login (for 127.0.0.1 at 2011-02-13 12:05:12) [POST]
+  Parameters: {"commit"=>"ログイン", "authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "login"=>{"login_id"=>"test", "password"=>"test"}, "request_url"=>"http://0.0.0.0:3000/schedules"}
+Rendering template within layouts/base
+Rendering entry/login
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://0.0.0.0/entry/login]
+
+
+Processing EntryController#login (for 127.0.0.1 at 2011-02-13 12:05:43) [POST]
+  Parameters: {"commit"=>"ログイン", "authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "login"=>{"login_id"=>"test", "password"=>"test"}, "request_url"=>"http://0.0.0.0:3000/entry/login"}
+Rendering template within layouts/base
+Rendering entry/login
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://0.0.0.0/entry/login]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 12:06:56) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 217ms (View: 209, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 12:06:56) [GET]
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 220ms (View: 212, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing EntryController#login (for 127.0.0.1 at 2011-02-13 12:06:58) [POST]
+  Parameters: {"commit"=>"ログイン", "authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "login"=>{"login_id"=>"test", "password"=>"test"}, "request_url"=>"http://0.0.0.0:3000/schedules"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login_id" = 'test') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/schedules
+Completed in 6ms (DB: 0) | 302 Found [http://0.0.0.0/entry/login]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 12:06:58) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 218ms (View: 211, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing EntryController#logout (for 127.0.0.1 at 2011-02-13 12:07:39) [POST]
+  Parameters: {"commit"=>"ログアウト", "authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "request_url"=>"http://0.0.0.0:3000/schedules"}
+Redirected to http://0.0.0.0:3000/schedules
+Completed in 1ms (DB: 0) | 302 Found [http://0.0.0.0/entry/logout]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 12:07:39) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 223ms (View: 214, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing EntryController#login (for 127.0.0.1 at 2011-02-13 12:07:42) [POST]
+  Parameters: {"commit"=>"ログイン", "authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "login"=>{"login_id"=>"test", "password"=>"test"}, "request_url"=>"http://0.0.0.0:3000/schedules"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login_id" = 'test') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/schedules
+Completed in 6ms (DB: 0) | 302 Found [http://0.0.0.0/entry/login]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 12:07:42) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 218ms (View: 210, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 12:08:19) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 221ms (View: 213, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing EntryController#edit (for 127.0.0.1 at 2011-02-13 12:08:21) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/base
+Rendering entry/edit
+Completed in 20ms (View: 15, DB: 0) | 200 OK [http://0.0.0.0/entry/edit]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 12:08:27) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 217ms (View: 209, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 12:09:58) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 229ms (View: 221, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 12:10:48) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 226ms (View: 218, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing EntryController#logout (for 127.0.0.1 at 2011-02-13 12:10:51) [POST]
+  Parameters: {"commit"=>"ログアウト", "authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "request_url"=>"http://0.0.0.0:3000/schedules"}
+Redirected to http://0.0.0.0:3000/schedules
+Completed in 1ms (DB: 0) | 302 Found [http://0.0.0.0/entry/logout]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 12:10:51) [GET]
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 216ms (View: 208, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing EntryController#login (for 127.0.0.1 at 2011-02-13 12:10:53) [POST]
+  Parameters: {"commit"=>"ログイン", "authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "login"=>{"login_id"=>"test", "password"=>"test"}, "request_url"=>"http://0.0.0.0:3000/schedules"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login_id" = 'test') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/schedules
+Completed in 5ms (DB: 0) | 302 Found [http://0.0.0.0/entry/login]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 12:10:53) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 231ms (View: 222, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 12:12:00) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 223ms (View: 214, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing EntryController#logout (for 127.0.0.1 at 2011-02-13 12:12:11) [POST]
+  Parameters: {"commit"=>"ログアウト", "authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "request_url"=>"http://0.0.0.0:3000/schedules"}
+Redirected to http://0.0.0.0:3000/schedules
+Completed in 1ms (DB: 0) | 302 Found [http://0.0.0.0/entry/logout]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 12:12:11) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 215ms (View: 207, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing EntryController#login (for 127.0.0.1 at 2011-02-13 12:12:13) [POST]
+  Parameters: {"commit"=>"ログイン", "authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "login"=>{"login_id"=>"test", "password"=>"test"}, "request_url"=>"http://0.0.0.0:3000/schedules"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login_id" = 'test') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/schedules
+Completed in 5ms (DB: 0) | 302 Found [http://0.0.0.0/entry/login]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 12:12:13) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 222ms (View: 214, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 12:13:42) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 171ms (View: 163, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 12:13:52) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 171ms (View: 163, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 12:14:21) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 178ms (View: 168, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 12:15:10) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 172ms (View: 164, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 12:15:19) [GET]
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 220ms (View: 165, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 12:17:55) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.7ms)[0m   [0mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/base
+Rendering schedules/list
+Completed in 84ms (View: 80, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 12:19:11) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/base
+Rendering schedules/list
+Completed in 34ms (View: 30, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 12:19:13) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 228ms (View: 220, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 12:23:24) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 231ms (View: 223, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 12:24:08) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 217ms (View: 209, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 12:24:49) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 168ms (View: 160, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 12:26:15) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 172ms (View: 164, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 12:26:40) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 217ms (View: 208, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 12:27:01) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 225ms (View: 216, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 12:27:12) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 224ms (View: 215, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 12:27:23) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 226ms (View: 218, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 12:27:34) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 218ms (View: 209, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 12:27:43) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 219ms (View: 210, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 12:28:32) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 220ms (View: 212, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 12:29:01) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 172ms (View: 164, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 12:29:22) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 172ms (View: 164, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 12:32:10) [GET]
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 171ms (View: 163, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 12:32:28) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 217ms (View: 163, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 12:34:48) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.4ms)[0m   [0mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 3 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:9)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:38)
+Completed in 69ms (View: 65, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 12:37:31) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.4ms)[0m   [0mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 3 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:9)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:38)
+Completed in 21ms (View: 17, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 12:38:03) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 3 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:9)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:38)
+Completed in 22ms (View: 18, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 12:38:29) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.4ms)[0m   [0mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 3 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:9)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:38)
+Completed in 21ms (View: 17, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 12:38:52) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 3 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:9)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:38)
+Completed in 21ms (View: 17, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 12:39:28) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 3 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:9)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:38)
+Completed in 21ms (View: 17, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 12:39:49) [GET]
+  Parameters: {"date"=>"2011-02-13", "page"=>"2"}
+  [4;35;1mSchedule Load (0.4ms)[0m   [0mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 3 OFFSET 3[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:9)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:38)
+Completed in 22ms (View: 18, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13&page=2]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 12:39:51) [GET]
+  Parameters: {"date"=>"2011-02-13", "page"=>"3"}
+  [4;35;1mSchedule Load (0.4ms)[0m   [0mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 3 OFFSET 6[0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:9)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:38)
+Completed in 18ms (View: 15, DB: 0) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13&page=3]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 12:39:53) [GET]
+  Parameters: {"date"=>"2011-02-13", "page"=>"2"}
+  [4;36;1mSchedule Load (0.4ms)[0m   [0;1mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 3 OFFSET 3[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:9)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:38)
+Completed in 21ms (View: 18, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13&page=2]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 12:39:55) [GET]
+  Parameters: {"date"=>"2011-02-13", "page"=>"1"}
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 3 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:9)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:38)
+Completed in 20ms (View: 16, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13&page=1]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 12:39:56) [GET]
+  Parameters: {"date"=>"2011-02-13", "page"=>"3"}
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 3 OFFSET 6[0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:9)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:38)
+Completed in 21ms (View: 17, DB: 0) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13&page=3]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 12:39:57) [GET]
+  Parameters: {"date"=>"2011-02-13", "page"=>"2"}
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 3 OFFSET 3[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:9)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:38)
+Completed in 22ms (View: 18, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13&page=2]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 12:39:58) [GET]
+  Parameters: {"date"=>"2011-02-13", "page"=>"1"}
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 3 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:9)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:38)
+Completed in 22ms (View: 18, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13&page=1]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 12:40:43) [GET]
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 214ms (View: 206, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 12:41:38) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 230ms (View: 221, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 12:42:18) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 223ms (View: 215, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 12:42:52) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 232ms (View: 223, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 12:44:07) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 3 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:9)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:38)
+Completed in 21ms (View: 17, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 12:46:40) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 227ms (View: 218, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 12:47:17) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 221ms (View: 214, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 12:48:20) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 217ms (View: 209, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 12:52:56) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 179ms (View: 171, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 12:53:41) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 175ms (View: 166, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 12:54:12) [GET]
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 178ms (View: 171, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 12:55:00) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 225ms (View: 170, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 12:55:44) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 222ms (View: 215, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 12:56:29) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 221ms (View: 212, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 12:59:33) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 223ms (View: 215, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:00:45) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 223ms (View: 215, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:01:14) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 224ms (View: 216, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:01:14) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 218ms (View: 210, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:02:01) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 231ms (View: 223, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:02:01) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 220ms (View: 211, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:02:24) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 183ms (View: 175, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:02:24) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 215ms (View: 160, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:02:34) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 225ms (View: 217, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:02:34) [GET]
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 219ms (View: 211, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:03:38) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 233ms (View: 225, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:04:12) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 231ms (View: 223, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:04:13) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 227ms (View: 219, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:04:31) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 168ms (View: 160, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:04:32) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 167ms (View: 159, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:06:25) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 220ms (View: 211, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:06:25) [GET]
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 218ms (View: 210, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:06:51) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 224ms (View: 216, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:06:51) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 225ms (View: 217, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:07:03) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 169ms (View: 161, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:07:10) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 176ms (View: 168, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:09:29) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 215ms (View: 207, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:09:40) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 219ms (View: 211, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:09:58) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 225ms (View: 217, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:10:13) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 218ms (View: 210, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:10:24) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 218ms (View: 210, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:10:32) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 174ms (View: 166, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:10:32) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 169ms (View: 161, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:10:55) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 219ms (View: 211, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:10:55) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 221ms (View: 214, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:11:04) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 218ms (View: 210, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:11:05) [GET]
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 218ms (View: 211, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:14:01) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 169ms (View: 161, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:14:01) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 168ms (View: 160, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:15:04) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 215ms (View: 208, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:15:04) [GET]
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 220ms (View: 212, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:15:17) [GET]
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 218ms (View: 211, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:15:17) [GET]
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 218ms (View: 211, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:15:44) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 218ms (View: 210, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:15:44) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 168ms (View: 161, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:16:17) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 219ms (View: 211, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:16:18) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 222ms (View: 215, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:16:35) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 225ms (View: 217, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:16:35) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 225ms (View: 218, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:17:35) [GET]
+  Parameters: {"date"=>"2011-03-13"}
+  [4;36;1mSchedule Load (0.3ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-03-01' AND schedule_date <= '2011-03-31') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 232ms (View: 227, DB: 0) | 200 OK [http://0.0.0.0/?date=2011-03-13]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:17:37) [GET]
+  Parameters: {"date"=>"2011-04-13"}
+  [4;35;1mSchedule Load (0.3ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-04-01' AND schedule_date <= '2011-04-30') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 182ms (View: 176, DB: 0) | 200 OK [http://0.0.0.0/?date=2011-04-13]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:17:39) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;36;1mSchedule Load (0.8ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 237ms (View: 176, DB: 1) | 200 OK [http://0.0.0.0/?date=2011-02-13]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:18:29) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 221ms (View: 212, DB: 1) | 200 OK [http://0.0.0.0/?date=2011-02-13]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:18:30) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 221ms (View: 213, DB: 1) | 200 OK [http://0.0.0.0/?date=2011-02-13]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:19:43) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 225ms (View: 216, DB: 1) | 200 OK [http://0.0.0.0/?date=2011-02-13]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:19:43) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 230ms (View: 222, DB: 1) | 200 OK [http://0.0.0.0/?date=2011-02-13]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:22:28) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 171ms (View: 160, DB: 1) | 200 OK [http://0.0.0.0/?date=2011-02-13]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:22:29) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 216ms (View: 160, DB: 1) | 200 OK [http://0.0.0.0/?date=2011-02-13]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:22:40) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 217ms (View: 209, DB: 1) | 200 OK [http://0.0.0.0/?date=2011-02-13]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:22:40) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 219ms (View: 211, DB: 1) | 200 OK [http://0.0.0.0/?date=2011-02-13]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:23:50) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 220ms (View: 211, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:23:50) [GET]
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 218ms (View: 211, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:26:54) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 174ms (View: 165, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:26:54) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 217ms (View: 160, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#list (for 127.0.0.1 at 2011-02-13 13:26:59) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" ORDER BY schedule_date DESC, id ASC LIMIT 3 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "schedules" [0m
+Rendering template within layouts/base
+Rendering schedules/list
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:9)
+DEPRECATION WARNING: WillPaginate: :prev_label view parameter is now :previous_label; the old name has been deprecated. (called from _run_erb_app47views47schedules47list46html46erb at /Users/raisondetre0115/Mine/workspace/taurus/app/views/schedules/list.html.erb:38)
+Completed in 21ms (View: 16, DB: 1) | 200 OK [http://0.0.0.0/schedules/list?date=2011-02-13]
+
+
+Processing EntryController#logout (for 127.0.0.1 at 2011-02-13 13:27:13) [POST]
+  Parameters: {"commit"=>"ログアウト", "authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "request_url"=>"http://0.0.0.0:3000/schedules"}
+Redirected to http://0.0.0.0:3000/schedules
+Completed in 1ms (DB: 0) | 302 Found [http://0.0.0.0/entry/logout]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:27:13) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 168ms (View: 160, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:27:13) [GET]
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 215ms (View: 207, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing EntryController#login (for 127.0.0.1 at 2011-02-13 13:27:25) [POST]
+  Parameters: {"commit"=>"ログイン", "authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "login"=>{"login_id"=>"test", "password"=>"test"}, "request_url"=>"http://0.0.0.0:3000/schedules"}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login_id" = 'test') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/schedules
+Completed in 33ms (DB: 0) | 302 Found [http://0.0.0.0/entry/login]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:27:25) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 218ms (View: 210, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:27:27) [GET]
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 222ms (View: 215, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:27:28) [GET]
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 220ms (View: 212, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:42:06) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 256ms (View: 248, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:42:44) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 220ms (View: 212, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:42:44) [GET]
+  [4;35;1mSchedule Load (0.7ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 169ms (View: 161, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:43:42) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 176ms (View: 168, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:43:42) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 217ms (View: 209, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:49:53) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 228ms (View: 219, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:50:04) [GET]
+  Parameters: {"date"=>"2011-11-01"}
+  [4;35;1mSchedule Load (0.3ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-11-01' AND schedule_date <= '2011-11-30') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 227ms (View: 222, DB: 0) | 200 OK [http://0.0.0.0/?date=2011-11-01]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:50:06) [GET]
+  Parameters: {"date"=>"2012-11-01"}
+  [4;36;1mSchedule Load (0.3ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2012-11-01' AND schedule_date <= '2012-11-30') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 200ms (View: 193, DB: 0) | 200 OK [http://0.0.0.0/?date=2012-11-01]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:50:08) [GET]
+  Parameters: {"date"=>"2012-12-01"}
+  [4;35;1mSchedule Load (0.3ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2012-12-01' AND schedule_date <= '2012-12-31') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 140ms (View: 135, DB: 0) | 200 OK [http://0.0.0.0/?date=2012-12-01]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:50:11) [GET]
+  Parameters: {"date"=>"2013-01-01"}
+  [4;36;1mSchedule Load (0.3ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2013-01-01' AND schedule_date <= '2013-01-31') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 245ms (View: 239, DB: 0) | 200 OK [http://0.0.0.0/?date=2013-01-01]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:50:12) [GET]
+  Parameters: {"date"=>"2013-02-01"}
+  [4;35;1mSchedule Load (0.3ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2013-02-01' AND schedule_date <= '2013-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 250ms (View: 245, DB: 0) | 200 OK [http://0.0.0.0/?date=2013-02-01]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:50:13) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;36;1mSchedule Load (0.9ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 227ms (View: 217, DB: 1) | 200 OK [http://0.0.0.0/?date=2011-02-13]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:50:15) [GET]
+  Parameters: {"date"=>"2011-01-13"}
+  [4;35;1mSchedule Load (0.3ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-01-01' AND schedule_date <= '2011-01-31') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 246ms (View: 241, DB: 0) | 200 OK [http://0.0.0.0/?date=2011-01-13]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:50:17) [GET]
+  Parameters: {"date"=>"2010-12-13"}
+  [4;36;1mSchedule Load (0.3ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2010-12-01' AND schedule_date <= '2010-12-31') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 272ms (View: 266, DB: 0) | 200 OK [http://0.0.0.0/?date=2010-12-13]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:50:19) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 229ms (View: 220, DB: 1) | 200 OK [http://0.0.0.0/?date=2011-02-13]
+
+
+Processing EntryController#edit (for 127.0.0.1 at 2011-02-13 13:50:24) [GET]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/base
+Rendering entry/edit
+Completed in 15ms (View: 11, DB: 0) | 200 OK [http://0.0.0.0/entry/edit]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:50:31) [GET]
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 219ms (View: 211, DB: 1) | 200 OK [http://0.0.0.0/schedules]

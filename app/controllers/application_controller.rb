@@ -8,5 +8,13 @@ class ApplicationController < ActionController::Base
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
 
+  require 'date'
+
   layout 'base'
+
+  $wdays = [ "日", "月", "火", "水", "木", "金", "土" ]
+  $cycle_mode = [ "day", "month", "year" ]
+  $mode = [ '公開', '非公開' ]
+  $per_page = 3
+
 end

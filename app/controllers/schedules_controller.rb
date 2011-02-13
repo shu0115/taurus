@@ -1,11 +1,5 @@
 class SchedulesController < ApplicationController
 
-  require 'date'
-
-  $wdays = [ "日", "月", "火", "水", "木", "金", "土" ]
-  $cycle_mode = [ "day", "month", "year" ]
-  $mode = [ '公開', '非公開' ]
-
   #----------#
   # calendar #
   #----------#
@@ -50,7 +44,7 @@ class SchedulesController < ApplicationController
   #------#
   def list
     @now_date = Date.parse( params[:date] )
-    @schedules = Schedule.paginate( :page => params[:page], :per_page => 10, :order => "schedule_date DESC, id ASC" )
+    @schedules = Schedule.paginate( :page => params[:page], :per_page => $per_page, :order => "schedule_date DESC, id ASC" )
   end
 
   #------#

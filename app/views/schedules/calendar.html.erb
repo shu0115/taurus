@@ -1,13 +1,13 @@
-<span class="menu_title">カレンダー</span><br />
-
-<br />
 
 <%# 前月／次月生成 %>
 <% last_month = @now_date.last_month %>
 <% next_month = @now_date.next_month %>
 
+<%# ページネーション %>
+<div class="pagination">
+
 <%# 前月 %>
-<%= link_to( "前月", :action => 'calendar', :date => Date.new( last_month.year, last_month.month, last_month.day ) ) -%>
+<%= link_to( "前月", { :action => 'calendar', :date => Date.new( last_month.year, last_month.month, last_month.day ) } ) -%>
 
 <%# 今月 %>
  | <%= link_to( "今月", :action => 'calendar', :date => Date.new( Time.now.year, Time.now.month, Time.now.day ) ) -%>
@@ -21,7 +21,7 @@
 <%# 前年 %>
 <%= link_to( "#{@now_date.years_ago(1).year}年", :action=>'calendar', :date=> @now_date.years_ago(1) ) -%>
 <%# 今年 %>
- | <b><%= "#{@now_date.year}年" -%></b>
+ | <b><span class="current"><%= "#{@now_date.year}年" -%></span></b>
 <%# 翌年 %>
  | <%= link_to( "#{@now_date.years_since(1).year}年", :action=>'calendar', :date=> @now_date.years_since(1) ) -%>
 
@@ -29,18 +29,18 @@
 <br />
 
 <%# 月 %>
-<% if @now_date.month == 1 %><b><%= "1月" -%></b><% else %><%= link_to( "1月", :action => 'calendar', :date => Date.new( @now_date.year, 1, 1 ) ) -%><% end -%>
-　<% if @now_date.month == 2 %><b><%= "2月" -%></b><% else %><%= link_to( "2月", :action => 'calendar', :date => Date.new( @now_date.year, 2, 1 ) ) -%><% end -%>
-　<% if @now_date.month == 3 %><b><%= "3月" -%></b><% else %><%= link_to( "3月", :action => 'calendar', :date => Date.new( @now_date.year, 3, 1 ) ) -%><% end -%>
-　<% if @now_date.month == 4 %><b><%= "4月" -%></b><% else %><%= link_to( "4月", :action => 'calendar', :date => Date.new( @now_date.year, 4, 1 ) ) -%><% end -%>
-　<% if @now_date.month == 5 %><b><%= "5月" -%></b><% else %><%= link_to( "5月", :action => 'calendar', :date => Date.new( @now_date.year, 5, 1 ) ) -%><% end -%>
-　<% if @now_date.month == 6 %><b><%= "6月" -%></b><% else %><%= link_to( "6月", :action => 'calendar', :date => Date.new( @now_date.year, 6, 1 ) ) -%><% end -%>
-　<% if @now_date.month == 7 %><b><%= "7月" -%></b><% else %><%= link_to( "7月", :action => 'calendar', :date => Date.new( @now_date.year, 7, 1 ) ) -%><% end -%>
-　<% if @now_date.month == 8 %><b><%= "8月" -%></b><% else %><%= link_to( "8月", :action => 'calendar', :date => Date.new( @now_date.year, 8, 1 ) ) -%><% end -%>
-　<% if @now_date.month == 9 %><b><%= "9月" -%></b><% else %><%= link_to( "9月", :action => 'calendar', :date => Date.new( @now_date.year, 9, 1 ) ) -%><% end -%>
-　<% if @now_date.month == 10 %><b><%= "10月" -%></b><% else %><%= link_to( "10月", :action => 'calendar', :date => Date.new( @now_date.year, 10, 1 ) ) -%><% end -%>
-　<% if @now_date.month == 11 %><b><%= "11月" -%></b><% else %><%= link_to( "11月", :action => 'calendar', :date => Date.new( @now_date.year, 11, 1 ) ) -%><% end -%>
-　<% if @now_date.month == 12 %><b><%= "12月" -%></b><% else %><%= link_to( "12月", :action => 'calendar', :date => Date.new( @now_date.year, 12, 1 ) ) -%><% end -%>
+<% if @now_date.month == 1 %><b><span class="current"><%= "1月" -%></span></b><% else %><%= link_to( "1月", :action => 'calendar', :date => Date.new( @now_date.year, 1, 1 ) ) -%><% end -%>
+　<% if @now_date.month == 2 %><b><span class="current"><%= "2月" -%></span></b><% else %><%= link_to( "2月", :action => 'calendar', :date => Date.new( @now_date.year, 2, 1 ) ) -%><% end -%>
+　<% if @now_date.month == 3 %><b><span class="current"><%= "3月" -%></span></b><% else %><%= link_to( "3月", :action => 'calendar', :date => Date.new( @now_date.year, 3, 1 ) ) -%><% end -%>
+　<% if @now_date.month == 4 %><b><span class="current"><%= "4月" -%></span></b><% else %><%= link_to( "4月", :action => 'calendar', :date => Date.new( @now_date.year, 4, 1 ) ) -%><% end -%>
+　<% if @now_date.month == 5 %><b><span class="current"><%= "5月" -%></span></b><% else %><%= link_to( "5月", :action => 'calendar', :date => Date.new( @now_date.year, 5, 1 ) ) -%><% end -%>
+　<% if @now_date.month == 6 %><b><span class="current"><%= "6月" -%></span></b><% else %><%= link_to( "6月", :action => 'calendar', :date => Date.new( @now_date.year, 6, 1 ) ) -%><% end -%>
+　<% if @now_date.month == 7 %><b><span class="current"><%= "7月" -%></span></b><% else %><%= link_to( "7月", :action => 'calendar', :date => Date.new( @now_date.year, 7, 1 ) ) -%><% end -%>
+　<% if @now_date.month == 8 %><b><span class="current"><%= "8月" -%></span></b><% else %><%= link_to( "8月", :action => 'calendar', :date => Date.new( @now_date.year, 8, 1 ) ) -%><% end -%>
+　<% if @now_date.month == 9 %><b><span class="current"><%= "9月" -%></span></b><% else %><%= link_to( "9月", :action => 'calendar', :date => Date.new( @now_date.year, 9, 1 ) ) -%><% end -%>
+　<% if @now_date.month == 10 %><b><span class="current"><%= "10月" -%></span></b><% else %><%= link_to( "10月", :action => 'calendar', :date => Date.new( @now_date.year, 10, 1 ) ) -%><% end -%>
+　<% if @now_date.month == 11 %><b><span class="current"><%= "11月" -%></span></b><% else %><%= link_to( "11月", :action => 'calendar', :date => Date.new( @now_date.year, 11, 1 ) ) -%><% end -%>
+　<% if @now_date.month == 12 %><b><span class="current"><%= "12月" -%></span></b><% else %><%= link_to( "12月", :action => 'calendar', :date => Date.new( @now_date.year, 12, 1 ) ) -%><% end -%>
 
 <br />
 
@@ -60,11 +60,14 @@
 
 <br />
 
-<b><%= "#{@now_date.year}年#{@now_date.month}月" -%></b><br />
+<br />
+<%= link_to t( "menu.list", :default => 'List' ), :action => "list", :date => @now_date %><br />
+<br />
 
-<br />
-<%= link_to 'List', :action => "list", :date => @now_date %><br />
-<br />
+</div>
+<%# ／ページネーション %>
+
+<div class='calendar_area'>
 
 <table class="calendar">
 
@@ -137,9 +140,15 @@
 
 </table>
 
-<br />
-
-<%= link_to 'List', :action => "list", :date => @now_date %>
+</div>
 
 <br />
 <br />
+
+<%# ページネーション %>
+<div class="pagination">
+<%= link_to t( "menu.list", :default => 'List' ), :action => "list", :date => @now_date %>
+</div>
+
+<br />
+

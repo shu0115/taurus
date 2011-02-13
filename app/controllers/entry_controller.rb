@@ -41,7 +41,7 @@ class EntryController < ApplicationController
   # login #
   #-------#
   def login
-    @user = User.new( params[:user] )
+    @user = User.new( params[:login] )
 
     return if @user.blank?
 
@@ -50,14 +50,17 @@ class EntryController < ApplicationController
       user = @user.authenticate
 
       unless user.blank?
-        # ユーザIDをセッションに格納
+        # ユーザID／ログインIDをセッションに格納
         session[:user_id] = user.id
+        session[:login_id] = user.login_id  # IDをセッションに格納
 
         flash[:notice] = "ログインに成功しました。"
-        redirect_to :root
+        redirect_to params[:request_url]
         return
       else
         flash[:notice] = "ログインIDもしくはパスワードが正しくありません。"
+        redirect_to params[:request_url]
+        return
       end
     end
   end
@@ -69,7 +72,7 @@ class EntryController < ApplicationController
     session[:user_id] = nil
 
     flash[:notice] = "ログアウトしました。"
-    redirect_to :controller => "top"
+    redirect_to params[:request_url]
     return
   end
 
