@@ -6432,3 +6432,24 @@ Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:50:31) [
 Rendering template within layouts/base
 Rendering schedules/calendar
 Completed in 219ms (View: 211, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:54:03) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 175ms (View: 167, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:54:17) [GET]
+  [4;35;1mSchedule Load (0.6ms)[0m   [0mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 176ms (View: 168, DB: 1) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 13:54:17) [GET]
+  [4;36;1mSchedule Load (0.6ms)[0m   [0;1mSELECT * FROM "schedules" WHERE (schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28') [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Completed in 218ms (View: 163, DB: 1) | 200 OK [http://0.0.0.0/schedules]
