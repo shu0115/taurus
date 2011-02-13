@@ -56,6 +56,13 @@ class SchedulesController < ApplicationController
   def show
     @now_date = Date.parse( params[:date] )
     @schedule = Schedule.find( params[:id] ) unless params[:id].blank?
+
+    # アクセス権限チェック
+    if !@schedule.blank? and ( @schedule.mode == "非公開" and session[:user_id] != @schedule.user_id )
+      flash[:notice] = 'アクセス権限がありません。'
+      redirect_to :root
+      return
+    end
   end
 
   #-----#
@@ -80,6 +87,13 @@ class SchedulesController < ApplicationController
     @schedule = Schedule.find( params[:id] ) unless params[:id].blank?
     @schedule.start_time = Time.parse("00:00") if @schedule.start_time.blank?
     @schedule.end_time = Time.parse("00:00") if @schedule.end_time.blank?
+
+    # アクセス権限チェック
+    if !@schedule.blank? and ( @schedule.mode == "非公開" and session[:user_id] != @schedule.user_id )
+      flash[:notice] = 'アクセス権限がありません。'
+      redirect_to :root
+      return
+    end
   end
 
   #--------#
