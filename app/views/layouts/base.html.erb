@@ -37,6 +37,9 @@
         <%# ログインID %>
         <%= session[:login_id] -%>：
 
+        <%# Schedule %>
+        <%= link_to( t( 'menu.schedule' ), :controller => 'schedules' ) -%>
+
         <%# Public %>
         <%= link_to( t( 'menu.public' ), :controller => 'schedules', :mode => 'public' ) -%>
 

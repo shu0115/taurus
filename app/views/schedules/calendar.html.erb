@@ -60,7 +60,7 @@
 
 <br />
 <%# リスト %>
-<%= link_to t( "menu.list", :default => 'List' ), :action => "list", :date => @now_date %><br />
+<%= link_to t( "menu.list", :default => 'List' ), :action => "list", :date => @now_date, :mode => params[:mode] %><br />
 <br />
 
 </div>
@@ -133,7 +133,7 @@
       <% unless today_schedules.blank? %>
         <% today_schedules.each_with_index{ | value, index | %>
           <%# スケジュールリンク %>
-          <span class="schedule_title"><%= link_to value.title, { :action => "show", :id => value.id, :date => @now_date }, :title => value.note %></span><br />
+          <span class="schedule_title"><%= link_to value.title, { :action => "show", :id => value.id, :date => @now_date, :mode => @mode }, :title => value.note %></span><br />
         <% } %>
       <% end %>
     </td>

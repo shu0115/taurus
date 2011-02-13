@@ -1,5 +1,37 @@
 class Schedule < ActiveRecord::Base
 
+  #------------------------#
+  # self.get_list_schedule #
+  #------------------------#
+  # リストスケジュール取得
+  def self.get_list_schedule( args )
+
+    page = args[:page]
+    per_page = args[:per_page]
+    mode = args[:mode]
+    user_id = args[:user_id]
+
+    condition_text = ""
+    condition_hash = Hash.new
+    month_schedules = Hash.new
+
+    if mode == "public"
+      condition_text += " mode = '公開' "
+    else
+      condition_text += " user_id = :user_id "
+      condition_hash[:user_id] = user_id
+    end
+
+    schedules = Schedule.paginate(
+      :page => page, 
+      :per_page => per_page, 
+      :conditions => [ condition_text, condition_hash ],
+      :order => "schedule_date DESC, id ASC"
+    )
+
+    return schedules
+  end
+
   #-------------------------#
   # self.get_month_schedule #
   #-------------------------#

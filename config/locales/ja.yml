@@ -12,6 +12,7 @@ ja:
     top: Top
     entry: Entry
     public: Public
+    schedule: Schedule
 
   schedule:
     title: タイトル

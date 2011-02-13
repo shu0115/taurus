@@ -46,14 +46,26 @@ class SchedulesController < ApplicationController
   # list #
   #------#
   def list
+    if params[:mode].to_s == "public" or session[:user_id].blank?
+      @mode = "public"
+    end
+
     @now_date = Date.parse( params[:date] )
-    @schedules = Schedule.paginate( :page => params[:page], :per_page => $per_page, :order => "schedule_date DESC, id ASC" )
+
+    #@schedules = Schedule.paginate( :page => params[:page], :per_page => $per_page, :order => "schedule_date DESC, id ASC" )
+
+    # リストスケジュール取得
+    @schedules = Schedule.get_list_schedule( :page => params[:page], :per_page => $per_page, :mode => @mode, :user_id => session[:user_id] )
   end
 
   #------#
   # show #
   #------#
   def show
+    if params[:mode].to_s == "public" or session[:user_id].blank?
+      @mode = "public"
+    end
+
     @now_date = Date.parse( params[:date] )
     @schedule = Schedule.find( params[:id] ) unless params[:id].blank?
 

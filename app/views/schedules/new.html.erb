@@ -48,7 +48,7 @@
 <% end %>
 
 <div class="pagination">
-  <%= link_to t( 'menu.list' ), { :controller => "schedules", :action => "list", :id => @schedule.id, :date => @now_date } %><br />
+  <%= link_to t( 'menu.list' ), { :controller => "schedules", :action => "list", :date => @now_date, :mode => params[:mode] } %><br />
   
   <br />
   <br />
