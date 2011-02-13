@@ -13365,3 +13365,76 @@ Rendering template within layouts/base
 Rendering schedules/show
 Rendered layouts/_access_analyze (0.0ms)
 Completed in 17ms (View: 11, DB: 0) | 200 OK [http://0.0.0.0/schedules/show?date=2011-02-14&id=1]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-14 02:41:43) [GET]
+  Parameters: {"date"=>"2011-02-14", "id"=>"1"}
+  [4;36;1mSchedule Load (0.2ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/base
+Rendering schedules/show
+Rendered layouts/_access_analyze (0.1ms)
+Completed in 67ms (View: 60, DB: 0) | 200 OK [http://0.0.0.0/schedules/show?date=2011-02-14&id=1]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-14 02:41:56) [GET]
+  Parameters: {"date"=>"2011-02-14", "id"=>"1"}
+  [4;36;1mSchedule Load (0.1ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/base
+Rendering schedules/show
+Rendered layouts/_access_analyze (0.0ms)
+Completed in 21ms (View: 14, DB: 0) | 200 OK [http://0.0.0.0/schedules/show?date=2011-02-14&id=1]
+
+
+Processing EntryController#logout (for 127.0.0.1 at 2011-02-14 02:42:09) [POST]
+  Parameters: {"commit"=>"ログアウト", "authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "request_url"=>"http://0.0.0.0:3000/schedules/show?date=2011-02-14&id=1"}
+Redirected to http://0.0.0.0:3000/schedules/show?date=2011-02-14&id=1
+Completed in 1ms (DB: 0) | 302 Found [http://0.0.0.0/entry/logout]
+
+
+Processing SchedulesController#show (for 127.0.0.1 at 2011-02-14 02:42:09) [GET]
+  Parameters: {"date"=>"2011-02-14", "id"=>"1"}
+  [4;36;1mSchedule Load (0.1ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ("schedules"."id" = 1) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/
+Completed in 7ms (DB: 0) | 302 Found [http://0.0.0.0/schedules/show?date=2011-02-14&id=1]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-14 02:42:09) [GET]
+  [4;36;1mSchedule Load (0.3ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ( schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28' AND mode = '公開' ) [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Rendered layouts/_access_analyze (0.0ms)
+Completed in 190ms (View: 183, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-14 02:42:22) [GET]
+  [4;35;1mSchedule Load (0.4ms)[0m   [0mSELECT * FROM "schedules" WHERE ( schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28' AND mode = '公開' ) [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Rendered layouts/_access_analyze (0.1ms)
+Completed in 196ms (View: 189, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-14 02:42:49) [GET]
+  [4;36;1mSchedule Load (0.4ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ( schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28' AND mode = '公開' ) [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Rendered layouts/_access_analyze (0.0ms)
+Completed in 196ms (View: 189, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing EntryController#login (for 127.0.0.1 at 2011-02-14 02:42:59) [POST]
+  Parameters: {"commit"=>"ログイン", "authenticity_token"=>"JW/Ib8ZwX733/CVgiTjNO2wPvba2n0eQvh5PaNoS9IY=", "login"=>{"login_id"=>"test", "password"=>"test"}, "request_url"=>"http://0.0.0.0:3000/"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login_id" = 'test') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/
+Completed in 6ms (DB: 0) | 302 Found [http://0.0.0.0/entry/login]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-14 02:42:59) [GET]
+  [4;36;1mSchedule Load (0.4ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ( schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28' AND user_id = 1 ) [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Rendered layouts/_access_analyze (0.0ms)
+Completed in 206ms (View: 198, DB: 0) | 200 OK [http://0.0.0.0/]
