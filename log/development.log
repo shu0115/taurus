@@ -12423,3 +12423,43 @@ Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 20:53:16) [
 Rendering template within layouts/base
 Rendering schedules/calendar
 Completed in 161ms (View: 153, DB: 1) | 200 OK [http://0.0.0.0/?date=2011-02-13]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 22:59:18) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" WHERE ( schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28' AND user_id = 1 ) [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+
+ActionView::TemplateError (Missing template schedules/_access_analyze.erb in view path app/views) on line #11 of app/views/layouts/base.html.erb:
+8:     <%= stylesheet_link_tag 'base' %>
+9:     <%= stylesheet_link_tag 'base_override' %>
+10:     <%# アクセス解析 %>
+11:     <%= render :partial => "access_analyze" %>
+12: 	</head>
+13: 
+14: 	<body>
+
+    app/views/layouts/base.html.erb:11
+
+Rendered rescues/_trace (73.1ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 22:59:44) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ( schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28' AND user_id = 1 ) [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Rendered layouts/_access_analyze (0.5ms)
+Completed in 215ms (View: 207, DB: 0) | 200 OK [http://0.0.0.0/?date=2011-02-13]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-13 23:07:41) [GET]
+  Parameters: {"date"=>"2011-02-13"}
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" WHERE ( schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28' AND user_id = 1 ) [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Rendered layouts/_access_analyze (0.5ms)
+Completed in 214ms (View: 206, DB: 0) | 200 OK [http://0.0.0.0/?date=2011-02-13]
