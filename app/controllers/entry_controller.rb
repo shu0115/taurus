@@ -58,6 +58,10 @@ class EntryController < ApplicationController
         session[:user_id] = user.id
         session[:login_id] = user.login_id
 
+    result = Schedule.update_all( ["user_id = ?", session[:user_id]] )
+    print "【 result 】>> " ; p result ;
+    
+
         flash[:notice] = "ログインに成功しました。"
         redirect_to params[:request_url]
         return

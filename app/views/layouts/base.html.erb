@@ -22,6 +22,9 @@
         <%# Entry %>
         <%= link_to( t( 'menu.entry' ), :controller => 'entry', :action => 'input' ) -%>
 
+        <%# Public %>
+        <%= link_to( t( 'menu.public' ), :controller => 'schedules', :mode => 'public' ) -%>
+
         <%# Login %>
         <% form_tag :controller => "entry", :action => "login" do -%>
           ID:<input type="text" name="login[login_id]" size="15" />
@@ -33,6 +36,9 @@
         <%# --- ログイン後 --- %>
         <%# ログインID %>
         <%= session[:login_id] -%>：
+
+        <%# Public %>
+        <%= link_to( t( 'menu.public' ), :controller => 'schedules', :mode => 'public' ) -%>
 
         <%# Edit %>
         <%= link_to( t( 'menu.edit' ), :controller => 'entry', :action => 'edit' ) -%>
@@ -47,13 +53,8 @@
 
     <%# タイトル %>
     <center>
-      <% if session[:user_id].blank? %>
-        <%# ログイン前 %>
-        <span id="title"><%#= link_to "Taurus", { :controller => "public" } %><%= link_to "Taurus", { :controller => "schedules" } %></span>
-      <% else %>
-        <%# ログイン後 %>
-        <span id="title"><%= link_to "Taurus", { :controller => "schedules" } %></span>
-      <% end %>
+      <%# ログイン後 %>
+      <span id="title"><%= link_to "Taurus", { :controller => "schedules" } %></span>
     </center>
 
 		<p style="color: green"><%= flash[:notice] %></p>

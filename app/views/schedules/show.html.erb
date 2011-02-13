@@ -39,8 +39,11 @@
 <div class="pagination">
 
 <%= link_to t( 'menu.list' ), { :controller => "schedules", :action => "list", :id => @schedule.id, :date => @now_date } %>
-<%= link_to t( 'menu.edit' ), { :controller => "schedules", :action => "edit", :id => @schedule.id, :date => @now_date } %>
-<%= link_to t( 'menu.delete' ), { :controller => "schedules", :action => "destroy", :id => @schedule.id, :date => @now_date, :next => 'calendar' }, :confirm => '本当に削除してよろしいですか?', :method => :delete %><br />
+<% if @schedule.user_id.to_s == session[:user_id].to_s %>
+  <%= link_to t( 'menu.edit' ), { :controller => "schedules", :action => "edit", :id => @schedule.id, :date => @now_date } %>
+  <%= link_to t( 'menu.delete' ), { :controller => "schedules", :action => "destroy", :id => @schedule.id, :date => @now_date, :next => 'calendar' }, :confirm => '本当に削除してよろしいですか?', :method => :delete %>
+<% end %>
+<br />
 
 <br />
 <br />

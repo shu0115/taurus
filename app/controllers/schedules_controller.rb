@@ -5,6 +5,10 @@ class SchedulesController < ApplicationController
   #----------#
   def calendar
     
+    if params[:mode].to_s == "public" or session[:user_id].blank?
+      @mode = "public"
+    end
+    
     # paramsに年月日データが入っているなら、そのデータ[@date]に入れる。
     # 入っていなければ、今日の年月日データを[@date]入れる。
     if params[:date]
@@ -34,9 +38,8 @@ class SchedulesController < ApplicationController
       @calendar_matrix.push( { :days => "　", :week_day => index } )
     }
 
-
     # 月内スケジュール取得
-    @month_schedules = Schedule.get_month_schedule( @now_date )
+    @month_schedules = Schedule.get_month_schedule( :date => @now_date, :mode => @mode, :user_id => session[:user_id] )
   end
 
   #------#

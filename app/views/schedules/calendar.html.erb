@@ -124,7 +124,11 @@
       <%#= value[:days] %>
       <span id="schedule_field_<%= index %>">
         <%# 日付(新規作成リンク) %>
-        <% if value[:days].to_s != "　" %><%= link_to value[:days], { :action => "new", :schedule_date_year => @now_date.year, :schedule_date_month => @now_date.month, :schedule_date_day => value[:days], :date => @now_date } %><% end %>
+        <% if @mode != "public" and value[:days].to_s != "　" %>
+          <%= link_to value[:days], { :action => "new", :schedule_date_year => @now_date.year, :schedule_date_month => @now_date.month, :schedule_date_day => value[:days], :date => @now_date } %>
+        <% else %>
+          <%= value[:days] %>
+        <% end %>
       </span><br />
       <% unless today_schedules.blank? %>
         <% today_schedules.each_with_index{ | value, index | %>
