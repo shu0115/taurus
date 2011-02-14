@@ -30,6 +30,7 @@ class EntryController < ApplicationController
       # ユーザID／ログインIDをセッションに格納
       session[:user_id] = @user.id
       session[:login_id] = @user.login_id
+      session[:display_name] = @user.display_name
 
       flash[:notice] = 'ユーザ登録が完了しました。'
       redirect_to :root
