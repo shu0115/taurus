@@ -26,13 +26,15 @@
 
 <p>
   <b>周期:</b>
-  <%=h @schedule.cycle %>
+  <%=h @schedule.cycle %> <%=h @schedule.cycle_mode %>
 </p>
 
+<% if false %>
 <p>
   <b>周期間隔:</b>
   <%=h @schedule.cycle_mode %>
 </p>
+<% end %>
 
 <p>
   <b>公開設定:</b>

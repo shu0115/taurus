@@ -22,13 +22,21 @@
 
   <p>
     <b>周期</b><br />
+<% if false %>
     <%= f.text_field :cycle, :value => "1" %>
+<% end %>
+    1
+    <%= f.hidden_field :cycle, { :value => "1" } %>
+    day
+    <%= f.hidden_field :cycle_mode, { :value => "day" } %>
   </p>
 
+<% if false %>
   <p>
     <b>周期間隔</b><br />
     <%= select( "schedule", "cycle_mode", $cycle_mode, { :selected => "day" } )%><br />
   </p>
+<% end %>
 
   <p>
     <b>公開設定</b><br />
