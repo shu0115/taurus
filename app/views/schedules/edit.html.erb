@@ -8,7 +8,7 @@
 <% form_for @schedule, :url => "/schedules/update/#{@schedule.id}" do |f| %>
   <p>
     <b>タイトル</b><br />
-    <%= f.text_field :title %>
+    <%= f.text_field :title, :class => 'text_field' %>
   </p>
 
   <p>

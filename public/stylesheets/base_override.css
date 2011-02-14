@@ -222,24 +222,6 @@
   width: 95%;
 }
 
-/* text_fieldクラス */
-.text_field {
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border: 1px solid #aaa;
-  padding: 5px;
-  width: 200px;
-}
-
-/* password_fieldクラス */
-.password_field {
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border: 1px solid #aaa;
-  padding: 5px;
-  width: 200px;
-}
-
 /* radius_borderクラス */
 .radius_border {
   -moz-border-radius: 20px;

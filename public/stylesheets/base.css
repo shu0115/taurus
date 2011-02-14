@@ -23,11 +23,30 @@ pre {
 
 
 
-/* フォーム */
+/* --- フォーム --- */
 form {
   display: inline;  
 }
 
+/* テキストフィールド */
+.text_field {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border: 1px solid #aaa;
+  padding: 5px;
+  width: 200px;
+}
+
+/* パスワードフィールド */
+.password_field {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border: 1px solid #aaa;
+  padding: 5px;
+  width: 200px;
+}
+
+/* テキストエリア */
 textarea {
   width: 95%;
   height: 500px;
