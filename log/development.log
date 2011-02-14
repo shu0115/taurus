@@ -13753,3 +13753,143 @@ Rendering template within layouts/base
 Rendering entry/input
 Rendered layouts/_access_analyze (0.0ms)
 Completed in 15ms (View: 12, DB: 0) | 200 OK [http://0.0.0.0/entry/input]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-14 17:22:39) [GET]
+  [4;36;1mSchedule Load (0.4ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ( schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28' AND mode = '公開' ) [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Rendered layouts/_access_analyze (0.0ms)
+Completed in 213ms (View: 206, DB: 0) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing EntryController#login (for 127.0.0.1 at 2011-02-14 17:22:41) [POST]
+  Parameters: {"commit"=>"ログイン", "authenticity_token"=>"Nuh0G9b9qCbWtJqxb2vHSFnCFWh88oNCTE9dZdmLjcQ=", "login"=>{"login_id"=>"test", "password"=>"test"}, "request_url"=>"http://0.0.0.0:3000/schedules"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login_id" = 'test') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/schedules
+Completed in 5ms (DB: 0) | 302 Found [http://0.0.0.0/entry/login]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-14 17:22:41) [GET]
+  [4;36;1mSchedule Load (0.5ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ( schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28' AND user_id = 1 ) [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Rendered layouts/_access_analyze (0.0ms)
+Completed in 221ms (View: 213, DB: 0) | 200 OK [http://0.0.0.0/schedules]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-14 17:22:43) [GET]
+  Parameters: {"mode"=>"public"}
+  [4;35;1mSchedule Load (0.4ms)[0m   [0mSELECT * FROM "schedules" WHERE ( schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28' AND mode = '公開' ) [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Rendered layouts/_access_analyze (0.0ms)
+Completed in 202ms (View: 195, DB: 0) | 200 OK [http://0.0.0.0/schedules?mode=public]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-14 17:22:45) [GET]
+  Parameters: {"date"=>"2011-03-14"}
+  [4;36;1mSchedule Load (0.3ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ( schedule_date >= '2011-03-01' AND schedule_date <= '2011-03-31' AND user_id = 1 ) [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Rendered layouts/_access_analyze (0.0ms)
+Completed in 184ms (View: 178, DB: 0) | 200 OK [http://0.0.0.0/?date=2011-03-14]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-14 17:22:46) [GET]
+  Parameters: {"date"=>"2011-02-14"}
+  [4;35;1mSchedule Load (0.5ms)[0m   [0mSELECT * FROM "schedules" WHERE ( schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28' AND user_id = 1 ) [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Rendered layouts/_access_analyze (0.0ms)
+Completed in 164ms (View: 156, DB: 1) | 200 OK [http://0.0.0.0/?date=2011-02-14]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-14 17:24:50) [GET]
+  Parameters: {"mode"=>"public"}
+  [4;36;1mSchedule Load (0.4ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ( schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28' AND mode = '公開' ) [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Rendered layouts/_access_analyze (0.1ms)
+Completed in 203ms (View: 196, DB: 0) | 200 OK [http://0.0.0.0/schedules?mode=public]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-14 17:25:04) [GET]
+  Parameters: {"mode"=>"public", "date"=>"2011-03-14"}
+  [4;35;1mSchedule Load (0.3ms)[0m   [0mSELECT * FROM "schedules" WHERE ( schedule_date >= '2011-03-01' AND schedule_date <= '2011-03-31' AND mode = '公開' ) [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Rendered layouts/_access_analyze (0.0ms)
+Completed in 211ms (View: 206, DB: 0) | 200 OK [http://0.0.0.0/?date=2011-03-14&mode=public]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-14 17:25:05) [GET]
+  Parameters: {"mode"=>"public", "date"=>"2011-02-14"}
+  [4;36;1mSchedule Load (0.4ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ( schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28' AND mode = '公開' ) [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Rendered layouts/_access_analyze (0.0ms)
+Completed in 198ms (View: 191, DB: 0) | 200 OK [http://0.0.0.0/?date=2011-02-14&mode=public]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-14 17:25:07) [GET]
+  Parameters: {"mode"=>"public", "date"=>"2011-02-14"}
+  [4;35;1mSchedule Load (0.3ms)[0m   [0mSELECT * FROM "schedules" WHERE ( schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28' AND mode = '公開' ) [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Rendered layouts/_access_analyze (0.0ms)
+Completed in 198ms (View: 191, DB: 0) | 200 OK [http://0.0.0.0/?date=2011-02-14&mode=public]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-14 17:25:09) [GET]
+  Parameters: {"mode"=>"public", "date"=>"2012-02-14"}
+  [4;36;1mSchedule Load (0.3ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ( schedule_date >= '2012-02-01' AND schedule_date <= '2012-02-29' AND mode = '公開' ) [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Rendered layouts/_access_analyze (0.0ms)
+Completed in 111ms (View: 106, DB: 0) | 200 OK [http://0.0.0.0/?date=2012-02-14&mode=public]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-14 17:25:10) [GET]
+  Parameters: {"mode"=>"public", "date"=>"2011-02-14"}
+  [4;35;1mSchedule Load (0.3ms)[0m   [0mSELECT * FROM "schedules" WHERE ( schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28' AND mode = '公開' ) [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Rendered layouts/_access_analyze (0.0ms)
+Completed in 201ms (View: 194, DB: 0) | 200 OK [http://0.0.0.0/?date=2011-02-14&mode=public]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-14 17:25:12) [GET]
+  Parameters: {"mode"=>"public", "date"=>"2011-03-01"}
+  [4;36;1mSchedule Load (0.3ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ( schedule_date >= '2011-03-01' AND schedule_date <= '2011-03-31' AND mode = '公開' ) [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Rendered layouts/_access_analyze (0.0ms)
+Completed in 211ms (View: 206, DB: 0) | 200 OK [http://0.0.0.0/?date=2011-03-01&mode=public]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-14 17:25:13) [GET]
+  Parameters: {"mode"=>"public", "date"=>"2011-02-01"}
+  [4;35;1mSchedule Load (0.3ms)[0m   [0mSELECT * FROM "schedules" WHERE ( schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28' AND mode = '公開' ) [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Rendered layouts/_access_analyze (0.0ms)
+Completed in 199ms (View: 192, DB: 0) | 200 OK [http://0.0.0.0/?date=2011-02-01&mode=public]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-14 17:25:14) [GET]
+  Parameters: {"mode"=>"public", "date"=>"2011-01-01"}
+  [4;36;1mSchedule Load (0.3ms)[0m   [0;1mSELECT * FROM "schedules" WHERE ( schedule_date >= '2011-01-01' AND schedule_date <= '2011-01-31' AND mode = '公開' ) [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Rendered layouts/_access_analyze (0.0ms)
+Completed in 160ms (View: 155, DB: 0) | 200 OK [http://0.0.0.0/?date=2011-01-01&mode=public]
+
+
+Processing SchedulesController#calendar (for 127.0.0.1 at 2011-02-14 17:25:16) [GET]
+  Parameters: {"mode"=>"public", "date"=>"2011-02-01"}
+  [4;35;1mSchedule Load (0.3ms)[0m   [0mSELECT * FROM "schedules" WHERE ( schedule_date >= '2011-02-01' AND schedule_date <= '2011-02-28' AND mode = '公開' ) [0m
+Rendering template within layouts/base
+Rendering schedules/calendar
+Rendered layouts/_access_analyze (0.0ms)
+Completed in 197ms (View: 190, DB: 0) | 200 OK [http://0.0.0.0/?date=2011-02-01&mode=public]
