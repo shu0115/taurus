@@ -10,6 +10,8 @@ class ApplicationController < ActionController::Base
 
   require 'date'
 
+  before_filter :ssl_redirect
+
   layout 'base'
 
   # 曜日
@@ -22,6 +24,17 @@ class ApplicationController < ActionController::Base
   $mode = [ '公開', '非公開' ]
 
   # ページ内件数
-  $per_page = 5
+  $per_page = 15
+
+  private
+  #--------------#
+  # ssl_redirect #
+  #--------------#
+  def ssl_redirect
+    if Rails.env.production? and request.env["HTTP_X_FORWARDED_PROTO"].to_s != "https"
+      request.env["HTTP_X_FORWARDED_PROTO"] = "https"
+      redirect_to request.url
+    end
+  end
 
 end

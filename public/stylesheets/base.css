@@ -5,7 +5,7 @@ body {
   color: #000;
 }
 
-body, p, ol, ul, td {
+body, p, ol, ul, td, textarea {
   font-family: monospace, verdana, arial, helvetica, sans-serif;
   font-size:   14px;
   line-height: 18px;
@@ -17,11 +17,14 @@ div {
 
 pre {
   background-color: #fff;
-  padding: 10px;
+  margin: 0px;
+  padding: 0px 10px;
   font-size: 14px;
 }
 
-
+p {
+  margin: 10px 0px;
+}
 
 /* --- フォーム --- */
 form {

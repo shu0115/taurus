@@ -46,8 +46,9 @@
   <pre><%=h @schedule.note %></pre>
 </p>
 
-<%# ページネーション %>
 <div class="pagination">
+
+<br />
 
 <%= link_to t( 'menu.list' ), { :controller => "schedules", :action => "list", :date => @now_date, :mode => params[:mode] } %>
 <% if @schedule.user_id.to_s == session[:user_id].to_s %>
