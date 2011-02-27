@@ -1,4 +1,6 @@
-<span class="menu_title">新規作成</span><br />
+<!--<span class="menu_title">新規作成</span><br />-->
+
+<br />
 
 <%= error_messages_for :schedule %>
 
@@ -55,7 +57,7 @@
   </p>
 <% end %>
 
-<div class="pagination">
+<div class="pagination menu">
   <%= link_to t( 'menu.list' ), { :controller => "schedules", :action => "list", :date => @now_date, :mode => params[:mode] } %><br />
   
   <br />

@@ -117,7 +117,7 @@ class SchedulesController < ApplicationController
     @schedule = Schedule.new( params[:schedule] )
 
     if @schedule.save
-      flash[:notice] = 'スケジュールを新規作成しました。'
+#      flash[:notice] = 'スケジュールを新規作成しました。'
       redirect_to :action => "calendar", :date => @now_date
     else
       flash[:notice] = 'スケジュールの新規作成に失敗しました。'
@@ -148,7 +148,7 @@ print "【 Date.valid_date? 】>> " ; p Date.valid_date?( params[:schedule]["sch
     end
 
     if @schedule.update_attributes( params[:schedule] )
-      flash[:notice] = 'スケジュールの更新が完了しました。'
+#      flash[:notice] = 'スケジュールの更新が完了しました。'
       redirect_to :action => "show", :id => @schedule.id, :date => @now_date
     else
       flash[:notice] = 'スケジュールの更新に失敗しました。'

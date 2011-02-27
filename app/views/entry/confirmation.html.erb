@@ -15,6 +15,13 @@
           <%= f.hidden_field :login_id, :value => @user.login_id %>
         </p>
 
+        <%# パスワード %>
+        <p>
+          <b><%= t("activerecord.attributes.user.password") %>:</b>
+          <% @user.password.length.times{ |index| %>*<% } %>
+          <%= f.hidden_field :password, :value => @user.password %>
+        </p>
+
         <%# 表示名 %>
         <p>
           <b><%= t("activerecord.attributes.user.display_name") %>:</b>
@@ -29,13 +36,6 @@
           <%= f.hidden_field :twitter_id, :value => @user.twitter_id %>
         </p>
 
-        <%# パスワード %>
-        <p>
-          <b><%= t("activerecord.attributes.user.password") %>:</b>
-          <% @user.password.length.times{ |index| %>*<% } %>
-          <%= f.hidden_field :password, :value => @user.password %>
-        </p>
-
         <div class="wat-cf">
           <%# 登録 %>
           <button class="button" type="submit">登録</button>
@@ -44,7 +44,7 @@
           <br />
 
           <%# 修正 %>
-          <div class="pagination">
+          <div class="pagination menu">
             <%= link_to '修正', { :action => "input", :user => params[:user] }, :class => 'button' %>
           </div>
         </div>

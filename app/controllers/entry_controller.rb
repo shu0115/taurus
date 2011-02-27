@@ -60,8 +60,9 @@ class EntryController < ApplicationController
         session[:login_id] = user.login_id
         session[:display_name] = user.display_name
 
-        flash[:notice] = "ログインに成功しました。"
-        redirect_to params[:request_url]
+#        flash[:notice] = "ログインに成功しました。"
+#        redirect_to params[:request_url]
+        redirect_to :controller => "schedules"
         return
       else
         flash[:notice] = "ログインIDもしくはパスワードが正しくありません。"
@@ -77,8 +78,9 @@ class EntryController < ApplicationController
   def logout
     session[:user_id] = nil
 
-    flash[:notice] = "ログアウトしました。"
-    redirect_to params[:request_url]
+#    flash[:notice] = "ログアウトしました。"
+#    redirect_to params[:request_url]
+    redirect_to :root
     return
   end
 
@@ -147,7 +149,7 @@ class EntryController < ApplicationController
     if @user.update_attributes( params[:user] )
       session[:login_id] = @user.login_id
       session[:display_name] = @user.display_name
-      flash[:notice] = '登録情報を更新しました。'
+#      flash[:notice] = '登録情報を更新しました。'
       redirect_to :action => "show"
       return
     else

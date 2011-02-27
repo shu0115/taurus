@@ -17,6 +17,7 @@ ja:
   schedule:
     title: タイトル
     schedule_date: 日付
+    time: 時間
     note: 備考
 
   web-app-theme:

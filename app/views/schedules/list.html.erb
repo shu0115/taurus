@@ -1,9 +1,7 @@
 
-<div class="pagination">
+<div class="pagination menu">
 
-<span class="menu_title">一覧</span><br />
-
-<br />
+<!--<span class="menu_title">一覧</span><br />-->
 
 <%= will_paginate @schedules, :prev_label => 'Prev', :next_label => 'Next' %><br />
 
@@ -16,8 +14,9 @@
 <% if false %>
     <th>Cycle</th>
     <th>Cycle mode</th>
-<% end %>
     <th><%= t( "schedule.note", :default => 'note' ) %></th>
+<% end %>
+    <th><%= t( "schedule.time" ) %></th>
   </tr>
 
 <% for schedule in @schedules %>
@@ -27,8 +26,9 @@
 <% if false %>
     <td><%=h schedule.cycle %></td>
     <td><%=h schedule.cycle_mode %></td>
-<% end %>
     <td><%=h schedule.note %></td>
+<% end %>
+    <td><%=h schedule.start_time.strftime("%H:%M") %>〜<%=h schedule.end_time.strftime("%H:%M") %></td>
     <td><%= link_to t( 'menu.show' ), { :controller => "schedules", :action => "show", :id => schedule.id, :date => @now_date } %></td>
     <td><% if schedule.user_id.to_s == session[:user_id].to_s %><%= link_to t( 'menu.edit' ), { :controller => "schedules", :action => "edit", :id => schedule.id, :date => @now_date } %><% end %></td>
     <td><% if schedule.user_id.to_s == session[:user_id].to_s %><%= link_to t( 'menu.delete' ), { :controller => "schedules", :action => "destroy", :id => schedule.id, :date => @now_date, :next => 'list' }, :confirm => '本当に削除してよろしいですか?', :method => :delete %><% end %></td>

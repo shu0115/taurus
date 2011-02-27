@@ -1,4 +1,4 @@
-<span class="menu_title">編集</span><br />
+<!--<span class="menu_title">編集</span><br />-->
 
 <br />
 
@@ -55,8 +55,7 @@
   </p>
 <% end %>
 
-<%# ページネーション %>
-<div class="pagination">
+<div class="pagination menu">
 
 <%= link_to t( 'menu.show' ), { :controller => 'schedules', :action => 'show', :id => @schedule.id, :date => @now_date } %>
 <% end %>
