@@ -9,20 +9,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110212114956) do
+ActiveRecord::Schema.define(:version => 20110227032634) do
 
   create_table "schedules", :force => true do |t|
-    t.string    "title"
-    t.date      "schedule_date"
-    t.integer   "cycle"
-    t.string    "cycle_mode"
-    t.text      "note"
-    t.timestamp "created_at"
-    t.timestamp "updated_at"
-    t.time      "start_time"
-    t.time      "end_time"
-    t.string    "mode"
-    t.integer   "user_id"
+    t.string   "title"
+    t.date     "schedule_date"
+    t.integer  "cycle"
+    t.string   "cycle_mode"
+    t.text     "note"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.datetime "start_time"
+    t.datetime "end_time"
+    t.string   "mode"
+    t.integer  "user_id"
   end
 
   create_table "users", :force => true do |t|
