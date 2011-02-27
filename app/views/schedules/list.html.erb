@@ -1,11 +1,13 @@
 
-<div class="pagination menu">
-
 <!--<span class="menu_title">一覧</span><br />-->
+
+<br />
 
 <%= will_paginate @schedules, :prev_label => 'Prev', :next_label => 'Next' %><br />
 
 <br />
+
+<div class="pagination menu">
 
 <table>
   <tr>
@@ -36,14 +38,14 @@
 <% end %>
 </table>
 
+</div>
+
 <br />
 
 <%= will_paginate @schedules, :prev_label => 'Prev', :next_label => 'Next' %><br />
 
 <br />
 
-<%= link_to t( 'menu.top' ), :action => "calendar", :date => @now_date, :mode => params[:mode] %><br />
+<span class="pagination menu"><%= link_to t( 'menu.top' ), { :action => "calendar", :date => @now_date, :mode => params[:mode] } %></span><br />
 
 <br />
-
-</div>
