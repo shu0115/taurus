@@ -24,7 +24,7 @@ class ApplicationController < ActionController::Base
   $mode = [ '公開', '非公開' ]
 
   # ページ内件数
-  $per_page = 1
+  $per_page = 15
 
   private
   #--------------#
