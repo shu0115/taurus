@@ -3,13 +3,12 @@
 <% last_month = @now_date.last_month %>
 <% next_month = @now_date.next_month %>
 
-<%# ページネーション %>
 <div class="pagination">
 
 <%# 前月 %>
 <%= link_to( "前月", { :action => 'calendar', :date => Date.new( last_month.year, last_month.month, last_month.day ), :mode => @mode } ) -%>
 <%# 今月 %>
- | <%= link_to( "今月", :action => 'calendar', :date => Date.new( Time.now.year, Time.now.month, Time.now.day ), :mode => @mode ) -%>
+ | <%= link_to( "今月", { :action => 'calendar', :date => Date.new( Time.now.year, Time.now.month, Time.now.day ), :mode => @mode } ) -%>
 <%# 次月 %>
  | <%= link_to( "次月", :action => 'calendar', :date => Date.new( next_month.year, next_month.month, next_month.day ), :mode => @mode ) -%>
 

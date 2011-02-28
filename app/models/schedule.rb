@@ -59,7 +59,8 @@ class Schedule < ActiveRecord::Base
 
     schedules = Schedule.find(
       :all,
-      :conditions => [ condition_text, condition_hash ]
+      :conditions => [ condition_text, condition_hash ],
+      :order => "schedule_date ASC, start_time ASC"
     )
 
     # スケジュールマトリックス生成
