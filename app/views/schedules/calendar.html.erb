@@ -8,9 +8,9 @@
 <%# 前月 %>
 <%= link_to( "前月", { :action => 'calendar', :date => Date.new( last_month.year, last_month.month, last_month.day ), :mode => @mode } ) -%>
 <%# 今月 %>
- | <%= link_to( "今月", { :action => 'calendar', :date => Date.new( Time.now.year, Time.now.month, Time.now.day ), :mode => @mode } ) -%>
+<%= link_to( "今月", { :action => 'calendar', :date => Date.new( Time.now.year, Time.now.month, Time.now.day ), :mode => @mode } ) -%>
 <%# 次月 %>
- | <%= link_to( "次月", :action => 'calendar', :date => Date.new( next_month.year, next_month.month, next_month.day ), :mode => @mode ) -%>
+<%= link_to( "次月", :action => 'calendar', :date => Date.new( next_month.year, next_month.month, next_month.day ), :mode => @mode ) -%>
 
 <br />
 <br />
@@ -18,9 +18,9 @@
 <%# 前年 %>
 <%= link_to( "#{@now_date.years_ago(1).year}年", :action=>'calendar', :date=> @now_date.years_ago(1), :mode => @mode ) -%>
 <%# 今年 %>
- | <b><span class="current"><%= "#{@now_date.year}年" -%></span></b>
+<b><span class="current"><%= "#{@now_date.year}年" -%></span></b>
 <%# 翌年 %>
- | <%= link_to( "#{@now_date.years_since(1).year}年", :action=>'calendar', :date=> @now_date.years_since(1), :mode => @mode ) -%>
+<%= link_to( "#{@now_date.years_since(1).year}年", :action=>'calendar', :date=> @now_date.years_since(1), :mode => @mode ) -%>
 
 <br />
 <br />
