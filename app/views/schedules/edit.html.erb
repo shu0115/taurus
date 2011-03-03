@@ -18,9 +18,9 @@
 
   <p>
     <b>時間</b><br />
-    <%= f.time_select :start_time, :include_blank => false %>
+    <%= f.time_select :start_time, :minute_step => 5, :include_blank => false %>
     〜
-    <%= f.time_select :end_time, :include_blank => false %>
+    <%= f.time_select :end_time, :minute_step => 5, :include_blank => false %>
   </p>
 
   <p>
