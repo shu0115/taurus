@@ -135,7 +135,7 @@
           <% tooltip = "#{value.start_time.strftime("%H:%M") unless value.start_time.blank?}〜#{value.end_time.strftime("%H:%M") unless value.end_time.blank?}\n#{value.note}" %>
           
           <%# スケジュールリンク %>
-          <span class="schedule_title"><%= link_to value.title, { :action => "show", :id => value.id, :date => @now_date, :mode => @mode }, :title => tooltip %></span><br />
+          <span class="schedule_title"><%= link_to value.title, { :action => "edit", :id => value.id, :date => @now_date, :mode => @mode }, :title => tooltip %></span><br />
         <% } %>
       <% end %>
     </td>
