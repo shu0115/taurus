@@ -51,7 +51,7 @@
 
   <p>
     <%= hidden_field_tag :date, @now_date %>
-    <%= f.submit "保存" %>
+    <%= f.submit "保存", :disable_with => "保存" %>
   </p>
 <% end %>
 

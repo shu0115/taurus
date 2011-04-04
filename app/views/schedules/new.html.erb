@@ -53,7 +53,7 @@
   <p>
     <%= hidden_field_tag :date, @now_date %>
     <%= f.hidden_field :user_id, { :value => session[:user_id] } %>
-    <%= f.submit "作成" %>
+    <%= f.submit "作成", :disable_with => "作成" %>
   </p>
 <% end %>
 
