@@ -25,7 +25,8 @@
         <%= link_to( t( 'menu.entry' ), :controller => 'entry', :action => 'input' ) -%>
 
         <%# Public %>
-        <%= link_to( t( 'menu.public' ), :controller => 'schedules', :mode => 'public' ) -%>
+        <%#= link_to( t( 'menu.public' ), :controller => 'schedules', :mode => 'public' ) -%>
+        <%= link_to( t( 'menu.public' ), :controller => 'public', :action => 'calendar' ) -%>
 
         <%# Login %>
         <% form_tag :controller => "entry", :action => "login", :protocol => $login_protocol, :only_path => false do -%>
@@ -47,7 +48,8 @@
         <%= link_to( t( 'menu.schedule' ), :controller => 'schedules' ) -%>
 
         <%# Public %>
-        <%= link_to( t( 'menu.public' ), :controller => 'schedules', :mode => 'public' ) -%>
+        <%#= link_to( t( 'menu.public' ), :controller => 'schedules', :mode => 'public' ) -%>
+        <%= link_to( t( 'menu.public' ), :controller => 'public', :action => 'calendar' ) -%>
 
         <%# Edit %>
         <%= link_to( t( 'menu.edit' ), :controller => 'entry', :action => 'edit' ) -%>
@@ -62,8 +64,15 @@
 
     <%# タイトル %>
     <center>
-      <%# ログイン後 %>
-      <span id="title"><%= link_to "Taurus", { :controller => "schedules" } %></span>
+      <span id="title">
+      <% unless session[:user_id].blank? -%>
+        <%# ログイン後 %>
+        <%= link_to "Taurus", { :controller => "schedules" } %>
+      <% else %>
+        <%# ログイン前 %>
+        <%= link_to "Taurus", { :controller => "public", :action => "calendar" } %>
+      <% end %>
+      </span>
     </center>
 
 		<p style="color: green"><%= flash[:notice] %></p>

@@ -42,7 +42,7 @@ ActionController::Routing::Routes.draw do |map|
   map.connect '/schedules', :controller => "schedules" ,:action => "calendar"
   map.connect '', :controller => "schedules" ,:action => "calendar"
 
-  map.connect ':controller/:action'
-  map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
+  map.connect ':controller/:action/:id'
+  map.connect ':controller/:action'
 end

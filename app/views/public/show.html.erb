@@ -1,0 +1,54 @@
+
+<br />
+
+<p>
+  <b>タイトル:</b>
+  <%=h @schedule.title %>
+</p>
+
+<p>
+  <b>日付:</b>
+  <%=h @schedule.schedule_date.strftime("%Y年%m月%d日") unless @schedule.schedule_date.blank? %>
+</p>
+
+<p>
+  <b>作成者:</b>
+  <% if !@user.blank? and !@user.twitter_id.blank? %>
+    <%= link_to @user.display_name, "http://twitter.com/#{@user.twitter_id}", :target => '_blank' %>
+  <% else %>
+    <%=h @user.display_name unless @user.blank? %>
+  <% end %>
+</p>
+
+<p>
+  <b>時間:</b>
+  <%=h @schedule.start_time.strftime("%H:%M") unless @schedule.start_time.blank? %>〜<%=h @schedule.end_time.strftime("%H:%M") unless @schedule.end_time.blank? %>
+</p>
+
+<p>
+  <b>周期:</b>
+  <%=h @schedule.cycle %> <%=h @schedule.cycle_mode %>
+</p>
+
+<p>
+  <b>公開設定:</b>
+  <%=h @schedule.mode %>
+</p>
+
+<p>
+  <b>備考:</b>
+  <pre><%=h @schedule.note %></pre>
+</p>
+
+<br />
+
+<span class=" menu">
+<%= link_to t( 'menu.top' ), :action => "calendar", :date => @now_date, :mode => @mode %>
+<%= link_to t( "menu.list", :default => 'List' ), :action => "list", :date => @now_date, :mode => @mode %>
+</span><br />
+<br />
+
+<br />
+<br />
+
+<br />

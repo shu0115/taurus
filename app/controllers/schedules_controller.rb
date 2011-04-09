@@ -132,8 +132,6 @@ class SchedulesController < ApplicationController
     @now_date = Date.parse( params[:date] )
     @schedule = Schedule.find( params[:id] ) unless params[:id].blank?
 
-print "【 Date.valid_date? 】>> " ; p Date.valid_date?( params[:schedule]["schedule_date(1i)"].to_i, params[:schedule]["schedule_date(2i)"].to_i, params[:schedule]["schedule_date(3i)"].to_i ) ;
-
     flash[:notice] = ""
     flash[:notice] += '日付が存在しません。<br />' if params[:schedule].blank? or !(Date.valid_date?( params[:schedule]["schedule_date(1i)"].to_i, params[:schedule]["schedule_date(2i)"].to_i, params[:schedule]["schedule_date(3i)"].to_i ))
     flash[:notice] += 'スケジュールデータが存在しません。<br />' if @schedule.blank?

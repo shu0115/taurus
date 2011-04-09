@@ -1,0 +1,43 @@
+
+<br />
+
+<%= will_paginate @schedules, :prev_label => 'Prev', :next_label => 'Next' %><br />
+
+<br />
+
+<div class="pagination menu">
+
+<table>
+  <tr>
+    <th><%= t( "schedule.title", :default => 'Title' ) %></th>
+    <th><%= t( "schedule.schedule_date", :default => 'Schedule date' ) %></th>
+<% if false %>
+    <th>Cycle</th>
+    <th>Cycle mode</th>
+    <th><%= t( "schedule.note", :default => 'note' ) %></th>
+<% end %>
+    <th><%= t( "schedule.time" ) %></th>
+  </tr>
+
+<% for schedule in @schedules %>
+  <tr>
+    <td><%=h schedule.title %></td>
+    <td><%=h schedule.schedule_date.strftime("%Y年%m月%d日") %></td>
+    <td><%=h schedule.start_time.strftime("%H:%M") unless schedule.start_time.blank? %>〜<%=h schedule.end_time.strftime("%H:%M") unless schedule.end_time.blank? %></td>
+    <td><%= link_to t( 'menu.show' ), { :action => "show", :id => schedule.id, :date => @now_date } %></td>
+  </tr>
+<% end %>
+</table>
+<br />
+
+</div>
+
+<br />
+
+<%= will_paginate @schedules, :prev_label => 'Prev', :next_label => 'Next' %><br />
+
+<br />
+
+<span class="pagination menu"><%= link_to t( 'menu.top' ), { :action => "calendar", :date => @now_date, :mode => params[:mode] } %></span><br />
+
+<br />
