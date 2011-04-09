@@ -4,6 +4,7 @@
 ja:
   # メニュー
   menu:
+    title: Taurus
     list: List
     show: Show
     edit: Edit

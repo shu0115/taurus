@@ -207,8 +207,8 @@ a:hover, a:active {
 
 .menu a:hover {
   color: #fff;
+  background: #ff7500 repeat-x;
 }
-
 
 /* header_menu */
 .header_menu {
