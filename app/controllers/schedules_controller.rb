@@ -5,10 +5,6 @@ class SchedulesController < ApplicationController
   #----------#
   def calendar
     
-    if params[:mode].to_s == "public" or session[:user_id].blank?
-      @mode = "public"
-    end
-    
     # paramsに年月日データが入っているなら、そのデータ[@date]に入れる。
     # 入っていなければ、今日の年月日データを[@date]入れる。
     if params[:date]
@@ -46,10 +42,6 @@ class SchedulesController < ApplicationController
   # list #
   #------#
   def list
-    if params[:mode].to_s == "public" or session[:user_id].blank?
-      @mode = "public"
-    end
-
     @now_date = Date.parse( params[:date] )
 
     #@schedules = Schedule.paginate( :page => params[:page], :per_page => $per_page, :order => "schedule_date DESC, id ASC" )
@@ -62,10 +54,6 @@ class SchedulesController < ApplicationController
   # show #
   #------#
   def show
-    if params[:mode].to_s == "public" or session[:user_id].blank?
-      @mode = "public"
-    end
-
     @now_date = Date.parse( params[:date] )
     @schedule = Schedule.find( params[:id] ) unless params[:id].blank?
     @user = User.find_by_id( @schedule.user_id ) unless @schedule.blank?
