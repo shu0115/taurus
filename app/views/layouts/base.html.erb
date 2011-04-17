@@ -22,11 +22,10 @@
       <% if session[:user_id].blank? -%>
         <%# --- ログイン前 --- %>
         <%# Entry %>
-        <%= link_to( t( 'menu.entry' ), :controller => 'entry', :action => 'input' ) -%>
+        <span class="<%= "now_page" if params[:controller] == "entry" %>"><%= link_to( t( 'menu.entry' ), :controller => 'entry', :action => 'input' ) -%></span>
 
         <%# Public %>
-        <%#= link_to( t( 'menu.public' ), :controller => 'schedules', :mode => 'public' ) -%>
-        <%= link_to( t( 'menu.public' ), :controller => 'public', :action => 'calendar' ) -%>
+        <span class="<%= "now_page" if params[:controller] == "public" %>"><%= link_to( t( 'menu.public' ), :controller => 'public', :action => 'calendar' ) -%></span>
 
         <%# Login %>
         <% form_tag :controller => "entry", :action => "login", :protocol => $login_protocol, :only_path => false do -%>
@@ -44,15 +43,14 @@
           <%= session[:login_id] -%>：
         <% end %>
 
-        <%# Schedule %>
-        <%= link_to( t( 'menu.schedule' ), :controller => 'schedules' ) -%>
-
         <%# Public %>
-        <%#= link_to( t( 'menu.public' ), :controller => 'schedules', :mode => 'public' ) -%>
-        <%= link_to( t( 'menu.public' ), :controller => 'public', :action => 'calendar' ) -%>
+        <span class="<%= "now_page" if params[:controller] == "public" %>"><%= link_to( t( 'menu.public' ), :controller => 'public', :action => 'calendar' ) -%></span>
+
+        <%# Schedule %>
+        <span class="<%= "now_page" if params[:controller] == "schedules" %>"><%= link_to( t( 'menu.schedule' ), :controller => 'schedules' ) -%></span>
 
         <%# Edit %>
-        <%= link_to( t( 'menu.edit' ), :controller => 'entry', :action => 'edit' ) -%>
+        <span class="<%= "now_page" if params[:controller] == "entry" %>"><%= link_to( t( 'menu.edit' ), :controller => 'entry', :action => 'edit' ) -%></span>
 
         <%# ログアウト %>
         <% form_tag :controller => 'entry', :action => 'logout' do -%>

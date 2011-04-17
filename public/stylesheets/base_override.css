@@ -16,3 +16,9 @@
   padding: 5px;
   width: 100px;
 }
+
+.now_page a {
+  color: #fff;
+  background: #ff7500 repeat-x;
+  text-decoration: none;
+}
