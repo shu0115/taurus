@@ -13,7 +13,8 @@ ja:
     top: Calendar
     entry: Entry
     public: Public
-    schedule: Schedule
+#    schedule: Schedule
+    schedule: Calendar
 
   schedule:
     title: タイトル
